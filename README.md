@@ -73,7 +73,7 @@ If you used MO2, make you use a clean MO2 profile, preferably by creating a new 
 If you previously installed mods without a mod manager, make _extra_ sure you completely remove all mods.
 
 You can remove old files as follows.
-1. Delete the `C:\Users\**[username]**\AppData\Local\Fallout4VR\` directory in its entirety.
+1. Delete the `C:\Users\[username]\AppData\Local\Fallout4VR\` directory in its entirety.
    This contains old configuration files.
 2. The following apply only if you have already installed FO4VR:
    1. Delete the entire `[fo4vr_dir]` directory, but
@@ -559,7 +559,7 @@ If you don't intend to engage with settlements at all, you can skip this section
    I especially like the "leaders" feature, where you can appoint a settlement leader who will oversee the placement of
    all buildings in the settlement.
    It just works.
-   * **Variant:** "Three In One".
+   * **Variant:** "Three In One"
    * **[Requires in-game configuration](#in-game-configuration)**
    * **Untested alternative:** [Sim Settlements 2](https://www.nexusmods.com/fallout4/mods/47976)
      * There are guides out there on how to get Sim Settlements 2 working on FO4VR, but these have not been tested with
