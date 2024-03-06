@@ -1,4 +1,5 @@
-﻿Fallout 4 VR sucks quite badly for modern VR standards.
+﻿# Fallout 4 VR modlist<a name="top"></a>
+Fallout 4 VR sucks quite badly for modern VR standards.
 Gameplay is lackluster, graphics and lighting are bad, performance is bad, and there's plenty of VR-only bugs.
 As is typical with Bethesda games, you can fix most of that with a whole lot of mods.
 The modding scene for FO4VR has evolved a lot over time, and as a result not all tips and tricks you read online are
@@ -13,14 +14,16 @@ So I wrote down what I did to create a mostly vanilla experience.
 I did not focus as much on performance as other guides do because I have a powerful computer.
 However, I still avoided mods that negatively affect performance.
 
+(**TODO: Add note linking reader to TOC button.**)
 
-# 1 How to read this guide
+
+# 1 How to read this guide<a name="how-to-read"></a> <small><sup>[top ▲](#top)</sup></small>
 Read it carefully. Don't skip parts.
 
-## 1.1 About modding Fallout 4 VR
+## 1.1 About modding Fallout 4 VR<a name="about-modding-fo4vr"></a>
 (**TODO: Lower your expectations, instabilities, difficulties, etc.**)
 
-## 1.2 About version numbers
+## 1.2 About version numbers<a name="about-version-numbers"></a>
 Whenever I mention a tool or a mod, I will write down which version and variant I used.
 For example, I might write "F4SEVR (v0.6.20)" to mean that I downloaded version 0.6.20 of
 [F4SEVR](https://f4se.silverlock.org/).
@@ -29,7 +32,7 @@ If the version I wrote down is still the latest version when you're reading this
 If a newer version exists, and I don't explicitly mention you should download the version I mention, then you'll have to
 judge for yourself whether it's more likely the update will _fix_ bugs or will _add_ bugs.
 
-## 1.3 About tags
+## 1.3 About tags<a name="about-tags"></a>
 Some choices I make are more vanilla than others, and some choices make sense for people who already played Fallout 4,
 but make no sense for first-time Fallout 4 players.
 Therefore, I will tag tools and mods to let you know what to expect.
@@ -42,7 +45,7 @@ Here is a list of tags.
 * optional means that I really like the additions, and think they are good, but will leave it up to you whether you use
   them.
 
-## 1.4 Abbreviations
+## 1.4 Abbreviations<a name="abbreviations"></a>
 |                   |                                                                                      |
 |-------------------|--------------------------------------------------------------------------------------|
 | **FO4VR**         | Fallout 4 VR                                                                         |
@@ -55,10 +58,10 @@ Here is a list of tags.
 | **`[username]`**  | Your Windows username                                                                |
 
 
-# 2 Setup
+# 2 Setup<a name="setup"></a> <small><sup>[top ▲](#top)</sup></small>
 (**TODO: Foreword**)
 
-## 2.1 Removing old files
+## 2.1 Removing old files<a name="removing-old-files"></a>
 > [!NOTE]
 > If you have never installed FO4VR on your computer before, you can skip this section.
 
@@ -70,12 +73,12 @@ You can remove old files as follows.
 * Delete the `C:\Users\**[username]**\AppData\Local\Fallout4VR\ ` directory in its entirety.
   This contains old configuration files.
 * The following apply only if you have already installed FO4VR:
-  * Delete the entire `[fo4vr_dir]` directory (check the [abbreviations](#Abbreviations) to know which directory I
+  * Delete the entire `[fo4vr_dir]` directory (check the [abbreviations](#abbreviations) to know which directory I
     mean), _except_ (1) `[fo4vr_dir]\Data\Video\ ` and (2) all files in `[fo4vr_dir]\Data\ ` that start with Fallout 4.
   * In Steam, verify the integrity of FO4VR's game files.
     (How? [Check this Steam's help pages.](https://help.steampowered.com/en/faqs/view/0C48-FCBD-DA71-93EB))
 
-## 2.2 Software requirements
+## 2.2 Software requirements<a name="software-requirements"></a>
 > [!WARNING]
 > Read this section carefully!
 
@@ -105,7 +108,7 @@ You can remove old files as follows.
 * **[Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist)** ([direct link](https://aka.ms/vs/17/release/vc_redist.x64.exe)) (required)
 * **[7-Zip](https://7-zip.org/)** (required)
 
-## 2.3 Using DLC in FO4VR
+## 2.3 Using DLC in FO4VR<a name="using-dlc-in-fo4vr"></a>
 FO4VR does not include the DLC, which sucks.
 Luckily, if you have non-VR FO4, you can just copy the DLC files into your FO4VR installation and then install a few
 patches (the required patches are listed in the next section (**TODO: Link to that section**)).
@@ -115,11 +118,11 @@ To copy non-VR FO4's DLC into FO4VR, go to the `[fo4_dir]\Data\ ` directory and 
 (except those that start with `DLCUltraHighResolution`) to `[fo4vr_dir]\Data\ `.
 
 
-# 3 Configuration
-## 3.1 Basic settings
+# 3 Configuration<a name="configuration"></a> <small><sup>[top ▲](#top)</sup></small>
+## 3.1 Basic settings<a name="basic-settings"></a>
 (**TODO: steam and windows and in-game (e.g. character lighting) and with MO2**)
 
-## 3.2 INI configuration
+## 3.2 INI configuration<a name="ini-configuration"></a>
 INI files allow you to change many settings that are not found in the game's menus.
 To edit these settings, shut down FO4VR if it is running and open MO2.
 Then, in the main toolbar, click "Tools" (the icon has puzzle pieces), and click "INI Editor".
@@ -208,16 +211,17 @@ Take a look at the tab `fallout4.ini` to get a feel of what an INI looks like.
     bUseWandDirectionalMovement=0
     ```
 
-# 4 Mod list
+
+# 4 List of Mods<a name="list-of-mods"></a> <small><sup>[top ▲](#top)</sup></small>
 > [!INFO]
-> Make sure you know [what the abbreviations mean](#Abbreviations) and understand
+> Make sure you know [what the abbreviations mean](#abbreviations) and understand
 > [the relevance of version numbers](#about-version-numbers).
 
 * **TODO: About load order** 
 * **TODO: Control scheme from Workshop**
 * **TODO: Distinguish between VR-specific mods and general recommendations**
 
-## 4.1 External libraries
+## 4.1 External libraries<a name="external-libraries"></a>
 First of all, here's a few required mods/tools.
 These are essentially toolkits that directly alter the game engine, and are required by many other mods.
 
@@ -265,7 +269,7 @@ These are essentially toolkits that directly alter the game engine, and are requ
    * Extract the downloaded file into `[fo4vr_dir]`.
      If you did it correctly, you should have the file `IpHlpAPI.dll` in the same directory as `Fallout4VR.exe`.
 
-## 4.2 Libraries
+## 4.2 Libraries<a name="libraries"></a>
 > [!INFO]
 > From now on, all listed mods should be downloaded and installed through MO2.
 
@@ -275,7 +279,7 @@ The mods in this section provide utilities used in other mods. These do not affe
 2. [VR Address Library for F4SEVR](https://www.nexusmods.com/fallout4/mods/64879) (required) (v1.6.1)
 3. [Fallout4 VR Tools](https://www.nexusmods.com/fallout4/mods/45167) (required) (v0.1)
 
-## 4.3 Stability and Patches
+## 4.3 Stability and Patches<a name="stability-and-patches"></a>
 These mods fix bugs, either in the base game or in other mods.
 
 1. [Fallout 4 Version Check Patcher](https://www.nexusmods.com/fallout4/mods/42497) (required) (v1.00)  
@@ -320,12 +324,12 @@ These mods fix bugs, either in the base game or in other mods.
     Fixes a bug where birds are _always_ flying into buildings for some reason.
 12. **TODO: My own custom patches!**
 
-## 4.4 Performance
+## 4.4 Performance<a name="performance"></a>
 1. [Insignificant Object Remover](https://www.nexusmods.com/fallout4/mods/9835) (required) (v1.0)
 2. [FAR - Faraway Area Reform](https://www.nexusmods.com/fallout4/mods/20713) (required) (v1.2)
    * Choose variant "Default Resolution".
 
-## 4.5 Graphics
+## 4.5 Graphics<a name="graphics"></a>
 1. [Burst Impact Blast FX](https://www.nexusmods.com/fallout4/mods/57789) (recommended) (v9.51 + v0.952)
    * Download the main file (v9.51) _and_ the bloatfly patch (v0.952).
    * All options in the FOMOD installer are fine.
@@ -348,7 +352,7 @@ These mods fix bugs, either in the base game or in other mods.
 7. [Classic Ghouls Redux](https://www.nexusmods.com/fallout4/mods/57362) (optional) (v1)  
    Changes (non-feral) ghoul textures to look more like ghouls from Fallout 3.
 
-## 4.6 Lighting
+## 4.6 Lighting<a name="lighting"></a>
 (**TODO: Note source from which I stole this configuration.**)
 
 1. [Darker Nights](https://www.nexusmods.com/fallout4/mods/191) (recommended) (v1.11p6)
@@ -361,7 +365,7 @@ These mods fix bugs, either in the base game or in other mods.
    * Choose variant "plus Bloom Remover".
 5. [Interiors Enhanced - Darker Ambient Light and Fog](https://www.nexusmods.com/fallout4/mods/8768) (required) (v2.0)
 
-## 4.7 Sound
+## 4.7 Sound<a name="sound"></a>
 1. [Faded Glory - A Post-Apocalyptic Soundscape](https://www.nexusmods.com/fallout4/mods/26014) (optional) (v5-1)
 2. [Fallout Suite - Soundtrack Extension](https://www.nexusmods.com/fallout4/mods/15870) (optional) (v1.1)
 3. [Bleak Beauty - A Fallout 4 Fan Made OST](https://www.nexusmods.com/fallout4/mods/9663) (optional) (v1.2)
@@ -380,7 +384,7 @@ These mods fix bugs, either in the base game or in other mods.
    Replaces geiger counter sounds to be more intense.
    * Choose either variant. I chose "Quieter Version".
 
-## 4.8 UI
+## 4.8 UI<a name="ui"></a>
 The UI in VR is unintuitive to navigate, and the key bindings shown in the UI are usually incorrect.
 Unfortunately, there are currently no good UI mods for VR.
 [FallUI](https://www.nexusmods.com/fallout4/mods/48758) (v2.2.1) sort of works, but suffers from a variety of bugs in
@@ -397,7 +401,7 @@ can't configure them through MCM.
    * After installing, edit the mod's files, and remove the file `interface\MultiActivateMenu.swf`.
      This fixes a bug where no text is shown at all when talking with followers.
 
-## 4.9 Gameplay
+## 4.9 Gameplay<a name="gameplay"></a>
 1. [FRIK - Full Player Body with IK](https://www.nexusmods.com/fallout4/mods/53464) (required) (v0.58)  
    Allows you to see your hands. Absolutely required for immersion.
    * Requires some configuration. (**TODO: Link**)
@@ -428,7 +432,7 @@ can't configure them through MCM.
 6. [Splinterz - Breakable Wooden Doors](https://www.nexusmods.com/fallout4/mods/21521) (optional) (v1.3)  
    Allows you to break doors. Pretty cool.
 
-## 4.10 Combat
+## 4.10 Combat<a name="combat"></a>
 (**TODO: Source**)
 
 1. [See-Through-Scopes](https://www.nexusmods.com/fallout4/mods/9476) (required) (v2.5.3)  
@@ -469,7 +473,7 @@ can't configure them through MCM.
    This mod makes it much more noticeable when you are being hit.
    * Choose variant "aMedium".
 
-## 4.11 Difficulty / Survival
+## 4.11 Difficulty / Survival<a name="difficulty-survival"></a>
 Fallout 4 is not a difficult game, even at higher difficulties.
 In VR, it only gets easier.
 Mods in this category affect the difficulty.
@@ -502,7 +506,7 @@ Some (but not all) of them assume you play in Survival mode, which I recommend y
 10. [Radiation Overhaul - 4x More Radiation Across the Wasteland](https://www.nexusmods.com/fallout4/mods/13790) (optional) (v1.1)  
     Makes radiation actually dangerous.
 
-## 4.12 Settlements
+## 4.12 Settlements<a name="settlements"></a>
 I think Fallout 4's settlements are very flawed.
 In VR, they are not necessarily more or less flawed than in non-VR, so the mods in this section are not VR-specific.
 However, several of these mods require VR-specific tweaks.
@@ -545,10 +549,11 @@ If you don't intend to engage with settlements at all, you can skip this section
 5. (TODO: **local leader**)
 
 
-# 5 Configuring your mods
+# 5 Configuring your mods<a name="configuring-your-mods"></a> <small><sup>[top ▲](#top)</sup></small>
 (**TODO**)
 
-# A. Launching and running
+
+# A. Launching and running<a name="launching-and-running"></a> <small><sup>[top ▲](#top)</sup></small>
 (**TODO: Rephrase and restructure this.**)
 
 * Always launch through MO2.
