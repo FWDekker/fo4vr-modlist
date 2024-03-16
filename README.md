@@ -163,12 +163,22 @@ These settings relate to stability, visual quality, and performance.
 ## 3.1 Basic settings<a name="basic-settings"></a> <small><sup>[top ▲](#toc)</sup></small>
 1. Steam > Fallout 4 VR > Settings > General > Uncheck "Enable the Steam Overlay while in-game" (If you cannot disable, you disabled it globally. That's fine too.)
 2. `[fo4vr_dir]\Fallout4VR.exe` > Properties > Compatibility > Check "Disable full-screen optimisations"
-3. While in-game in VR:
-   1. Settings > VR Performance:
+3. While in-game in VR, in Settings:
+   1. Gameplay:
+      1. Difficulty: Survival
+   2. Display:
+      1. Floating markers: Off
+   3. VR:
+      1. Direct movement: On
+      2. Pip-Boy location: Projected
+      3. Comfort vignette while moving: Off
+      4. Comfort vignette while turning: Off
+      5. Rotation type: Smooth
+   4. Performance:
        1. Anti-Aliasing: TAA
        2. Anisotropic Filtering: 16
        3. Character Lighting: Off
-4. MO2: (**TODO: ???**)
+5. MO2: (**TODO: ???**)
 
 ## 3.2 INI configuration<a name="ini-configuration"></a> <small><sup>[top ▲](#toc)</sup></small>
 INI files contain extra game settings that are not found in the game's menus.
@@ -600,18 +610,19 @@ Some (but not all) of them assume you play in Survival mode, which I recommend y
     * Recommended even for non-survival playthroughs! (**TODO: Config link**)
     * **Installer:** Everything
     * **[Requires in-game configuration](#finishing-up)**
-2. **[JOURNEY](https://www.nexusmods.com/fallout4/mods/12685)** (v1.6.1) <sub>![recommended]</sub>  
+2. **[JOURNEY](https://www.nexusmods.com/fallout4/mods/12685)** (v1.6.1) <sub>![recommended]</sub>
+   (**TODO: Make this optional, and explain the differences with above better.**)
    Re-enables a restricted form of fast travel.
    You can use this together with the above mod.
    * **[Requires in-game configuration](#finishing-up)**
-3. **[Campsite](https://www.nexusmods.com/fallout4/mods/11734)** (v1.0.4) <sub>![recommended]</sub>  
+4. **[Campsite](https://www.nexusmods.com/fallout4/mods/11734)** (v1.0.4) <sub>![recommended]</sub>  
    Lets you bring a tent with you so you can sleep anywhere.
-4. **[Loot Logic and Reduction With optional Harvest Restrictions](https://www.nexusmods.com/fallout4/mods/21366)** (v1.5.3.1) <sub>![recommended]</sub>  
+5. **[Loot Logic and Reduction With optional Harvest Restrictions](https://www.nexusmods.com/fallout4/mods/21366)** (v1.5.3.1) <sub>![recommended]</sub>  
    Reduces loot found in containers. Otherwise you'll quickly find you'll have so much ammo and chems the game just
    totally isn't challenging anymore.
-5. **[NPC Loot Drop rebalance](https://www.nexusmods.com/fallout4/mods/24163)** (v1.0) <sub>![recommended]</sub>  
+6. **[NPC Loot Drop rebalance](https://www.nexusmods.com/fallout4/mods/24163)** (v1.0) <sub>![recommended]</sub>  
    Reduces loot found on NPCs, in line with the above mod.
-6. **[Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/29447)** (v1.5.4) <sub>![recommended]</sub>  
+7. **[Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/29447)** (v1.5.4) <sub>![recommended]</sub>  
    In survival, you have less carrying capacity and heavier items. These backpacks will come in use.
    * **Requires:** FO4AU _and_ FO4FH _and_ FO4NW
    * **Variant:** "1.5.4"
@@ -728,6 +739,8 @@ The overall procedure is as follows:
   You may get a CTD otherwise.
   Some claim that Buffout4 fixes this, but in my game, it didn't, as I would continue to CTD.
 * Don't swim, lol
+* Aiming with a gun in the Vault is dogshit bat.
+  Give it up, just use your stick for now... we'll fix guns later.
 
 ## 5.2 Configure controls<a name="configure-controls"></a> <small><sup>[top ▲](#toc)</sup></small>
 (**TODO**)
@@ -735,25 +748,68 @@ The overall procedure is as follows:
 ## 5.3 Configure mods<a name="configure-mods"></a> <small><sup>[top ▲](#toc)</sup></small>
 (**TODO**)
 
-### 5.3.1 FRIK <small><sup>[top ▲](#toc)</sup></small>
+### 5.3.1 Backpacks of the Commonwealth <small><sup>[top ▲](#toc)</sup></small>
+As soon as you exit Vault 111, you'll receive a magazine from Backpacks of the Commonwealth.
+After that, you'll also be prompted to enter the spawn rate.
+Enter the recommended rate of 0%.
+
+### 5.3.2 Survival Options <small><sup>[top ▲](#toc)</sup></small>
+Open your Pip-Boy, go to Inv, to Misc, and activate `[Settings] Survival Options Holotape`.
+Apply the following settings.
+1. Combat Options
+   1. Incoming Damage Multiplier: (**TODO**)
+   2. Outgoing Damage Multiplier: (**TODO**)
+2. Save Options
+   1. Cell Change Save Options
+      1. Toggle Cell Change Save: On
+      2. Change To Normal Saves: Normal Save
+   2. Timed Save Options
+      1. Toggle Timed Save: On
+      2. Change To Normal Saves: Normal Save
+      3. Set Timed Save Interval: 7 Minutes
+   4. Level Up Save Options
+      1. Toggle Level Up Save: Current: On
+      2. Change To Normal Saves: `[Current: Normal Save]`
+   5. Give Save Item
+
+After using the "Give Save Item" option, you'll find a "Save Item" in your inventory, under "Aid".
+Put the item on your favourite wheel so you can save whenever you want.
+
+### 5.3.3 Journey <small><sup>[top ▲](#toc)</sup></small>
+(**TODO: Actually, nvm, not necessary**)
+
+### 5.3.4 Bullet Time VATS VR <small><sup>[top ▲](#toc)</sup></small>
+In your Inventory, under Misc, find and use the item `[Settings - Bullet Time VATS]`.
+
+1. Time Dilation: 50%
+2. Movement Settings Menu
+   1. "In Bullet Time V.A.T.S." use: DIRECT MOVE
+
+### 5.3.5 FRIK <small><sup>[top ▲](#toc)</sup></small>
 > [!WARNING]
 > Make sure [FRIK](https://www.nexusmods.com/fallout4/mods/53464) remains disabled until you have exited the vault.
 
-(**TODO**)
+Save the game (using the "Save Item" you added using Survival Options), exit the game, enable FRIK (and re-enable UFO4P while you're at it, if you disabled it), re-sort your mods with LOOT, and then re-launch the game.
 
-### 5.3.2 Bullet Time VATS VR <small><sup>[top ▲](#toc)</sup></small>
-(**TODO**)
+In Pip-Boy, in Inv, under Misc, select "FRIK Configuration".
 
-### 5.3.3 Survival Options <small><sup>[top ▲](#toc)</sup></small>
-(**TODO**)
+1. Stand up straight, relaxed, hands by your side.
+   Select "CALIBRATE".
+2. Select "Save Body Position to INI".
+3. Select "Toggle Arms Only Mode!".
 
-### 5.3.4 Journey <small><sup>[top ▲](#toc)</sup></small>
-(**TODO**)
+### 5.3.6 Sim Settlements <small><sup>[top ▲](#toc)</sup></small>
+Eventually, find your way to the Museum of Freedom, where you will find the City Manager 2078 Holotape.
+Find the holotape in the Misc section of your inventory and activate it.
+Answer the questions to configure Sim Settlements.
+(Sometimes the prompts become invisible.
+Just continue your way through it, the actions below will override those choices anyway.)
 
-### 5.3.5 Sim Settlements <small><sup>[top ▲](#toc)</sup></small>
-(**TODO**)
+After that, open the holotape again.
+1. Tools > Configuration Tools > Configuration Wizard
+2. Tools > Configuration Tools > Performance Wizard
 
-### 5.3.6 IDEK's Logistics Station 2 <small><sup>[top ▲](#toc)</sup></small>
+### 5.3.7 IDEK's Logistics Station 2 <small><sup>[top ▲](#toc)</sup></small>
 (**TODO: Complete this section**)
 
 There is an option to integrate this with Sim Settlements and with Salvage Beacons, but I didn't use those
