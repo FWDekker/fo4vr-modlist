@@ -1,5 +1,5 @@
 ﻿# Florine's Fallout 4 VR
-_Last updated: 2024-03-07_
+_Last updated: 2024-03-16_
 
 > A thorough, beginner-friendly guide for a stable, vanilla-ish experience.
 
@@ -42,10 +42,10 @@ However, I mostly avoided mods that negatively affect performance.
 This section deals with the basics:
 Why FO4VR modding is difficult, how this guide deals with version numbers, and common abbreviations.
 
-## 1.1 About modding Fallout 4 VR<a name="about-modding-fo4vr"></a>
+## 1.1 About modding Fallout 4 VR<a name="about-modding-fo4vr"></a> <small><sup>[top ▲](#toc)</sup></small>
 (**TODO: Lower your expectations, instabilities, difficulties, etc.**)
 
-## 1.2 About version numbers<a name="about-version-numbers"></a>
+## 1.2 About version numbers<a name="about-version-numbers"></a> <small><sup>[top ▲](#toc)</sup></small>
 Whenever I mention a tool or a mod, I will write down which version and variant I used.
 For example, I might write "F4SEVR (v0.6.20)" to mean that I downloaded version 0.6.20 of
 [F4SEVR](https://f4se.silverlock.org/).
@@ -54,7 +54,7 @@ If the version I wrote down is still the latest version when you're reading this
 If a newer version exists, and I don't explicitly mention you should download the version I mention, then you'll have to
 judge for yourself whether it's more likely the update will _fix_ bugs or will _add_ bugs.
 
-## 1.3 About tags<a name="about-tags"></a>
+## 1.3 About tags<a name="about-tags"></a> <small><sup>[top ▲](#toc)</sup></small>
 Some choices I make are more vanilla than others, and some choices make sense for people who already played Fallout 4,
 but make no sense for first-time Fallout 4 players.
 Therefore, I will tag tools and mods to let you know what to expect.
@@ -66,7 +66,7 @@ Here is a list of tags.
 | ![recommended] | Good for all players. Install this, unless you seriously disagree. |
 | ![optional]    | Good, but personal preference. Install if you want.                |
 
-## 1.4 Abbreviations<a name="abbreviations"></a>
+## 1.4 Abbreviations<a name="abbreviations"></a> <small><sup>[top ▲](#toc)</sup></small>
 | Abbreviation      | Meaning                              | Example                                   |
 |-------------------|--------------------------------------|-------------------------------------------|
 | **FO4VR**         | Fallout 4 VR                         |                                           |
@@ -83,7 +83,7 @@ Here is a list of tags.
 Before you can start modding FO4VR, you need to make sure you have a clean install and have the right software
 installed.
 
-## 2.1 Removing old files<a name="removing-old-files"></a>
+## 2.1 Removing old files<a name="removing-old-files"></a> <small><sup>[top ▲](#toc)</sup></small>
 > [!TIP]
 > If you haven't installed FO4VR yet, check the [software requirements](#software-requirements) to learn the correct
 > installation directory.
@@ -108,16 +108,15 @@ You can remove old files as follows.
    2. In Steam, verify the integrity of FO4VR's game files.
       ([Check Steam's help pages to learn how.](https://help.steampowered.com/en/faqs/view/0C48-FCBD-DA71-93EB))
 
-## 2.2 Software requirements<a name="software-requirements"></a>
+## 2.2 Software requirements<a name="software-requirements"></a> <small><sup>[top ▲](#toc)</sup></small>
 > [!WARNING]
 > You should install FO4VR into the right directory.
 > Read this section carefully!
 
 * **Windows 11** (v23H2) <sub>![required]</sub>  
   I use Linux for everything, including gaming, but for VR gaming it's just not a good choice as of 2024.
-* **SteamVR** (v? TODO) <sub>![required]</sub>
-* **Fallout 4 VR** (v1.2.72) <sub>![required]</sub>
-  * (**TODO: verify FO4 and FO4VR version numbers**)
+* **SteamVR** (v2.4.3) <sub>![required]</sub>
+* **Fallout 4 VR** (v1.2.72.0.1) <sub>![required]</sub>
   * Do **not** install FO4VR in or below `C:\Program Files (x86)\`.
     Doing so may result in specific mods/tools unexpectedly failing, because Windows doesn't like it when software
     changes things in `Program Files (x86)`.
@@ -140,7 +139,7 @@ You can remove old files as follows.
 * **[Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist)** ([direct link](https://aka.ms/vs/17/release/vc_redist.x64.exe)) <sub>![required]</sub>
 * **[7-Zip](https://7-zip.org/)** <sub>![required]</sub>
 
-## 2.3 Using DLC in FO4VR<a name="using-dlc-in-fo4vr"></a>
+## 2.3 Using DLC in FO4VR<a name="using-dlc-in-fo4vr"></a> <small><sup>[top ▲](#toc)</sup></small>
 FO4VR does not include the DLC, which sucks.
 Luckily, if you have non-VR FO4, you can just copy the DLC files into your FO4VR installation and then install a few
 patches (included in the [mod list](#list-of-mods)).
@@ -157,10 +156,21 @@ You should now have the required software.
 Before you install mods, there's some settings to tweak.
 These settings relate to stability, visual quality, and performance.
 
-## 3.1 Basic settings<a name="basic-settings"></a>
-(**TODO: steam and windows and in-game (e.g. character lighting) and with MO2**)
+> [!NOTE]
+> Even if you skip these steps, at least launch the game once.
+> This will set up important files and registry entries.
 
-## 3.2 INI configuration<a name="ini-configuration"></a>
+## 3.1 Basic settings<a name="basic-settings"></a> <small><sup>[top ▲](#toc)</sup></small>
+1. Steam > Fallout 4 VR > Settings > General > Uncheck "Enable the Steam Overlay while in-game" (If you cannot disable, you disabled it globally. That's fine too.)
+2. `[fo4vr_dir]\Fallout4VR.exe` > Properties > Compatibility > Check "Disable full-screen optimisations"
+3. While in-game in VR:
+   1. Settings > VR Performance:
+       1. Anti-Aliasing: TAA
+       2. Anisotropic Filtering: 16
+       3. Character Lighting: Off
+4. MO2: (**TODO: ???**)
+
+## 3.2 INI configuration<a name="ini-configuration"></a> <small><sup>[top ▲](#toc)</sup></small>
 INI files contain extra game settings that are not found in the game's menus.
 
 To edit these settings,
@@ -370,8 +380,8 @@ These mods fix bugs, either in the base game or in other mods.
    * **Load order:** Below UFO4P (**TODO: Move this elsewhere?**)
 4. **[DLCVR - Fallout 4 VR and DLC standalone bug fixes](https://www.nexusmods.com/fallout4/mods/28842)** (v1.0.4) (requires FO4FH or FO4NW) <sub>![required]</sub>  
    Fixes issues specific to FO4FH and FO4NW, relating to invisible floors and so on.
-   * **Variant:** Depends on your DLC
-5. **[Edmond's Automatron VR Workbench Rebuild](https://www.nexusmods.com/fallout4/mods/55692)** (v1.0) (requires FO4AU) <sub>![required]</sub>  
+   * **Variant:** Depends on your DLC.
+5. **[Edmond's Automatron VR Workbench Rebuild](https://www.nexusmods.com/fallout4/mods/55692)** (v1.0) (requires FO4AU and FO4NW) <sub>![required]</sub>  
    Re-implements parts of FO4AU that did not work in VR. Some parts of FO4AU are still broken even with this mod.
    * **Variant:** "No wild edits"
 6. **[Buffout 4](https://www.nexusmods.com/fallout4/mods/47359)** (v1.28.6) <sub>![required]</sub>  
@@ -390,18 +400,21 @@ These mods fix bugs, either in the base game or in other mods.
     * **Variant:** "Subtle" _or_ main file
 11. **[Bird Fix](https://www.nexusmods.com/fallout4/mods/45429)** (v1) <sub>![required]</sub>  
     Fixes a bug where birds are _always_ flying into buildings for some reason.
-12. **TODO: My own custom patches!**
+    * **Note:** You can ignore the listed dependencies.
+13. **TODO: My own custom patches!**
 
 ## 4.4 Performance<a name="performance"></a> <small><sup>[top ▲](#toc)</sup></small>
 FO4VR is notorious for having sub-par performance.
 The following mods help improve performance.
 
 1. **[Insignificant Object Remover](https://www.nexusmods.com/fallout4/mods/9835)** (v1.0) <sub>![required]</sub>
+   * (**TODO: Remove? I don't really care about the FPS.)
+   * (**TODO: In the FOMOD, which variant?)
 2. **[FAR - Faraway Area Reform](https://www.nexusmods.com/fallout4/mods/20713)** (v1.2) <sub>![required]</sub>
    * **Variant:** "Default Resolution"
 
 ## 4.5 Graphics<a name="graphics"></a> <small><sup>[top ▲](#toc)</sup></small>
-1. **[Burst Impact Blast FX](https://www.nexusmods.com/fallout4/mods/57789)** (v9.51 + v0.952) <sub>![recommended]</sub>
+1. **[Burst Impact Blast FX](https://www.nexusmods.com/fallout4/mods/57789)** (v9.51 + v0.952) (requires FO4AU, FO4FH, and FO4NW) <sub>![recommended]</sub>
    * **Variant:** main file _and_ "BIB-FX Fixed Bloatfly's too-large effect".
    * All options in the FOMOD installer are fine.
      If you're lazy, just spam "Next".
@@ -411,7 +424,8 @@ The following mods help improve performance.
    FO4VR's default textures are too ugly for VR, and the high-resolution texture pack is (supposedly) too
    VRAM-consuming.
    This texture pack provides a nice balance.
-   * **Variant:** all files in section "Main files"
+   * **Variant:** All files in section "Main files"
+   * **Note:** You can safely download files for which you do not own the required DLC
 4. **[Vivid Fallout - All in One](https://www.nexusmods.com/fallout4/mods/25714)** (v1.9) <sub>![recommended]</sub>  
    Adds even nicer textures, but may have some performance impact.
    * **Variant:** "Best choice"
@@ -430,11 +444,12 @@ The following mods help improve performance.
    * **Variant:** main file _and_ "No Glow Fix for Far Harbor DLC".
 2. **[PhyLight](https://www.nexusmods.com/fallout4/mods/25740)** (v1.1) <sub>![required]</sub>
    * **Variant:** "PhyDark (164)" _and_ "No Interior Dust or Fog"
-3. **[Vanilla Eye Adaptation Fix - All DLC](https://www.nexusmods.com/fallout4/mods/52129)** (v1.1) <sub>![required]</sub>
+3. **[Vanilla Eye Adaptation Fix - All DLC](https://www.nexusmods.com/fallout4/mods/52129)** (v1.1) (requires all DLC) <sub>![required]</sub>
    * **Variant:** the one with version 1.1
 4. **[Fr4nsson's Light Tweaks](https://www.nexusmods.com/fallout4/mods/2139)** (v1.6) <sub>![required]</sub>
    * **Variant:** "plus Bloom Remover"
 5. **[Interiors Enhanced - Darker Ambient Light and Fog](https://www.nexusmods.com/fallout4/mods/8768)** (v2.0) <sub>![required]</sub>
+   * **Variant:** Depends on your DLC.
 
 ## 4.7 Sound<a name="sound"></a> <small><sup>[top ▲](#toc)</sup></small>
 The sound is actually fine in VR.
@@ -453,7 +468,7 @@ However, it doesn't hurt to improve sound effects for VR, and to add more high-q
    * **Requires:** "Ambient Wasteland - Fallout 4 Edition"
 7. **[Project Reality Footsteps FO4](https://www.nexusmods.com/fallout4/mods/35904)** (v1.7) <sub>![recommended]</sub>  
    Adds more different kinds of footstep sounds.
-   * **Variant:** "Project Reality Footsteps FO4 1.7 BA2"
+   * **Variant:** "BA2"
 8. **[Not Great Not Terrible - Scarier Geiger Counter Sounds](https://www.nexusmods.com/fallout4/mods/45354)** (v1.0) <sub>![optional]</sub>  
    Replaces geiger counter sounds to be more intense.
    * **Variant:** "Quieter Version" _or_ "Main File"
@@ -479,33 +494,36 @@ can't configure them through MCM.
 1. **[FRIK - Full Player Body with IK](https://www.nexusmods.com/fallout4/mods/53464)** (v0.58) <sub>![required]</sub>  
    Allows you to see your hands.
    Absolutely required for immersion.
+   * **Variant:** "alpha 58" (**TODO: Verify this**)
    * **[Requires in-game configuration](#finishing-up)**
-   * **Important:** Download this mod, but **make sure it is deactivated in MO2**.
+   * **Important:** Download this mod, but **keep it deactivated in MO2 for now**.
    * **Untested alternative:** [Idle Hands](https://www.nexusmods.com/fallout4/mods/42922)
-2. **[Player Collision Options - nocollide actors](https://www.nexusmods.com/fallout4/mods/41866)** (v1.0) <sub>![required]</sub>  
+3. **[Player Collision Options - nocollide actors](https://www.nexusmods.com/fallout4/mods/41866)** (v1.0) <sub>![required]</sub>  
    Normally, when you get close to an NPC in VR, the game will push you back. This is annoying and disorienting when you
    want to roleplay or pet your dog.
    This disables collisions between you and NPCs.
-3. **[Realistic Death Physics - No Animations](https://www.nexusmods.com/fallout4/mods/4371)** (v1.2) <sub>![recommended]</sub>  
+   * **Variant:** "nocollide actors"
+5. **[Realistic Death Physics - No Animations](https://www.nexusmods.com/fallout4/mods/4371)** (v1.2) <sub>![recommended]</sub>  
    Merely "recommended" because there is a slightly increased chance that there's some physical glitching going on.
    The trade-off there is yours to make.
    * **Variant:** "ALL DLC version" if you have all DLC, or "No Animations" otherwise
-   * (**TODO: Test variant "Vanilla Physics - No Animations"**)
-4. **[PipBoy VR light](https://www.nexusmods.com/fallout4/mods/29245)** (v1.1) <sub>![required]</sub>  
+   * (**TODO: Test variant "Vanilla Physics - No Animations"**) / (**TODO: Check required DLC**)
+6. **[PipBoy VR light](https://www.nexusmods.com/fallout4/mods/29245)** (v1.1) <sub>![required]</sub>  
    In VR, the default Pip-Boy light (the "flashlight") is just a weak glow around you.
    I really liked the flashlight in Half-Life: Alyx.
    This mod changes the shape of the Pip-Boy's light to be like a flashlight, and does so with no performance overhead.
    I personally chose the small light because I want it to be scary, but you can choose any variant you want.
    * **Variant:** main file _and_ one optional file.
      (I chose "Gun style aimed Small Gobo".)
-5. **[Everyone's Best Friend](https://www.nexusmods.com/fallout4/mods/13459)** (v3.0.0) <sub>![recommended]</sub>  
+7. **[Everyone's Best Friend](https://www.nexusmods.com/fallout4/mods/13459)** (v3.0.0) <sub>![recommended]</sub>  
    Normally you can only have one follower, but Dogmeat really isn't comparable to the depth of the other companions.
    But Dogmeat is also really cute.
    This mods lets you have both Dogmeat and any other companion at the same time.
    * **Patch:** [EBF UFO4P compatibility fix](https://www.nexusmods.com/fallout4/mods/43409) (v2.1.0)
-6. **[Splinterz - Breakable Wooden Doors](https://www.nexusmods.com/fallout4/mods/21521)** (v1.3) <sub>![optional]</sub>  
+8. **[Splinterz - Breakable Wooden Doors](https://www.nexusmods.com/fallout4/mods/21521)** (v1.3) <sub>![optional]</sub>  
    Allows you to break doors.
    Pretty cool.
+   * **Variant:** Depends on your DLC.
 
 ## 4.10 Combat<a name="combat"></a> <small><sup>[top ▲](#toc)</sup></small>
 (**TODO: Source**)
@@ -520,7 +538,7 @@ can't configure them through MCM.
    Absolutely horrible and nauseating.
    This mod removes that screen, and just lets you look through the actual scope.
    * **Variant:** main file only, not the optional file.
-3. **[Bullet Time VATS VR](https://www.nexusmods.com/fallout4/mods/72502)** (vb1.1) <sub>![required]</sub>  
+3. **[Bullet Time VATS VR](https://www.nexusmods.com/fallout4/mods/72502)** (vb1.1) (requires FO4FH and FO4NW) <sub>![required]</sub>  
    In vanilla, VATS is a gameplay mechanic that pauses combat and lets you select body parts to target, which you will
    then automatically shoot at.
    This sucks in VR, because you don't get to aim the gun and pull the trigger yourself.
@@ -534,17 +552,19 @@ can't configure them through MCM.
    In VR, hip-fire doesn't exist.
    As a result, hip-fire perks are useless.
    This mod makes those perks useful again.
-6. **[Weapon Accuracy Redone for VR](https://www.nexusmods.com/fallout4/mods/40669)** (v1.0) <sub>![required]</sub>  
+   * **Variant:** Depends on your DLC.
+7. **[Weapon Accuracy Redone for VR](https://www.nexusmods.com/fallout4/mods/40669)** (v1.0) <sub>![required]</sub>  
    In VR it's super annoying if you're clearly aiming at an enemy and then the game decides the shot didn't hit because
    of some random die.
    This mod reduces weapon spread and recoil to make accuracy in VR more rewarding.
-7. **[Better Low Health](https://www.nexusmods.com/fallout4/mods/6018)** (v1.0) <sub>![recommended]</sub>  
+   * **Variant:** Depends on your DLC.
+9. **[Better Low Health](https://www.nexusmods.com/fallout4/mods/6018)** (v1.0) <sub>![recommended]</sub>  
    Your health bar is visible on the inside of your wrist, but that's also where you're holding your gun, so during
    combat you typically don't really know how much health you have left.
    The game shows some visual effects at 20% health left, but that's usually too late.
    This mod increases that threshold to 50%.
    * **Variant:** "50"
-8. **[More Noticeable Hit Effect](https://www.nexusmods.com/fallout4/mods/6157)** (v1.0) <sub>![required]</sub>  
+10. **[More Noticeable Hit Effect](https://www.nexusmods.com/fallout4/mods/6157)** (v1.0) <sub>![required]</sub>  
    I noticed that during fights I usually had no idea if bullets were flying past me or into me.
    This mod makes it much more noticeable when you are being hit.
    * **Variant:** "aMedium"
@@ -571,17 +591,20 @@ Some (but not all) of them assume you play in Survival mode, which I recommend y
    totally isn't challenging anymore.
 5. **[NPC Loot Drop rebalance](https://www.nexusmods.com/fallout4/mods/24163)** (v1.0) <sub>![recommended]</sub>  
    Reduces loot found on NPCs, in line with the above mod.
-6. **[Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/29447)** (v1.5.4) <sub>![recommended]</sub>  
+6. **[Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/29447)** (v1.5.4) (requires FO4AU, FO4FH, and FO4NW) <sub>![recommended]</sub>  
    In survival, you have less carrying capacity and heavier items. These backpacks will come in use.
-7. **[Dogmeat's Backpack](https://www.nexusmods.com/fallout4/mods/10111)** (v2.0) <sub>![recommended]</sub>  
+   * **Variant:** "1.5.4"
+8. **[Dogmeat's Backpack](https://www.nexusmods.com/fallout4/mods/10111)** (v2.0) <sub>![recommended]</sub>  
    As above, but now for your companion.
-8. **[Dogmeat's Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/62037)** (v1.3) <sub>![recommended]</sub>  
+9. **[Dogmeat's Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/62037)** (v1.3) <sub>![recommended]</sub>  
    Re-balances the above mod to be in line with the one above that.
-9. **[Headshot Damage Multiplier](https://www.nexusmods.com/fallout4/mods/33546)** (v1.0) <sub>![recommended]</sub>
+   * **Requires:** The two mods above this one.
+11. **[Headshot Damage Multiplier](https://www.nexusmods.com/fallout4/mods/33546)** (v1.0) <sub>![recommended]</sub>
    * **Variant:** "x5"
    * (**TODO: Test this**)
-10. **[Radiation Overhaul - 4x More Radiation Across the Wasteland](https://www.nexusmods.com/fallout4/mods/13790)** (v1.1) <sub>![optional]</sub>  
+11. **[Radiation Overhaul - 4x More Radiation Across the Wasteland](https://www.nexusmods.com/fallout4/mods/13790)** (v1.1) <sub>![optional]</sub>  
     Makes radiation actually dangerous.
+    * **Variant:** Depends on your DLC.
 
 ## 4.12 Settlements<a name="settlements"></a> <small><sup>[top ▲](#toc)</sup></small>
 I think Fallout 4's settlements are very flawed.
@@ -601,12 +624,12 @@ If you don't intend to engage with settlements at all, you can skip this section
    I especially like the "leaders" feature, where you can appoint a settlement leader who will oversee the placement of
    all buildings in the settlement.
    It just works.
-   * **Variant:** "Three In One"
+   * **Variant:** "Three In One **v4.1.7**"
    * **[Requires in-game configuration](#finishing-up)**
-   * **Untested alternative:** [Sim Settlements 2](https://www.nexusmods.com/fallout4/mods/47976)
-     * There are guides out there on how to get Sim Settlements 2 working on FO4VR, but these have not been tested with
-       this guide.
-       I recommend you err on the side of caution and avoid Sim Settlements 2.
+   * **Untested alternative:** [Sim Settlements 2](https://www.nexusmods.com/fallout4/mods/47976)  
+     There are guides out there on how to get Sim Settlements 2 working on FO4VR, but these have not been tested with
+     this guide.
+     I recommend you err on the side of caution and avoid Sim Settlements 2.
 2. **[Leaders Of The Commonwealth](https://www.nexusmods.com/fallout4/mods/30495)** (v2) <sub>![recommended]</sub>  
    With basic Sim Settlements, only your followers are leaders.
    Especially at the start of the game, it's frustrating if your settlements can't grow because you don't have enough
@@ -640,6 +663,7 @@ Most mods don't need configuration, but a few do.
 These mods can be configured after you've finished the prologue.
 This section will take you through that process.
 
+(**TODO: Make an easier overview.**)
 The overall procedure is as follows:
 1. [Read general tips.](#general-tips) (Section 5.1)
 2. Launch the game.
@@ -675,8 +699,6 @@ The overall procedure is as follows:
 * Don't use your pipboy while the light is on!
   You may get a CTD otherwise.
   Some claim that Buffout4 fixes this, but in my game, it didn't, as I would continue to CTD.
-* If you die, load your previous save manually.
-  (**TODO: Is there a mod that increases the load time, or otherwise changes this?**)
 * Don't swim, lol
 
 ## 5.2 Configure controls<a name="configure-controls"></a> <small><sup>[top ▲](#toc)</sup></small>
@@ -710,7 +732,7 @@ There is an option to integrate this with Sim Settlements and with Salvage Beaco
 integrations because I couldn't figure them out.
 
 
-# 6 Conclusion
+# 6 Conclusion <small><sup>[top ▲](#toc)</sup></small>
 That's it!
 I hope this guide was useful for you :-)
 
