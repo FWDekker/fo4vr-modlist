@@ -1,5 +1,5 @@
 ﻿# Florine's Fallout 4 VR
-_Last updated: 2024-03-16_
+_Last updated: 2024-03-17_
 
 > A thorough, beginner-friendly guide for a stable, vanilla-ish experience.
 
@@ -391,7 +391,8 @@ These mods fix bugs, either in the base game or in other mods.
    Though there are some incompatibilities because VR is not supported by the mod authors (like with most other mods on
    this list), overall the pros outweigh the cons.
    * **Requires:** all DLC
-   * **Path:** [Unofficial Fallout 4 VR Fix](https://www.nexusmods.com/fallout4/mods/47117) (v1)
+   * **Patch:** [Unofficial Fallout 4 VR Fix](https://www.nexusmods.com/fallout4/mods/47117) (v1)
+   * **Patch:** [VR weapon and armor keyword crash patch](https://www.nexusmods.com/fallout4/mods/79711) (v2.1.5-1.0.0)
 6. **[DLCVR - Fallout 4 VR and DLC standalone bug fixes](https://www.nexusmods.com/fallout4/mods/28842)** (v1.0.4) <sub>![required]</sub>  
    Fixes issues specific to FO4FH and FO4NW, relating to invisible floors and so on.
    * **Requires:** FO4FH _or_ FO4NW
@@ -417,7 +418,6 @@ These mods fix bugs, either in the base game or in other mods.
 14. **[Bird Fix](https://www.nexusmods.com/fallout4/mods/45429)** (v1) <sub>![required]</sub>  
     Fixes a bug where birds are _always_ flying into buildings for some reason.
     * **Note:** You can ignore the listed dependencies.
-15. **TODO: My own custom patches!**
 
 ## 4.4 Performance<a name="performance"></a> <small><sup>[top ▲](#toc)</sup></small>
 FO4VR is notorious for having sub-par performance.
@@ -454,6 +454,7 @@ The following mods help improve performance.
    * **Variant:** "Better Performance - Non ESP Version"
 7. **[Classic Ghouls Redux](https://www.nexusmods.com/fallout4/mods/57362)** (v1) <sub>![optional]</sub>  
    Changes (non-feral) ghoul textures to look more like ghouls from Fallout 3.
+   * **Patch:** [UFO4P and LotC patch](https://www.nexusmods.com/fallout4/mods/79713) (v1-1.0.0)
 
 ## 4.6 Lighting<a name="lighting"></a> <small><sup>[top ▲](#toc)</sup></small>
 By default, the world looks _really_ overexposed, which makes the outside like outright ugly.
@@ -638,6 +639,7 @@ Some (but not all) of them assume you play in Survival mode, which I recommend y
    * **Requires:** FO4AU _and_ FO4FH _and_ FO4NW
    * **Variant:** "1.5.4"
    * **Installer:** "Scripted Level List Inject"
+   * **Patch:** [Dirty Edit Patch](https://www.nexusmods.com/fallout4/mods/79705) (v1.5.4-1.0.0)
 8. **[Dogmeat's Backpack](https://www.nexusmods.com/fallout4/mods/10111)** (v2.0) <sub>![recommended]</sub>  
    As above, but now for your companion.
 9. **[Dogmeat's Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/62037)** (v1.3) <sub>![recommended]</sub>  
@@ -652,6 +654,7 @@ Some (but not all) of them assume you play in Survival mode, which I recommend y
 12. **[Radiation Overhaul - 4x More Radiation Across the Wasteland](https://www.nexusmods.com/fallout4/mods/13790)** (v1.1) <sub>![optional]</sub>  
     Makes radiation actually dangerous.
     * **Variant:** depends on your DLC
+    * **Patch:** [UFO4P and item name patch](https://www.nexusmods.com/fallout4/mods/79708) (v1.1-1.0.0)
 
 ## 4.12 Settlements<a name="settlements"></a> <small><sup>[top ▲](#toc)</sup></small>
 I think Fallout 4's settlements are very flawed.
@@ -698,14 +701,18 @@ If you don't intend to engage with settlements at all, you can skip this section
      1. Install type: FO4VR
      2. Sim Settlements 1: "Sim Settlements"
      3. Sim Settlements 2: Do not select
-6. (**TODO: Local leader**)
-
-(**TODO: Sort load order!**)
-(**TODO: Ensure all ESPs are enabled (but FRIK is disabled)**)
+5. **[Local Leader Tweaks](https://www.nexusmods.com/fallout4/mods/16661)** (v1.0) <sub>![recommended]</sub>
+   The Local Leader perk is required to unlock some of the most important parts of using settlements.
+   I think that it's stupid that these perks, which cost quite some effort to unlock if you don't run a Charisma build, don't justify their worth in terms of gameplay impact, but are still vital for using settlements.
+   For this reason, I recommend using this mod, which will allow you to do basically everything you can do with Local Leader, except you won't need Local Leader.
+   * **Variant:** main file _and_ "Crafting add-on"
 
 # 5 Finishing up<a name="finishing-up"></a> <small><sup>[top ▲](#toc)</sup></small>
 > [!WARNING]
 > Make sure [FRIK](https://www.nexusmods.com/fallout4/mods/53464) remains disabled until you have exited the vault.
+
+(**TODO: Sort load order!**)
+(**TODO: Ensure all ESPs are enabled (but FRIK is disabled)**)
 
 You should now have a good selection of mods from the previous selection installed.
 You should have installed all required mods, probably several recommended mods, and maybe some optional mods.
