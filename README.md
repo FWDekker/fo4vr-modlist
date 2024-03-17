@@ -171,6 +171,7 @@ These settings relate to stability, visual quality, and performance.
 3. While in-game in VR, in Settings:
    1. _Gameplay_
       1. _Difficulty:_ Survival
+         If you don't want to use survival, disable "Save on Rest", "Save on Wait", and "Save on Travel", install [Survival Options](https://www.nexusmods.com/fallout4/mods/14650), and follow the [in-game configuration](#finishing-up), explained later on.
    2. _Display_
       | Setting          | Value |
       |------------------|-------|
@@ -788,8 +789,6 @@ Apply the following settings.
 | | Interval | 7 Minutes |
 | Save Options > Level Up Save Options | Toggle | Current:On |
 | | Change To | Current:Normal Save |
-
-If you are doing a non-survival playthrough, (**TODO: How to disable quick-saves?**)
 
 Finally, if you are doing a survival playthrough, in the same holotape, under the "Save Options" menu, select "Give Save Item".
 This will add a "Save Item" to your inventory, to be found under Aid.
