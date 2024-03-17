@@ -67,16 +67,17 @@ Here is a list of tags.
 | ![optional]    | Good, but personal preference. Install if you want.                |
 
 ## 1.4 Abbreviations<a name="abbreviations"></a> <small><sup>[top ▲](#toc)</sup></small>
-| Abbreviation      | Meaning                              | Example                                   |
-|-------------------|--------------------------------------|-------------------------------------------|
-| **FO4VR**         | Fallout 4 VR                         |                                           |
-| **FO4AU**         | Fallout 4: Automatron  (the 1st DLC) |                                           |
-| **FO4FH**         | Fallout 4: Far Harbor (the 3rd DLC)  |                                           |
-| **FO4NW**         | Fallout 4: Nuka-World  (the 6th DLC) |                                           |
-| **MO2**           | Mod Organizer 2                      |                                           |
-| **`[fo4_dir]`**   | Where you installed non-VR FO4       | `C:\Steam\steamapps\common\Fallout 4\`    |
-| **`[fo4vr_dir]`** | Where you installed FO4VR            | `C:\Steam\steamapps\common\Fallout 4 VR\` |
-| **`[username]`**  | Your Windows username                | `florine`                                 |
+| Abbreviation      | Meaning                                     | Example                                   |
+|-------------------|---------------------------------------------|-------------------------------------------|
+| **FO4VR**         | Fallout 4 VR                                |                                           |
+| **FO4AU**         | Fallout 4: Automatron  (the 1st DLC)        |                                           |
+| **FO4FH**         | Fallout 4: Far Harbor (the 3rd DLC)         |                                           |
+| **FO4VW**         | Fallout 4: Vault-Tec Workshop (the 5th DLC) |                                           |
+| **FO4NW**         | Fallout 4: Nuka-World  (the 6th DLC)        |                                           |
+| **MO2**           | Mod Organizer 2                             |                                           |
+| **`[fo4_dir]`**   | Where you installed non-VR FO4              | `C:\Steam\steamapps\common\Fallout 4\`    |
+| **`[fo4vr_dir]`** | Where you installed FO4VR                   | `C:\Steam\steamapps\common\Fallout 4 VR\` |
+| **`[username]`**  | Your Windows username                       | `florine`                                 |
 
 
 # 2 Setup<a name="setup"></a> <small><sup>[top ▲](#toc)</sup></small>
@@ -135,7 +136,11 @@ You can remove old files as follows.
   * Install MO2 in a place where you don't need admin rights to access it.
     For example, install it somewhere in your home directory.
     Personally, I went for `C:\Users\[username]\MO2\`.
-  * (**TODO: Explain instances.**)
+  * When launching for the first time, you will be asked to create an instance.
+    * You can create a global or a portable instance.
+      It doesn't really matter which you choose.
+    * Enable profile-specific INIs.
+    * Enable profile-specific saves.
 * **[Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist)** ([direct link](https://aka.ms/vs/17/release/vc_redist.x64.exe)) <sub>![required]</sub>
 * **[7-Zip](https://7-zip.org/)** <sub>![required]</sub>
 
@@ -164,17 +169,19 @@ These settings relate to stability, visual quality, and performance.
 1. Steam > Fallout 4 VR > Settings > General > Uncheck "Enable the Steam Overlay while in-game" (If you cannot disable, you disabled it globally. That's fine too.)
 2. `[fo4vr_dir]\Fallout4VR.exe` > Properties > Compatibility > Check "Disable full-screen optimisations"
 3. While in-game in VR, in Settings:
-   1. Gameplay:
-      1. Difficulty: Survival
-   2. Display:
-      1. Floating markers: Off
-   3. VR:
+   1. _Gameplay_
+      1. _Difficulty:_ Survival
+   2. _Display_
+      | Setting          | Value |
+      |------------------|-------|
+      | Floating markers | Off   |
+   4. VR:
       1. Direct movement: On
       2. Pip-Boy location: Projected
       3. Comfort vignette while moving: Off
       4. Comfort vignette while turning: Off
       5. Rotation type: Smooth
-   4. Performance:
+   5. Performance:
        1. Anti-Aliasing: TAA
        2. Anisotropic Filtering: 16
        3. Character Lighting: Off
@@ -298,8 +305,6 @@ Here's a bunch of other resources that may be useful for you.
 > [!NOTE]
 > Make sure you know [what the abbreviations mean](#abbreviations) and understand
 > [the relevance of version numbers](#about-version-numbers).
-
-* **TODO: About load order** 
 
 ## 4.1 External libraries<a name="external-libraries"></a> <small><sup>[top ▲](#toc)</sup></small>
 First of all, here's a few required mods/tools.
@@ -451,7 +456,8 @@ The following mods help improve performance.
    Changes (non-feral) ghoul textures to look more like ghouls from Fallout 3.
 
 ## 4.6 Lighting<a name="lighting"></a> <small><sup>[top ▲](#toc)</sup></small>
-(**TODO: Note source from which I stole this configuration.**)
+By default, the world looks _really_ overexposed, which makes the outside like outright ugly.
+I used a combination of mods recommended by [dropadred](https://www.reddit.com/user/dropadred/), as [described in this thread](https://www.reddit.com/r/fo4vr/comments/r8rrsm/).
 
 1. **[Darker Nights](https://www.nexusmods.com/fallout4/mods/191)** (v1.11p6) <sub>![recommended]</sub>
    * **Variant:** main file _and_ "No Glow Fix for Far Harbor DLC"
@@ -503,14 +509,16 @@ VR, like bad contrast between text and background, menus being too small, and so
 all.
 [MCM](https://www.nexusmods.com/fallout4/mods/21497) (v1.39) also doesn't work; mods that use MCM are fine, but you
 can't configure them through MCM.
+What we're left with is a single UI mod, which actually works fine.
 
 1. **[Full Dialog VR](https://www.nexusmods.com/fallout4/mods/28516/)** (v1.1) <sub>![recommended]</sub>
    In conversations, you usually have four response options.
    The game summarises these using keywords.
    This is annoying, because your character may say something completely different from what you expected.
    This mod replaces the keywords with the full line your character will say.
-   * After installing, edit the mod's files, and remove the file `interface\MultiActivateMenu.swf`.
-     This fixes a bug where no text is shown at all when talking with followers.
+   * **Patch:**
+     After installing, right-click the mod, click "Open in Explorer", enter the directory `interface`, and delete the file `MultiActivateMenu.swf`.
+     This fixes a VR-specific bug where no icons are shown when talking with followers.
 
 ## 4.9 Gameplay<a name="gameplay"></a> <small><sup>[top ▲](#toc)</sup></small>
 1. **[FRIK - Full Player Body with IK](https://www.nexusmods.com/fallout4/mods/53464)** (v0.58) <sub>![required]</sub>  
@@ -548,7 +556,9 @@ can't configure them through MCM.
    * **Variant:** depends on your DLC
 
 ## 4.10 Combat<a name="combat"></a> <small><sup>[top ▲](#toc)</sup></small>
-(**TODO: Source**)
+Combat in VR is a mixed experience.
+Many parts are fine, but a few important parts are very, very wrong.
+The following selection of mods is a combination of important fixes and subjective rebalancing.
 
 1. **[See-Through-Scopes](https://www.nexusmods.com/fallout4/mods/9476)** (v2.5.3) <sub>![required]</sub>  
    Changes in-game scopes so they are see-through.
@@ -607,14 +617,15 @@ Some (but not all) of them assume you play in Survival mode, which I recommend y
 1. **[Survival Options](https://www.nexusmods.com/fallout4/mods/14650)** (v1.7.1) <sub>![recommended]</sub>  
    Allows you to customise your survival mode experience. Lets you re-enable fast travel, manual saves, auto-saves, and
    change damage multipliers.
-    * Recommended even for non-survival playthroughs! (**TODO: Config link**)
-    * **Installer:** Everything
+    * Recommended even for non-survival playthroughs!
+      Check the config section later on for more information.
+      (**TODO: Link there**)
+    * **Installer:** everything
     * **[Requires in-game configuration](#finishing-up)**
-2. **[JOURNEY](https://www.nexusmods.com/fallout4/mods/12685)** (v1.6.1) <sub>![recommended]</sub>
-   (**TODO: Make this optional, and explain the differences with above better.**)
+3. **[Settlement Fast Travel Survival Mod](https://www.nexusmods.com/fallout4/mods/58708)** (v1.05) <sub>![recommended]</sub>
    Re-enables a restricted form of fast travel.
    You can use this together with the above mod.
-   * **[Requires in-game configuration](#finishing-up)**
+   * **Requires:** FO4AU _and_ FO4FH _and_ FO4VW _and_ FO4NW
 4. **[Campsite](https://www.nexusmods.com/fallout4/mods/11734)** (v1.0.4) <sub>![recommended]</sub>  
    Lets you bring a tent with you so you can sleep anywhere.
 5. **[Loot Logic and Reduction With optional Harvest Restrictions](https://www.nexusmods.com/fallout4/mods/21366)** (v1.5.3.1) <sub>![recommended]</sub>  
@@ -632,10 +643,13 @@ Some (but not all) of them assume you play in Survival mode, which I recommend y
 9. **[Dogmeat's Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/62037)** (v1.3) <sub>![recommended]</sub>  
    Re-balances the above mod to be in line with the one above that.
    * **Requires:** The two mods above this one.
-11. **[Headshot Damage Multiplier](https://www.nexusmods.com/fallout4/mods/33546)** (v1.0) <sub>![recommended]</sub>
-   * **Variant:** "x5"
-   * (**TODO: Test this**)
-11. **[Radiation Overhaul - 4x More Radiation Across the Wasteland](https://www.nexusmods.com/fallout4/mods/13790)** (v1.1) <sub>![optional]</sub>  
+10. **[Headshot Damage Multiplier](https://www.nexusmods.com/fallout4/mods/33546)** (v1.0) <sub>![recommended]</sub>
+    In survival, your outgoing damage is reduced and enemy health is increased.
+    Unfortunately, this results in bullet sponge enemies, where you can unload an entire shotgun magazine into someone's face and they somehow survive.
+    In VR, your accuracy is much higher, so I found that combat became more interesting if I rewarded myself for making headshots.
+    The result is a sort of mutual [glass cannon](https://tvtropes.org/pmwiki/pmwiki.php/Main/GlassCannon) situation, where every shot matters.
+    * **Variant:** "x5"
+12. **[Radiation Overhaul - 4x More Radiation Across the Wasteland](https://www.nexusmods.com/fallout4/mods/13790)** (v1.1) <sub>![optional]</sub>  
     Makes radiation actually dangerous.
     * **Variant:** depends on your DLC
 
@@ -684,7 +698,6 @@ If you don't intend to engage with settlements at all, you can skip this section
      1. Install type: FO4VR
      2. Sim Settlements 1: "Sim Settlements"
      3. Sim Settlements 2: Do not select
-   * **[Requires in-game configuration](#finishing-up)**
 6. (**TODO: Local leader**)
 
 (**TODO: Sort load order!**)
@@ -712,6 +725,8 @@ The overall procedure is as follows:
 6. [Configure mods.](#configure-mods) (Section 5.3)
 7. Continue playing the game to your leisure.
 
+(**TODO: Note what to do if the Vault-Tec elevator keeps crashing.**)
+
 ## 5.1 General tips <small><sup>[top ▲](#toc)</sup></small>
 (**TODO: Rephrase and restructure this.**)
 
@@ -734,7 +749,7 @@ The overall procedure is as follows:
   Therefore, manually save often, and avoid loading QuickSaves or AutoSaves.
   (Making an AutoSave or QuickSave by itself is not harmful.
   It's just that you shouldn't load them.)
-  You can use the Survival Options mod mentioned earlier to replace Quick-Saves with Saves.
+  You can use the Survival Options mogd mentioned earlier to replace Quick-Saves with Saves.
 * Don't use your pipboy while the light is on!
   You may get a CTD otherwise.
   Some claim that Buffout4 fixes this, but in my game, it didn't, as I would continue to CTD.
@@ -757,8 +772,8 @@ Enter the recommended rate of 0%.
 Open your Pip-Boy, go to Inv, to Misc, and activate `[Settings] Survival Options Holotape`.
 Apply the following settings.
 1. Combat Options
-   1. Incoming Damage Multiplier: (**TODO**)
-   2. Outgoing Damage Multiplier: (**TODO**)
+   1. Incoming Damage Multiplier: 3.0
+   2. Outgoing Damage Multiplier: 1.0
 2. Save Options
    1. Cell Change Save Options
       1. Toggle Cell Change Save: On
@@ -775,8 +790,10 @@ Apply the following settings.
 After using the "Give Save Item" option, you'll find a "Save Item" in your inventory, under "Aid".
 Put the item on your favourite wheel so you can save whenever you want.
 
-### 5.3.3 Journey <small><sup>[top ▲](#toc)</sup></small>
-(**TODO: Actually, nvm, not necessary**)
+### 5.3.3 JOURNEY <small><sup>[top ▲](#toc)</sup></small>
+In your Inventory, under Misc, find and use `[Settings] JOURNEY`.
+
+1. Travel Messages: Off
 
 ### 5.3.4 Bullet Time VATS VR <small><sup>[top ▲](#toc)</sup></small>
 In your Inventory, under Misc, find and use the item `[Settings - Bullet Time VATS]`.
@@ -795,10 +812,17 @@ In Pip-Boy, in Inv, under Misc, select "FRIK Configuration".
 
 1. Stand up straight, relaxed, hands by your side.
    Select "CALIBRATE".
-2. Select "Save Body Position to INI".
-3. Select "Toggle Arms Only Mode!".
+2. Select "Toggle Arms Only Mode!".
+3. Select "Save Body Position to INI".
+   (This also saves your "arms only" setting.)
 
-### 5.3.6 Sim Settlements <small><sup>[top ▲](#toc)</sup></small>
+### 5.3.6 Camping <small><sup>[top ▲](#toc)</sup></small>
+To activate the camping mod, you'll need to find a book somewhere in Sanctuary.
+Hint: It's in a basement.
+Hint: It's in the (**TODO**) basement.
+After you've found the book, you'll be able to craft camping items at any chemistry workbench.
+
+### 5.3.7 Sim Settlements <small><sup>[top ▲](#toc)</sup></small>
 Eventually, find your way to the Museum of Freedom, where you will find the City Manager 2078 Holotape.
 Find the holotape in the Misc section of your inventory and activate it.
 Answer the questions to configure Sim Settlements.
@@ -806,14 +830,17 @@ Answer the questions to configure Sim Settlements.
 Just continue your way through it, the actions below will override those choices anyway.)
 
 After that, open the holotape again.
-1. Tools > Configuration Tools > Configuration Wizard
-2. Tools > Configuration Tools > Performance Wizard
+1. ASAM Sensor Info
+   (This will initialise some more stuff.)
+2. Tools > Configuration Tools > Configuration Wizard
+3. Tools > Configuration Tools > Performance Wizard
 
-### 5.3.7 IDEK's Logistics Station 2 <small><sup>[top ▲](#toc)</sup></small>
-(**TODO: Complete this section**)
+(**TODO: Link to tutorials (or should I do that in the mod list?)**)
 
-There is an option to integrate this with Sim Settlements and with Salvage Beacons, but I didn't use those
-integrations because I couldn't figure them out.
+Note that after you select a city plan, the camera will fly up, which may be uncomfortable if you are not used to smooth locomotion.
+You can disable this in the settings of Sim Settlements, but then you lose the advantage of knowing when the settlement's setup script is done when the camera goes back down (and yes you really need to wait for that, or your settlement will not initialise correctly).
+So if you find this nauseating, I recommend just closing your eyes or removing your headset for as long as the setup takes, and checking on your monitor when it's done.
+Yes, this is annoying, but hey, it's FO4VR, what did you expect?
 
 
 # 6 Conclusion <small><sup>[top ▲](#toc)</sup></small>
