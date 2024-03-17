@@ -393,40 +393,42 @@ These mods fix bugs, either in the base game or in other mods.
    * **Requires:** all DLC
    * **Patch:** [Unofficial Fallout 4 VR Fix](https://www.nexusmods.com/fallout4/mods/47117) (v1)
    * **Patch:** [VR weapon and armor keyword crash patch](https://www.nexusmods.com/fallout4/mods/79711) (v2.1.5-1.0.0)
-6. **[DLCVR - Fallout 4 VR and DLC standalone bug fixes](https://www.nexusmods.com/fallout4/mods/28842)** (v1.0.4) <sub>![required]</sub>  
+3. **[DLCVR - Fallout 4 VR and DLC standalone bug fixes](https://www.nexusmods.com/fallout4/mods/28842)** (v1.0.4) <sub>![required]</sub>  
    Fixes issues specific to FO4FH and FO4NW, relating to invisible floors and so on.
    * **Requires:** FO4FH _or_ FO4NW
    * **Variant:** depends on your DLC
-7. **[Edmond's Automatron VR Workbench Rebuild](https://www.nexusmods.com/fallout4/mods/55692)** (v1.0) <sub>![required]</sub>  
+4. **[Edmond's Automatron VR Workbench Rebuild](https://www.nexusmods.com/fallout4/mods/55692)** (v1.0) <sub>![required]</sub>  
    Re-implements parts of FO4AU that did not work in VR. Some parts of FO4AU are still broken even with this mod.
    * **Requires:** FO4AU _and_ FO4NW
    * **Variant:** "No wild edits"
-9. **[Buffout 4](https://www.nexusmods.com/fallout4/mods/47359)** (v1.28.6) <sub>![required]</sub>  
+5. **[Buffout 4](https://www.nexusmods.com/fallout4/mods/47359)** (v1.28.6) <sub>![required]</sub>  
    Fixes engine bugs and adds a crash logger.
-10. **[Buffout 4 NG with PDB support](https://www.nexusmods.com/fallout4/mods/64880)** (v1.13.1) <sub>![required]</sub>  
+6. **[Buffout 4 NG with PDB support](https://www.nexusmods.com/fallout4/mods/64880)** (v1.13.1) <sub>![required]</sub>  
    Same as above, but for VR.
-11. **[Multiple Floors Sandboxing](https://www.nexusmods.com/fallout4/mods/15608)** (v1.0) <sub>![required]</sub>  
+7. **[Multiple Floors Sandboxing](https://www.nexusmods.com/fallout4/mods/15608)** (v1.0) <sub>![required]</sub>  
    In locations with multiple storeys, NPCs walk only on the ground storey.
    This mod fixes that behaviour so NPCs walk on all storeys.
-12. **[No Aggro Impact Landing (Power Armor)](https://www.nexusmods.com/fallout4/mods/9019)** (v1.0) <sub>![required]</sub>  
+8. **[No Aggro Impact Landing (Power Armor)](https://www.nexusmods.com/fallout4/mods/9019)** (v1.0) <sub>![required]</sub>  
    If you wear power armour and fall from a height, you will create a shock wave that damages NPCs around you.
    Friendly NPCs damaged this way may become hostile, even if you do so by accident.
    This mod ensures that you do not accidentally turn friendly NPCs hostile this way.
-13. **[Radio Reverb Fix](https://www.nexusmods.com/fallout4/mods/16563)** (v1) <sub>![recommended]</sub>  
-    Applies reverb to your radio when applicable.
-    * **Variant:** "Subtle" _or_ main file
-14. **[Bird Fix](https://www.nexusmods.com/fallout4/mods/45429)** (v1) <sub>![required]</sub>  
+9. **[Radio Reverb Fix](https://www.nexusmods.com/fallout4/mods/16563)** (v1) <sub>![recommended]</sub>  
+   Applies reverb to your radio when applicable.
+   * **Variant:** "Subtle" _or_ main file
+10. **[Bird Fix](https://www.nexusmods.com/fallout4/mods/45429)** (v1) <sub>![required]</sub>  
     Fixes a bug where birds are _always_ flying into buildings for some reason.
     * **Note:** You can ignore the listed dependencies.
 
 ## 4.4 Performance<a name="performance"></a> <small><sup>[top ▲](#toc)</sup></small>
 FO4VR is notorious for having sub-par performance.
 The following mods help improve performance.
+If you notice after some playing that you have high FPS, you can consider disabling these for (arguably) more surrounding more detail around you.
 
-1. **[Insignificant Object Remover](https://www.nexusmods.com/fallout4/mods/9835)** (v1.0) <sub>![required]</sub>
-   * (**TODO: Remove? I don't really care about the FPS.)
-   * (**TODO: In the FOMOD, which variant?)
-2. **[FAR - Faraway Area Reform](https://www.nexusmods.com/fallout4/mods/20713)** (v1.2) <sub>![required]</sub>
+Personally, I eventually disabled these because I preferred higher graphical quality, but they may be useful for you.
+
+1. **[Insignificant Object Remover](https://www.nexusmods.com/fallout4/mods/9835)** (v1.0) <sub>![recommended]</sub>
+   * **Installer:** "Full"
+2. **[FAR - Faraway Area Reform](https://www.nexusmods.com/fallout4/mods/20713)** (v1.2) <sub>![recommended]</sub>
    * **Variant:** "Default Resolution"
 
 ## 4.5 Graphics<a name="graphics"></a> <small><sup>[top ▲](#toc)</sup></small>
@@ -491,14 +493,11 @@ However, it doesn't hurt to improve sound effects for VR, and to add more high-q
    Adds new high-quality songs to the game's radio.
 5. **[Ambient Wasteland - Fallout 4 Edition](https://www.nexusmods.com/fallout4/mods/25343)** (v0.1) <sub>![recommended]</sub>  
    Adds a whole bunch of ambient, distant background sounds to make the world feel more lively.
-6. **[Realistic Reverb and Ambience Overhaul - VR and FP](https://www.nexusmods.com/fallout4/mods/61140)** (v6) <sub>![recommended]</sub>  
-   Tweaks sound levels in "Ambient Wasteland - Fallout 4 Edition" for VR.
-   * **Variant:** "Realistic Reverb and Ambience Overhaul V6"
-   * **Requires:** "Ambient Wasteland - Fallout 4 Edition"
-7. **[Project Reality Footsteps FO4](https://www.nexusmods.com/fallout4/mods/35904)** (v1.7) <sub>![recommended]</sub>  
+   * **Patch:** [Realistic Reverb and Ambience Overhaul - VR and FP](https://www.nexusmods.com/fallout4/mods/61140) (v6)
+6. **[Project Reality Footsteps FO4](https://www.nexusmods.com/fallout4/mods/35904)** (v1.7) <sub>![recommended]</sub>  
    Adds more different kinds of footstep sounds.
    * **Variant:** "BA2"
-8. **[Not Great Not Terrible - Scarier Geiger Counter Sounds](https://www.nexusmods.com/fallout4/mods/45354)** (v1.0) <sub>![optional]</sub>  
+7. **[Not Great Not Terrible - Scarier Geiger Counter Sounds](https://www.nexusmods.com/fallout4/mods/45354)** (v1.0) <sub>![optional]</sub>  
    Replaces geiger counter sounds to be more intense.
    * **Variant:** "Quieter Version" _or_ "Main File"
 
@@ -526,32 +525,29 @@ What we're left with is a single UI mod, which actually works fine.
    Allows you to see your hands.
    Absolutely required for immersion.
    * **Variant:** "alpha 58"
-   * **[Requires in-game configuration](#finishing-up)**
    * **Important:** Download this mod, but **keep it deactivated in MO2 for now**.
+   * **Note:** [In-game configuration required.](#finishing-up)
    * **Untested alternative:** [Idle Hands](https://www.nexusmods.com/fallout4/mods/42922)
-3. **[Player Collision Options - nocollide actors](https://www.nexusmods.com/fallout4/mods/41866)** (v1.0) <sub>![required]</sub>  
+2. **[Player Collision Options - nocollide actors](https://www.nexusmods.com/fallout4/mods/41866)** (v1.0) <sub>![required]</sub>  
    Normally, when you get close to an NPC in VR, the game will push you back. This is annoying and disorienting when you
    want to roleplay or pet your dog.
    This disables collisions between you and NPCs.
    * **Variant:** "nocollide actors"
-5. **[Realistic Death Physics - No Animations](https://www.nexusmods.com/fallout4/mods/4371)** (v1.2) <sub>![recommended]</sub>  
-   Merely "recommended" because there is a slightly increased chance that there's some physical glitching going on.
-   The trade-off there is yours to make.
-   * **Variant:** "ALL DLC version" if you have all DLC, or "No Animations" otherwise
-   * (**TODO: Test variant "Vanilla Physics - No Animations"**) / (**TODO: Check required DLC**)
-6. **[PipBoy VR light](https://www.nexusmods.com/fallout4/mods/29245)** (v1.1) <sub>![required]</sub>  
+3. **[Realistic Death Physics - No Animations](https://www.nexusmods.com/fallout4/mods/4371)** (v1.2) <sub>![recommended]</sub>
+   * **Variant:** "Vanilla Animations" (even if you have DLC)
+4. **[PipBoy VR light](https://www.nexusmods.com/fallout4/mods/29245)** (v1.1) <sub>![required]</sub>  
    In VR, the default Pip-Boy light (the "flashlight") is just a weak glow around you.
    I really liked the flashlight in Half-Life: Alyx.
    This mod changes the shape of the Pip-Boy's light to be like a flashlight, and does so with no performance overhead.
    I personally chose the small light because I want it to be scary, but you can choose any variant you want.
    * **Variant:** main file _and_ one optional file.
      (I chose "Gun style aimed Small Gobo".)
-7. **[Everyone's Best Friend](https://www.nexusmods.com/fallout4/mods/13459)** (v3.0.0) <sub>![recommended]</sub>  
+5. **[Everyone's Best Friend](https://www.nexusmods.com/fallout4/mods/13459)** (v3.0.0) <sub>![recommended]</sub>  
    Normally you can only have one follower, but Dogmeat really isn't comparable to the depth of the other companions.
    But Dogmeat is also really cute.
    This mods lets you have both Dogmeat and any other companion at the same time.
    * **Patch:** [EBF UFO4P compatibility fix](https://www.nexusmods.com/fallout4/mods/43409) (v2.1.0)
-8. **[Splinterz - Breakable Wooden Doors](https://www.nexusmods.com/fallout4/mods/21521)** (v1.3) <sub>![optional]</sub>  
+6. **[Splinterz - Breakable Wooden Doors](https://www.nexusmods.com/fallout4/mods/21521)** (v1.3) <sub>![optional]</sub>  
    Allows you to break doors.
    Pretty cool.
    * **Variant:** depends on your DLC
@@ -570,44 +566,44 @@ The following selection of mods is a combination of important fixes and subjecti
      3. _Add-ons:_ None
      4. _Tweaks:_ None
      5. Do not choose any patches
-3. **[Better Scopes VR](https://www.nexusmods.com/fallout4/mods/61214)** (v0.9) <sub>![required]</sub>  
+2. **[Better Scopes VR](https://www.nexusmods.com/fallout4/mods/61214)** (v0.9) <sub>![required]</sub>  
    This one is _absolutely_ required.
    Without this mod, when you look down a scope, your screen turns black and you get a full-screen 2D projection of what
    you can see through your scope.
    Absolutely horrible and nauseating.
    This mod removes that screen, and just lets you look through the actual scope.
    * **Variant:** main file only, not the optional file.
-4. **[Bullet Time VATS VR](https://www.nexusmods.com/fallout4/mods/72502)** (vb1.1) <sub>![required]</sub>  
+3. **[Bullet Time VATS VR](https://www.nexusmods.com/fallout4/mods/72502)** (vb1.1) <sub>![required]</sub>  
    In vanilla, VATS is a gameplay mechanic that pauses combat and lets you select body parts to target, which you will
    then automatically shoot at.
    This sucks in VR, because you don't get to aim the gun and pull the trigger yourself.
    This mod replaces VATS with bullet time.
    * **Requires:** FO4FH _and_ FO4NW
-   * **[Requires in-game configuration](#finishing-up)**
-5. **[Critical Hits Outside of VATS](https://www.nexusmods.com/fallout4/mods/12653)** (v1.1.3) <sub>![required]</sub>  
+   * **Note:** [In-game configuration required.](#finishing-up)
+4. **[Critical Hits Outside of VATS](https://www.nexusmods.com/fallout4/mods/12653)** (v1.1.3) <sub>![required]</sub>  
    The above Bullet Time mod actually disables VATS, and thus completely removes critical hits from the game.
    This mod allows you to score critical hits again, even outside of bullet time.
-6. **[Hip-Fire Perk Replacers](https://www.nexusmods.com/fallout4/mods/40702)** (v1.2) <sub>![required]</sub>  
+5. **[Hip-Fire Perk Replacers](https://www.nexusmods.com/fallout4/mods/40702)** (v1.2) <sub>![required]</sub>  
    In vanilla, hip-fire is when you shoot without aiming down the sights.
    In VR, hip-fire doesn't exist.
    As a result, hip-fire perks are useless.
    This mod makes those perks useful again.
    * **Variant:** depends on your DLC
-7. **[Weapon Accuracy Redone for VR](https://www.nexusmods.com/fallout4/mods/40669)** (v1.0) <sub>![required]</sub>  
+6. **[Weapon Accuracy Redone for VR](https://www.nexusmods.com/fallout4/mods/40669)** (v1.0) <sub>![required]</sub>  
    In VR it's super annoying if you're clearly aiming at an enemy and then the game decides the shot didn't hit because
    of some random die.
    This mod reduces weapon spread and recoil to make accuracy in VR more rewarding.
    * **Variant:** depends on your DLC
-9. **[Better Low Health](https://www.nexusmods.com/fallout4/mods/6018)** (v1.0) <sub>![recommended]</sub>  
+7. **[Better Low Health](https://www.nexusmods.com/fallout4/mods/6018)** (v1.0) <sub>![recommended]</sub>  
    Your health bar is visible on the inside of your wrist, but that's also where you're holding your gun, so during
    combat you typically don't really know how much health you have left.
    The game shows some visual effects at 20% health left, but that's usually too late.
    This mod increases that threshold to 50%.
    * **Variant:** "50"
-10. **[More Noticeable Hit Effect](https://www.nexusmods.com/fallout4/mods/6157)** (v1.0) <sub>![required]</sub>  
-    I noticed that during fights I usually had no idea if bullets were flying past me or into me.
-    This mod makes it much more noticeable when you are being hit.
-    * **Variant:** "aMedium"
+8. **[More Noticeable Hit Effect](https://www.nexusmods.com/fallout4/mods/6157)** (v1.0) <sub>![required]</sub>  
+   I noticed that during fights I usually had no idea if bullets were flying past me or into me.
+   This mod makes it much more noticeable when you are being hit.
+   * **Variant:** "aMedium"
 
 ## 4.11 Difficulty / Survival<a name="difficulty-survival"></a> <small><sup>[top ▲](#toc)</sup></small>
 Fallout 4 is not a difficult game, even at higher difficulties.
@@ -618,40 +614,40 @@ Some (but not all) of them assume you play in Survival mode, which I recommend y
 1. **[Survival Options](https://www.nexusmods.com/fallout4/mods/14650)** (v1.7.1) <sub>![recommended]</sub>  
    Allows you to customise your survival mode experience. Lets you re-enable fast travel, manual saves, auto-saves, and
    change damage multipliers.
-    * Recommended even for non-survival playthroughs!
-      Check the config section later on for more information.
-      (**TODO: Link there**)
-    * **Installer:** everything
-    * **[Requires in-game configuration](#finishing-up)**
-3. **[Settlement Fast Travel Survival Mod](https://www.nexusmods.com/fallout4/mods/58708)** (v1.05) <sub>![recommended]</sub>
+   * Recommended even for non-survival playthroughs!
+   * **Installer:** everything
+   * **Note:** [In-game configuration required.](#finishing-up)
+2. **[Settlement Fast Travel Survival Mod](https://www.nexusmods.com/fallout4/mods/58708)** (v1.05) <sub>![recommended]</sub>
    Re-enables a restricted form of fast travel.
    You can use this together with the above mod.
    * **Requires:** FO4AU _and_ FO4FH _and_ FO4VW _and_ FO4NW
-4. **[Campsite](https://www.nexusmods.com/fallout4/mods/11734)** (v1.0.4) <sub>![recommended]</sub>  
+3. **[Campsite](https://www.nexusmods.com/fallout4/mods/11734)** (v1.0.4) <sub>![recommended]</sub>  
    Lets you bring a tent with you so you can sleep anywhere.
-5. **[Loot Logic and Reduction With optional Harvest Restrictions](https://www.nexusmods.com/fallout4/mods/21366)** (v1.5.3.1) <sub>![recommended]</sub>  
+   * **Note:** [In-game configuration required.](#finishing-up)
+4. **[Loot Logic and Reduction With optional Harvest Restrictions](https://www.nexusmods.com/fallout4/mods/21366)** (v1.5.3.1) <sub>![recommended]</sub>  
    Reduces loot found in containers. Otherwise you'll quickly find you'll have so much ammo and chems the game just
    totally isn't challenging anymore.
-6. **[NPC Loot Drop rebalance](https://www.nexusmods.com/fallout4/mods/24163)** (v1.0) <sub>![recommended]</sub>  
+5. **[NPC Loot Drop rebalance](https://www.nexusmods.com/fallout4/mods/24163)** (v1.0) <sub>![recommended]</sub>  
    Reduces loot found on NPCs, in line with the above mod.
-7. **[Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/29447)** (v1.5.4) <sub>![recommended]</sub>  
+6. **[Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/29447)** (v1.5.4) <sub>![recommended]</sub>  
    In survival, you have less carrying capacity and heavier items. These backpacks will come in use.
    * **Requires:** FO4AU _and_ FO4FH _and_ FO4NW
    * **Variant:** "1.5.4"
    * **Installer:** "Scripted Level List Inject"
    * **Patch:** [Dirty Edit Patch](https://www.nexusmods.com/fallout4/mods/79705) (v1.5.4-1.0.0)
-8. **[Dogmeat's Backpack](https://www.nexusmods.com/fallout4/mods/10111)** (v2.0) <sub>![recommended]</sub>  
+   * **Note:** [In-game configuration required.](#finishing-up)
+7. **[Dogmeat's Backpack](https://www.nexusmods.com/fallout4/mods/10111)** (v2.0) <sub>![recommended]</sub>  
    As above, but now for your companion.
-9. **[Dogmeat's Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/62037)** (v1.3) <sub>![recommended]</sub>  
+8. **[Dogmeat's Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/62037)** (v1.3) <sub>![recommended]</sub>  
    Re-balances the above mod to be in line with the one above that.
    * **Requires:** The two mods above this one.
-10. **[Headshot Damage Multiplier](https://www.nexusmods.com/fallout4/mods/33546)** (v1.0) <sub>![recommended]</sub>
-    In survival, your outgoing damage is reduced and enemy health is increased.
-    Unfortunately, this results in bullet sponge enemies, where you can unload an entire shotgun magazine into someone's face and they somehow survive.
-    In VR, your accuracy is much higher, so I found that combat became more interesting if I rewarded myself for making headshots.
-    The result is a sort of mutual [glass cannon](https://tvtropes.org/pmwiki/pmwiki.php/Main/GlassCannon) situation, where every shot matters.
-    * **Variant:** "x5"
-12. **[Radiation Overhaul - 4x More Radiation Across the Wasteland](https://www.nexusmods.com/fallout4/mods/13790)** (v1.1) <sub>![optional]</sub>  
+9. **[Headshot Damage Multiplier](https://www.nexusmods.com/fallout4/mods/33546)** (v1.0) <sub>![recommended]</sub>
+   In survival, your outgoing damage is reduced and enemy health is increased.
+   Unfortunately, this results in bullet sponge enemies, where you can unload an entire shotgun magazine into someone's face and they somehow survive.
+   In VR, your accuracy is much higher, so I found that combat became more interesting if I rewarded myself for making headshots.
+   The result is a sort of mutual [glass cannon](https://tvtropes.org/pmwiki/pmwiki.php/Main/GlassCannon) situation, where every shot matters.
+   * **Variant:** "x5"
+10. **[Radiation Overhaul - 4x More Radiation Across the Wasteland](https://www.nexusmods.com/fallout4/mods/13790)** (v1.1) <sub>![optional]</sub>  
     Makes radiation actually dangerous.
     * **Variant:** depends on your DLC
     * **Patch:** [UFO4P and item name patch](https://www.nexusmods.com/fallout4/mods/79708) (v1.1-1.0.0)
@@ -675,7 +671,7 @@ If you don't intend to engage with settlements at all, you can skip this section
    all buildings in the settlement.
    It just works.
    * **Variant:** "Three In One **v4.1.7**"
-   * **[Requires in-game configuration](#finishing-up)**
+   * **Note:** [In-game configuration required.](#finishing-up)
    * **Untested alternative:** [Sim Settlements 2](https://www.nexusmods.com/fallout4/mods/47976)  
      There are guides out there on how to get Sim Settlements 2 working on FO4VR, but these have not been tested with
      this guide.
@@ -776,46 +772,47 @@ After that, you'll also be prompted to enter the spawn rate.
 Enter the recommended rate of 0%.
 
 ### 5.3.2 Survival Options <small><sup>[top ▲](#toc)</sup></small>
-Open your Pip-Boy, go to Inv, to Misc, and activate `[Settings] Survival Options Holotape`.
+The following settings apply to both survival playthroughs and non-survival playthroughs.
+
+Open your inventory, go to Misc, and use the holotape "\[Settings\] Survival Options Holotape".
 Apply the following settings.
-1. Combat Options
-   1. Incoming Damage Multiplier: 3.0
-   2. Outgoing Damage Multiplier: 1.0
-2. Save Options
-   1. Cell Change Save Options
-      1. Toggle Cell Change Save: On
-      2. Change To Normal Saves: Normal Save
-   2. Timed Save Options
-      1. Toggle Timed Save: On
-      2. Change To Normal Saves: Normal Save
-      3. Set Timed Save Interval: 7 Minutes
-   4. Level Up Save Options
-      1. Toggle Level Up Save: Current: On
-      2. Change To Normal Saves: `[Current: Normal Save]`
-   5. Give Save Item
 
-After using the "Give Save Item" option, you'll find a "Save Item" in your inventory, under "Aid".
-Put the item on your favourite wheel so you can save whenever you want.
+| Category | Option | Value |
+|---|---|---|
+| Combat Options | Incoming Damage Multiplier | 3.0 |
+| | Outgoing Damage Multiplier | 1.0 |
+| Save Options > Cell Change Save Options | Toggle | Current:On |
+| | Change To | Current:Normal Save |
+| Save Options > Timed Save Options | Toggle | Current:On |
+| | Change To | Current:Normal Save |
+| | Interval | 7 Minutes |
+| Save Options > Level Up Save Options | Toggle | Current:On |
+| | Change To | Current:Normal Save |
 
-### 5.3.3 JOURNEY <small><sup>[top ▲](#toc)</sup></small>
-In your Inventory, under Misc, find and use `[Settings] JOURNEY`.
+If you are doing a non-survival playthrough, (**TODO: How to disable quick-saves?**)
 
-1. Travel Messages: Off
+Finally, if you are doing a survival playthrough, in the same holotape, under the "Save Options" menu, select "Give Save Item".
+This will add a "Save Item" to your inventory, to be found under Aid.
+Favourite the item and put it on your favourite wheel so you can save whenever you want.
 
-### 5.3.4 Bullet Time VATS VR <small><sup>[top ▲](#toc)</sup></small>
-In your Inventory, under Misc, find and use the item `[Settings - Bullet Time VATS]`.
+### 5.3.3 Bullet Time VATS VR <small><sup>[top ▲](#toc)</sup></small>
+Open your inventory, go to Misc, and use the holotape "\[Settings - Bullet Time VATS\]".
+Apply the following settings.
 
-1. Time Dilation: 50%
-2. Movement Settings Menu
-   1. "In Bullet Time V.A.T.S." use: DIRECT MOVE
+| Option | Value |
+|---|---|
+| Time Dilation | 50% |
+| Movement Settings Menu > "In Bullet Time V.A.T.S." use | DIRECT MOVE |
 
-### 5.3.5 FRIK <small><sup>[top ▲](#toc)</sup></small>
+### 5.3.4 FRIK <small><sup>[top ▲](#toc)</sup></small>
 > [!WARNING]
 > Make sure [FRIK](https://www.nexusmods.com/fallout4/mods/53464) remains disabled until you have exited the vault.
 
-Save the game (using the "Save Item" you added using Survival Options), exit the game, enable FRIK (and re-enable UFO4P while you're at it, if you disabled it), re-sort your mods with LOOT, and then re-launch the game.
+Save the game (using the "Save Item" you added using [Survival Options](https://www.nexusmods.com/fallout4/mods/14650)), exit the game, enable FRIK (and re-enable UFO4P while you're at it, if you disabled it), re-sort your mods with LOOT, and then re-launch the game.
 
-In Pip-Boy, in Inv, under Misc, select "FRIK Configuration".
+Open your inventory, go to Misc, and use the holotape "FRIK Configuration".
+Apply the following settings.
+You will need to re-open the holotape several times.
 
 1. Stand up straight, relaxed, hands by your side.
    Select "CALIBRATE".
@@ -823,22 +820,20 @@ In Pip-Boy, in Inv, under Misc, select "FRIK Configuration".
 3. Select "Save Body Position to INI".
    (This also saves your "arms only" setting.)
 
-### 5.3.6 Camping <small><sup>[top ▲](#toc)</sup></small>
-To activate the camping mod, you'll need to find a book somewhere in Sanctuary.
-Hint: It's in a basement.
-Hint: It's in the (**TODO**) basement.
-After you've found the book, you'll be able to craft camping items at any chemistry workbench.
+### 5.3.5 Campsite <small><sup>[top ▲](#toc)</sup></small>
+To activate [Campsite](https://www.nexusmods.com/fallout4/mods/11734), you'll need to find a book [somewhere in Sanctuary](https://youtu.be/E7VLBtH4gyA).
+Once you've found the book, you'll be able to craft camping items at any chemistry workbench.
 
-### 5.3.7 Sim Settlements <small><sup>[top ▲](#toc)</sup></small>
-Eventually, find your way to the Museum of Freedom, where you will find the City Manager 2078 Holotape.
-Find the holotape in the Misc section of your inventory and activate it.
+### 5.3.6 Sim Settlements <small><sup>[top ▲](#toc)</sup></small>
+If you follow along with the story, you'll eventually wind up at the [Museom of Freedom](https://fallout.fandom.com/wiki/Museum_of_Freedom).
+Inside, [you can find the Sim Settlements holotape](https://youtu.be/WQB6FQezJgE).
+After picking it up, open your inventory, go to Misc, and use the holotape "City Manager 2078 Holotape".
 Answer the questions to configure Sim Settlements.
-(Sometimes the prompts become invisible.
-Just continue your way through it, the actions below will override those choices anyway.)
+(If the promp becomes invisible, just skip through it.
+The following actions will override those choices.)
 
-After that, open the holotape again.
+After having answered these questions, open the holotape again, and select the following otions.
 1. ASAM Sensor Info
-   (This will initialise some more stuff.)
 2. Tools > Configuration Tools > Configuration Wizard
 3. Tools > Configuration Tools > Performance Wizard
 
