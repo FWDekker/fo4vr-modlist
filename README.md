@@ -30,7 +30,7 @@ However, I mostly avoided mods that negatively affect performance.
 ---
 
 **Table of contents**  
-<a name="toc"></a>[**How to read this guide**](#how-to-read) | [**Setup**](#setup) | [**Configuration**](#configuration) | [**List of mods**](#list-of-mods) | [**Finishing up**](#finishing-up)
+<a name="toc"></a>[**1 How to read this guide**](#how-to-read) | [**2 Setup**](#setup) | [**3 Configuration**](#configuration) | [**4 List of mods**](#list-of-mods) | [**5 Finishing up**](#finishing-up)
 
 ---
 
@@ -605,9 +605,9 @@ The following selection of mods is a combination of important fixes and subjecti
    This mod increases that threshold to 50%.
    * **Variant:** "50"
 10. **[More Noticeable Hit Effect](https://www.nexusmods.com/fallout4/mods/6157)** (v1.0) <sub>![required]</sub>  
-   I noticed that during fights I usually had no idea if bullets were flying past me or into me.
-   This mod makes it much more noticeable when you are being hit.
-   * **Variant:** "aMedium"
+    I noticed that during fights I usually had no idea if bullets were flying past me or into me.
+    This mod makes it much more noticeable when you are being hit.
+    * **Variant:** "aMedium"
 
 ## 4.11 Difficulty / Survival<a name="difficulty-survival"></a> <small><sup>[top ▲](#toc)</sup></small>
 Fallout 4 is not a difficult game, even at higher difficulties.
@@ -701,7 +701,7 @@ If you don't intend to engage with settlements at all, you can skip this section
      1. Install type: FO4VR
      2. Sim Settlements 1: "Sim Settlements"
      3. Sim Settlements 2: Do not select
-5. **[Local Leader Tweaks](https://www.nexusmods.com/fallout4/mods/16661)** (v1.0) <sub>![recommended]</sub>
+5. **[Local Leader Tweaks](https://www.nexusmods.com/fallout4/mods/16661)** (v1.0) <sub>![recommended]</sub>  
    The Local Leader perk is required to unlock some of the most important parts of using settlements.
    I think that it's stupid that these perks, which cost quite some effort to unlock if you don't run a Charisma build, don't justify their worth in terms of gameplay impact, but are still vital for using settlements.
    For this reason, I recommend using this mod, which will allow you to do basically everything you can do with Local Leader, except you won't need Local Leader.
