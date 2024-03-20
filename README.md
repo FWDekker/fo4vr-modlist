@@ -1,5 +1,5 @@
 ﻿# Florine's Fallout 4 VR
-_Last updated: 2024-03-17_
+_Last updated: 2024-03-20_
 
 > A thorough, beginner-friendly guide for a stable, vanilla-ish experience.
 
@@ -30,7 +30,7 @@ However, I mostly avoided mods that negatively affect performance.
 ---
 
 **Table of contents**  
-<a name="toc"></a>[**1 How to read this guide**](#how-to-read) | [**2 Setup**](#setup) | [**3 Configuration**](#configuration) | [**4 List of mods**](#list-of-mods) | [**5 Finishing up**](#finishing-up)
+<a name="toc"></a>[**1 How to read this guide**](#how-to-read) | [**2 Setup**](#setup) | [**3 Configuration**](#configuration) | [**4 List of mods**](#list-of-mods) | [**5 Playing the game**](#playing-the-game)
 
 ---
 
@@ -166,27 +166,41 @@ These settings relate to stability, visual quality, and performance.
 > This will set up important files and registry entries.
 
 ## 3.1 Basic settings<a name="basic-settings"></a> <small><sup>[top ▲](#toc)</sup></small>
-1. Steam > Fallout 4 VR > Settings > General > Uncheck "Enable the Steam Overlay while in-game" (If you cannot disable, you disabled it globally. That's fine too.)
+1. Steam > Fallout 4 VR > Settings > General > Uncheck "Enable the Steam Overlay while in-game"  
+   If you cannot uncheck the option, you disabled it globally, which is fine too.
 2. `[fo4vr_dir]\Fallout4VR.exe` > Properties > Compatibility > Check "Disable full-screen optimisations"
 3. While in-game in VR, in Settings:
    1. _Gameplay_
-      1. _Difficulty:_ Survival
-         If you don't want to use survival, disable "Save on Rest", "Save on Wait", and "Save on Travel", install [Survival Options](https://www.nexusmods.com/fallout4/mods/14650), and follow the [in-game configuration](#finishing-up), explained later on.
+
+      | Setting    | Value    |
+      |------------|----------|
+      | Difficulty | Survival |
+
+      If you don't want to use survival, disable "Save on Rest", "Save on Wait", and "Save on Travel", install
+      [Survival Options](https://www.nexusmods.com/fallout4/mods/14650), and follow the
+      [in-game configuration](#configure-mods), explained later on.
    2. _Display_
+
       | Setting          | Value |
       |------------------|-------|
       | Floating markers | Off   |
-   4. VR:
-      1. Direct movement: On
-      2. Pip-Boy location: Projected
-      3. Comfort vignette while moving: Off
-      4. Comfort vignette while turning: Off
-      5. Rotation type: Smooth
-   5. Performance:
-       1. Anti-Aliasing: TAA
-       2. Anisotropic Filtering: 16
-       3. Character Lighting: Off
-5. MO2: (**TODO: ???**)
+   3. _VR_
+
+      | Setting                        | Value     |
+      |--------------------------------|-----------|
+      | Direct movement                | On        |
+      | Pip-Boy location               | Projected |
+      | Comfort vignette while moving  | Off       |
+      | Comfort vignette while turning | Off       |
+      | Rotation type                  | Smooth    |
+   4. _Performance_
+
+      | Setting               | Value |
+      |-----------------------|-------|
+      | Anti-aliasing         | TAA   |
+      | Anisotropic filtering | 16    |
+      | Character lighting    | Off   |
+4. MO2: (**TODO: F4SEVR?**)
 
 ## 3.2 INI configuration<a name="ini-configuration"></a> <small><sup>[top ▲](#toc)</sup></small>
 INI files contain extra game settings that are not found in the game's menus.
@@ -328,8 +342,9 @@ These are essentially toolkits that directly alter the game engine, and are requ
         If this is not the case, you probably created the directory `[fo4vr_dir]\f4sevr_0_6_20\`, and you should copy
         the contents of that directory into `[fo4vr_dir]`.
 2. **[fo4vr_improvements](https://github.com/fholger/f4ovr_improvements)** (vcas_v2) <sub>![required]</sub>  
-   Improves some filters and shaders specifically for VR, and fixes issues the game has with Valve Index controllers.
-   (If you don't use Index, this won't hurt either.)
+   Improves some filters and shaders specifically for VR, and fixes issues the game has with some controllers.
+   * **Note:**
+     Do not install this mod if you use WMR or Vive Wand controllers.
    * **Installation instructions:**
      1. Go to [the mod's releases page](https://github.com/fholger/f4ovr_improvements/releases), and download the file
         `fo4vr_contrast_adaptive_sharpening_v2.7z`.
@@ -423,7 +438,8 @@ These mods fix bugs, either in the base game or in other mods.
 ## 4.4 Performance<a name="performance"></a> <small><sup>[top ▲](#toc)</sup></small>
 FO4VR is notorious for having sub-par performance.
 The following mods help improve performance.
-If you notice after some playing that you have high FPS, you can consider disabling these for (arguably) more surrounding more detail around you.
+If you notice after some playing that you have high FPS, you can consider disabling these for (arguably) more
+surrounding more detail around you.
 
 Personally, I eventually disabled these because I preferred higher graphical quality, but they may be useful for you.
 
@@ -461,7 +477,8 @@ Personally, I eventually disabled these because I preferred higher graphical qua
 
 ## 4.6 Lighting<a name="lighting"></a> <small><sup>[top ▲](#toc)</sup></small>
 By default, the world looks _really_ overexposed, which makes the outside like outright ugly.
-I used a combination of mods recommended by [dropadred](https://www.reddit.com/user/dropadred/), as [described in this thread](https://www.reddit.com/r/fo4vr/comments/r8rrsm/).
+I used a combination of mods recommended by [dropadred](https://www.reddit.com/user/dropadred/), as
+[described in this thread](https://www.reddit.com/r/fo4vr/comments/r8rrsm/).
 
 1. **[Darker Nights](https://www.nexusmods.com/fallout4/mods/191)** (v1.11p6) <sub>![recommended]</sub>
    * **Variant:** main file _and_ "No Glow Fix for Far Harbor DLC"
@@ -518,7 +535,8 @@ What we're left with is a single UI mod, which actually works fine.
    This is annoying, because your character may say something completely different from what you expected.
    This mod replaces the keywords with the full line your character will say.
    * **Patch:**
-     After installing, right-click the mod, click "Open in Explorer", enter the directory `interface`, and delete the file `MultiActivateMenu.swf`.
+     After installing, right-click the mod, click "Open in Explorer", enter the directory `interface`, and delete the
+     file `MultiActivateMenu.swf`.
      This fixes a VR-specific bug where no icons are shown when talking with followers.
 
 ## 4.9 Gameplay<a name="gameplay"></a> <small><sup>[top ▲](#toc)</sup></small>
@@ -527,7 +545,7 @@ What we're left with is a single UI mod, which actually works fine.
    Absolutely required for immersion.
    * **Variant:** "alpha 58"
    * **Important:** Download this mod, but **keep it deactivated in MO2 for now**.
-   * **Note:** [In-game configuration required.](#finishing-up)
+   * **Note:** [In-game configuration required.](#configure-mods)
    * **Untested alternative:** [Idle Hands](https://www.nexusmods.com/fallout4/mods/42922)
 2. **[Player Collision Options - nocollide actors](https://www.nexusmods.com/fallout4/mods/41866)** (v1.0) <sub>![required]</sub>  
    Normally, when you get close to an NPC in VR, the game will push you back. This is annoying and disorienting when you
@@ -580,7 +598,7 @@ The following selection of mods is a combination of important fixes and subjecti
    This sucks in VR, because you don't get to aim the gun and pull the trigger yourself.
    This mod replaces VATS with bullet time.
    * **Requires:** FO4FH _and_ FO4NW
-   * **Note:** [In-game configuration required.](#finishing-up)
+   * **Note:** [In-game configuration required.](#configure-mods)
 4. **[Critical Hits Outside of VATS](https://www.nexusmods.com/fallout4/mods/12653)** (v1.1.3) <sub>![required]</sub>  
    The above Bullet Time mod actually disables VATS, and thus completely removes critical hits from the game.
    This mod allows you to score critical hits again, even outside of bullet time.
@@ -617,14 +635,14 @@ Some (but not all) of them assume you play in Survival mode, which I recommend y
    change damage multipliers.
    * Recommended even for non-survival playthroughs!
    * **Installer:** everything
-   * **Note:** [In-game configuration required.](#finishing-up)
+   * **Note:** [In-game configuration required.](#configure-mods)
 2. **[Settlement Fast Travel Survival Mod](https://www.nexusmods.com/fallout4/mods/58708)** (v1.05) <sub>![recommended]</sub>
    Re-enables a restricted form of fast travel.
    You can use this together with the above mod.
    * **Requires:** FO4AU _and_ FO4FH _and_ FO4VW _and_ FO4NW
 3. **[Campsite](https://www.nexusmods.com/fallout4/mods/11734)** (v1.0.4) <sub>![recommended]</sub>  
    Lets you bring a tent with you so you can sleep anywhere.
-   * **Note:** [In-game configuration required.](#finishing-up)
+   * **Note:** [In-game configuration required.](#configure-mods)
 4. **[Loot Logic and Reduction With optional Harvest Restrictions](https://www.nexusmods.com/fallout4/mods/21366)** (v1.5.3.1) <sub>![recommended]</sub>  
    Reduces loot found in containers. Otherwise you'll quickly find you'll have so much ammo and chems the game just
    totally isn't challenging anymore.
@@ -636,7 +654,7 @@ Some (but not all) of them assume you play in Survival mode, which I recommend y
    * **Variant:** "1.5.4"
    * **Installer:** "Scripted Level List Inject"
    * **Patch:** [Dirty Edit Patch](https://www.nexusmods.com/fallout4/mods/79705) (v1.5.4-1.0.2)
-   * **Note:** [In-game configuration required.](#finishing-up)
+   * **Note:** [In-game configuration required.](#configure-mods)
 7. **[Dogmeat's Backpack](https://www.nexusmods.com/fallout4/mods/10111)** (v2.0) <sub>![recommended]</sub>  
    As above, but now for your companion.
 8. **[Dogmeat's Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/62037)** (v1.3) <sub>![recommended]</sub>  
@@ -644,9 +662,12 @@ Some (but not all) of them assume you play in Survival mode, which I recommend y
    * **Requires:** The two mods above this one.
 9. **[Headshot Damage Multiplier](https://www.nexusmods.com/fallout4/mods/33546)** (v1.0) <sub>![recommended]</sub>
    In survival, your outgoing damage is reduced and enemy health is increased.
-   Unfortunately, this results in bullet sponge enemies, where you can unload an entire shotgun magazine into someone's face and they somehow survive.
-   In VR, your accuracy is much higher, so I found that combat became more interesting if I rewarded myself for making headshots.
-   The result is a sort of mutual [glass cannon](https://tvtropes.org/pmwiki/pmwiki.php/Main/GlassCannon) situation, where every shot matters.
+   Unfortunately, this results in bullet sponge enemies, where you can unload an entire shotgun magazine into someone's
+   face and they somehow survive.
+   In VR, your accuracy is much higher, so I found that combat became more interesting if I rewarded myself for making
+   headshots.
+   The result is a sort of mutual [glass cannon](https://tvtropes.org/pmwiki/pmwiki.php/Main/GlassCannon) situation,
+   where every shot matters.
    * **Variant:** "x5"
 10. **[Radiation Overhaul - 4x More Radiation Across the Wasteland](https://www.nexusmods.com/fallout4/mods/13790)** (v1.1) <sub>![optional]</sub>  
     Makes radiation actually dangerous.
@@ -672,7 +693,7 @@ If you don't intend to engage with settlements at all, you can skip this section
    all buildings in the settlement.
    It just works.
    * **Variant:** "Three In One **v4.1.7**"
-   * **Note:** [In-game configuration required.](#finishing-up)
+   * **Note:** [In-game configuration required.](#configure-mods)
    * **Untested alternative:** [Sim Settlements 2](https://www.nexusmods.com/fallout4/mods/47976)  
      There are guides out there on how to get Sim Settlements 2 working on FO4VR, but these have not been tested with
      this guide.
@@ -700,114 +721,121 @@ If you don't intend to engage with settlements at all, you can skip this section
      3. Sim Settlements 2: Do not select
 5. **[Local Leader Tweaks](https://www.nexusmods.com/fallout4/mods/16661)** (v1.0) <sub>![recommended]</sub>  
    The Local Leader perk is required to unlock some of the most important parts of using settlements.
-   I think that it's stupid that these perks, which cost quite some effort to unlock if you don't run a Charisma build, don't justify their worth in terms of gameplay impact, but are still vital for using settlements.
-   For this reason, I recommend using this mod, which will allow you to do basically everything you can do with Local Leader, except you won't need Local Leader.
+   I think that it's stupid that these perks, which cost quite some effort to unlock if you don't run a Charisma build,
+   don't justify their worth in terms of gameplay impact, but are still vital for using settlements.
+   For this reason, I recommend using this mod, which will allow you to do basically everything you can do with Local
+   Leader, except you won't need Local Leader.
    * **Variant:** main file _and_ "Crafting add-on"
 
-# 5 Finishing up<a name="finishing-up"></a> <small><sup>[top ▲](#toc)</sup></small>
-> [!WARNING]
+
+# 5 Playing the game<a name="playing-the-game"></a> <small><sup>[top ▲](#toc)</sup></small> 
+> [!CAUTION]
 > Make sure [FRIK](https://www.nexusmods.com/fallout4/mods/53464) remains disabled until you have exited the vault.
 
-(**TODO: Sort load order!**)
-(**TODO: Ensure all ESPs are enabled (but FRIK is disabled)**)
+> [!WARNING]
+> Check that all .esp files are actually activated.
+> Additionally, sort your load order one more time, just to be sure.
 
 You should now have a good selection of mods from the previous selection installed.
 You should have installed all required mods, probably several recommended mods, and maybe some optional mods.
 
-The only thing that's left is to configure a few final mods.
-Most mods don't need configuration, but a few do.
-These mods can be configured after you've finished the prologue.
-This section will take you through that process.
-
-(**TODO: Make an easier overview.**)
-The overall procedure is as follows:
-1. [Read general tips.](#general-tips) (Section 5.1)
-2. Launch the game.
-3. [Configure controls.](#configure-controls) (Section 5.2)
-4. Start a new game.
-5. Play until you exit the vault.
-6. [Configure mods.](#configure-mods) (Section 5.3)
-7. Continue playing the game to your leisure.
-
-(**TODO: Note what to do if the Vault-Tec elevator keeps crashing.**)
+Next up is to learn about a few quirks of FO4VR you need to be aware of during playing.
+After that, you can start playing the prologue.
+Finally, you'll need to configure a few final mods.
+This section will take you through the entire process.
 
 ## 5.1 General tips <small><sup>[top ▲](#toc)</sup></small>
-(**TODO: Rephrase and restructure this.**)
-
-* Always launch through MO2.
-  Always use F4SEVR!
+### 5.1.1 Launching
+* Always launch F4SEVR, and always launch through MO2.
+  Do not launch through Steam.
+  Otherwise, your mods will not load.
   (**TODO: Describe how to add F4SEVR in MO2**)
-* Remove external gamepads before launching the game.
+* Unplug any controllers/gamepads you don't want to use before launching the game.
+  FO4(VR) does not support multiple controllers at the same time, and gets confused when you try.
 * Start your VR controllers before launching the game.
-  If you start them too late, some buttons will not work, you'll notice this in the main menu when you try to scroll
-  down.
-  In that case, restart the game.
-* In the main menu, if you select `Continue`, or select `Load` and then choose a save, and you notice nothing happens,
-  pull the right trigger again (or whatever button you use to select).
-  What happened is that there was a message saying you have changed your load order, asking for confirmation, but for
-  some reason that message is invisible when in the main menu.
-  If you want to see what the difference in load order is, then load the save, and then while in-game load that save;
-  now the message will be visible.
-* QuickSave is extremely unreliable and very often breaks mods/saves.
-  AutoSave is somewhat unreliable and sometimes breaks mods.
-  Therefore, manually save often, and avoid loading QuickSaves or AutoSaves.
-  (Making an AutoSave or QuickSave by itself is not harmful.
-  It's just that you shouldn't load them.)
-  You can use the Survival Options mogd mentioned earlier to replace Quick-Saves with Saves.
-* Don't use your pipboy while the light is on!
-  You may get a CTD otherwise.
-  Some claim that Buffout4 fixes this, but in my game, it didn't, as I would continue to CTD.
-* Don't swim, lol
-* Aiming with a gun in the Vault is dogshit bat.
-  Give it up, just use your stick for now... we'll fix guns later.
+  Otherwise, the game won't respond to some buttons, and you'll have to restart.
+* In the main menu, if you choose "Continue" and nothing happens, just press the selection button again.
+  This is necessary because the game is trying to show you a warning that you've removed a mod that the save relies on,
+  but for some reason this warning is invisible in the main menu (but works correctly after loading another save).
+
+### 5.1.2 Playing
+* Quicksaves are unreliable and are sometimes broken.
+  Autosaves are slightly better, but I still wouldn't rely on them.
+  Save manually and save often.
+  You can also install [Survival Options](https://www.nexusmods.com/fallout4/mods/14650) and
+  [configure the mod](#configure-mods) to perform a manual save at specific moments.
+* Do not open your Pip-Boy while your flashlight is on.
+  Doing so may cause the game to crash.
+* Swimming sucks ass in VR.
+  Avoid water.
 
 ## 5.2 Configure controls<a name="configure-controls"></a> <small><sup>[top ▲](#toc)</sup></small>
-(**TODO**)
+This section applies to Valve Index controllers only.
 
-## 5.3 Configure mods<a name="configure-mods"></a> <small><sup>[top ▲](#toc)</sup></small>
-(**TODO**)
+With the game running, with your headset on, open the SteamVR overlay.
+Select "Controller bindings", select "Choose another", and select "Fallout VR Essential Bindings".
+Unfortunately, even after configuring your controls, button prompts in the game will not show correctly.
+You'll have to learn the buttons by heart.
+This is mostly a case of trial and error.
 
-### 5.3.1 Backpacks of the Commonwealth <small><sup>[top ▲](#toc)</sup></small>
+## 5.3 Completing the prologue<a name="complete-prologue"></a> <small><sup>[top ▲](#toc)</sup></small>
+You can complete the prologue normally, though the experience can be somewhat buggy.
+Here's a small list of troubleshooting tips.
+
+* If your gun aim is completely wrong, just use the baton for now.
+  Aiming will be better once you've activated [FRIK](https://www.nexusmods.com/fallout4/mods/53464) after the prologue.
+* If the game keeps crashing while leaving the vault using the elevator, temporarily disable UFO4P.
+  You should re-enable UFO4P after having left the vault.
+* If this all sounds too bothersome, use [SKK Fast Start new game](https://www.nexusmods.com/fallout4/mods/29227)
+  (v020).
+
+## 5.4 Configure mods<a name="configure-mods"></a> <small><sup>[top ▲](#toc)</sup></small>
+After you've exited the vault, there's a few mods you should configure.
+
+### 5.4.1 Backpacks of the Commonwealth <small><sup>[top ▲](#toc)</sup></small>
 As soon as you exit Vault 111, you'll receive a magazine from Backpacks of the Commonwealth.
 After that, you'll also be prompted to enter the spawn rate.
 Enter the recommended rate of 0%.
 
-### 5.3.2 Survival Options <small><sup>[top ▲](#toc)</sup></small>
+### 5.4.2 Survival Options <small><sup>[top ▲](#toc)</sup></small>
 The following settings apply to both survival playthroughs and non-survival playthroughs.
 
 Open your inventory, go to Misc, and use the holotape "\[Settings\] Survival Options Holotape".
 Apply the following settings.
 
-| Category | Option | Value |
-|---|---|---|
-| Combat Options | Incoming Damage Multiplier | 3.0 |
-| | Outgoing Damage Multiplier | 1.0 |
-| Save Options > Cell Change Save Options | Toggle | Current:On |
-| | Change To | Current:Normal Save |
-| Save Options > Timed Save Options | Toggle | Current:On |
-| | Change To | Current:Normal Save |
-| | Interval | 7 Minutes |
-| Save Options > Level Up Save Options | Toggle | Current:On |
-| | Change To | Current:Normal Save |
+| Category                                | Option                     | Value               |
+|-----------------------------------------|----------------------------|---------------------|
+| Combat Options                          | Incoming Damage Multiplier | 3.0                 |
+|                                         | Outgoing Damage Multiplier | 1.0                 |
+| Save Options > Cell Change Save Options | Toggle                     | Current:On          |
+|                                         | Change To                  | Current:Normal Save |
+| Save Options > Timed Save Options       | Toggle                     | Current:On          |
+|                                         | Change To                  | Current:Normal Save |
+|                                         | Interval                   | 7 Minutes           |
+| Save Options > Level Up Save Options    | Toggle                     | Current:On          |
+|                                         | Change To                  | Current:Normal Save |
 
-Finally, if you are doing a survival playthrough, in the same holotape, under the "Save Options" menu, select "Give Save Item".
+Finally, if you are doing a survival playthrough, in the same holotape, under the "Save Options" menu, select "Give Save
+Item".
 This will add a "Save Item" to your inventory, to be found under Aid.
 Favourite the item and put it on your favourite wheel so you can save whenever you want.
 
-### 5.3.3 Bullet Time VATS VR <small><sup>[top ▲](#toc)</sup></small>
+### 5.4.3 Bullet Time VATS VR <small><sup>[top ▲](#toc)</sup></small>
 Open your inventory, go to Misc, and use the holotape "\[Settings - Bullet Time VATS\]".
 Apply the following settings.
 
-| Option | Value |
-|---|---|
-| Time Dilation | 50% |
+| Option                                                 | Value       |
+|--------------------------------------------------------|-------------|
+| Time Dilation                                          | 50%         |
 | Movement Settings Menu > "In Bullet Time V.A.T.S." use | DIRECT MOVE |
 
-### 5.3.4 FRIK <small><sup>[top ▲](#toc)</sup></small>
+### 5.4.4 FRIK <small><sup>[top ▲](#toc)</sup></small>
 > [!WARNING]
 > Make sure [FRIK](https://www.nexusmods.com/fallout4/mods/53464) remains disabled until you have exited the vault.
 
-Save the game (using the "Save Item" you added using [Survival Options](https://www.nexusmods.com/fallout4/mods/14650)), exit the game, enable FRIK (and re-enable UFO4P while you're at it, if you disabled it), re-sort your mods with LOOT, and then re-launch the game.
+Save the game (using the "Save Item" you added using [Survival Options](https://www.nexusmods.com/fallout4/mods/14650)),
+exit the game, enable FRIK (and re-enable UFO4P while you're at it, if you disabled it), re-sort your mods with LOOT,
+and then re-launch the game.
 
 Open your inventory, go to Misc, and use the holotape "FRIK Configuration".
 Apply the following settings.
@@ -819,29 +847,37 @@ You will need to re-open the holotape several times.
 3. Select "Save Body Position to INI".
    (This also saves your "arms only" setting.)
 
-### 5.3.5 Campsite <small><sup>[top ▲](#toc)</sup></small>
-To activate [Campsite](https://www.nexusmods.com/fallout4/mods/11734), you'll need to find a book [somewhere in Sanctuary](https://youtu.be/E7VLBtH4gyA).
+### 5.4.5 Campsite <small><sup>[top ▲](#toc)</sup></small>
+To activate [Campsite](https://www.nexusmods.com/fallout4/mods/11734), you'll need to find a book
+[somewhere in Sanctuary](https://youtu.be/E7VLBtH4gyA).
 Once you've found the book, you'll be able to craft camping items at any chemistry workbench.
 
-### 5.3.6 Sim Settlements <small><sup>[top ▲](#toc)</sup></small>
-If you follow along with the story, you'll eventually wind up at the [Museom of Freedom](https://fallout.fandom.com/wiki/Museum_of_Freedom).
+### 5.4.6 Sim Settlements <small><sup>[top ▲](#toc)</sup></small>
+[Sim Settlements](https://www.nexusmods.com/fallout4/mods/21872) can only be configured after you've played the game 
+a bit.
+Specifically, you'll need to reach the [Museum of Freedom](https://fallout.fandom.com/wiki/Museum_of_Freedom), which is
+one of the earlier storyline locations anyway.
 Inside, [you can find the Sim Settlements holotape](https://youtu.be/WQB6FQezJgE).
-After picking it up, open your inventory, go to Misc, and use the holotape "City Manager 2078 Holotape".
-Answer the questions to configure Sim Settlements.
-(If the promp becomes invisible, just skip through it.
-The following actions will override those choices.)
 
-After having answered these questions, open the holotape again, and select the following otions.
+After having picked up the holotape, open your inventory, go to Misc, and use the holotape "City Manager 2078 Holotape".
+Answer the questions to configure Sim Settlements.
+(If the prompt becomes invisible, just skip through it.
+The actions below will override those choices.)
+
+After having answered these questions, use the holotape again, and select the following options.
 1. ASAM Sensor Info
 2. Tools > Configuration Tools > Configuration Wizard
 3. Tools > Configuration Tools > Performance Wizard
 
 (**TODO: Link to tutorials (or should I do that in the mod list?)**)
 
-Note that after you select a city plan, the camera will fly up, which may be uncomfortable if you are not used to smooth locomotion.
-You can disable this in the settings of Sim Settlements, but then you lose the advantage of knowing when the settlement's setup script is done when the camera goes back down (and yes you really need to wait for that, or your settlement will not initialise correctly).
-So if you find this nauseating, I recommend just closing your eyes or removing your headset for as long as the setup takes, and checking on your monitor when it's done.
-Yes, this is annoying, but hey, it's FO4VR, what did you expect?
+After creating a settlement, you can select a leader and city plan.
+Doing so will run a setup script, during which the player camera will fly into the air, which you may find
+uncomfortable.
+Though you can disable this using the Sim Settlements holotape, you then lose the advantage of knowing when the setup
+script is done.
+If you leave the settlement before the script is done, your settlement will not initialise correctly.
+The best remedy is, unfortunately, to remove your headset and check on your monitor when it's done.
 
 
 # 6 Conclusion <small><sup>[top ▲](#toc)</sup></small>
