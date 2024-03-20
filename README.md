@@ -393,7 +393,7 @@ These mods fix bugs, either in the base game or in other mods.
    this list), overall the pros outweigh the cons.
    * **Requires:** all DLC
    * **Patch:** [Unofficial Fallout 4 VR Fix](https://www.nexusmods.com/fallout4/mods/47117) (v1)
-   * **Patch:** [VR weapon and armor keyword crash patch](https://www.nexusmods.com/fallout4/mods/79711) (v2.1.5-1.0.0)
+   * **Patch:** [VR weapon and armor keyword crash patch](https://www.nexusmods.com/fallout4/mods/79711) (v2.1.5-1.0.2)
 3. **[DLCVR - Fallout 4 VR and DLC standalone bug fixes](https://www.nexusmods.com/fallout4/mods/28842)** (v1.0.4) <sub>![required]</sub>  
    Fixes issues specific to FO4FH and FO4NW, relating to invisible floors and so on.
    * **Requires:** FO4FH _or_ FO4NW
@@ -457,7 +457,7 @@ Personally, I eventually disabled these because I preferred higher graphical qua
    * **Variant:** "Better Performance - Non ESP Version"
 7. **[Classic Ghouls Redux](https://www.nexusmods.com/fallout4/mods/57362)** (v1) <sub>![optional]</sub>  
    Changes (non-feral) ghoul textures to look more like ghouls from Fallout 3.
-   * **Patch:** [UFO4P and LotC patch](https://www.nexusmods.com/fallout4/mods/79713) (v1-1.0.0)
+   * **Patch:** [UFO4P and LotC patch](https://www.nexusmods.com/fallout4/mods/79713) (v1-1.0.3)
 
 ## 4.6 Lighting<a name="lighting"></a> <small><sup>[top ▲](#toc)</sup></small>
 By default, the world looks _really_ overexposed, which makes the outside like outright ugly.
@@ -635,7 +635,7 @@ Some (but not all) of them assume you play in Survival mode, which I recommend y
    * **Requires:** FO4AU _and_ FO4FH _and_ FO4NW
    * **Variant:** "1.5.4"
    * **Installer:** "Scripted Level List Inject"
-   * **Patch:** [Dirty Edit Patch](https://www.nexusmods.com/fallout4/mods/79705) (v1.5.4-1.0.0)
+   * **Patch:** [Dirty Edit Patch](https://www.nexusmods.com/fallout4/mods/79705) (v1.5.4-1.0.2)
    * **Note:** [In-game configuration required.](#finishing-up)
 7. **[Dogmeat's Backpack](https://www.nexusmods.com/fallout4/mods/10111)** (v2.0) <sub>![recommended]</sub>  
    As above, but now for your companion.
@@ -651,7 +651,7 @@ Some (but not all) of them assume you play in Survival mode, which I recommend y
 10. **[Radiation Overhaul - 4x More Radiation Across the Wasteland](https://www.nexusmods.com/fallout4/mods/13790)** (v1.1) <sub>![optional]</sub>  
     Makes radiation actually dangerous.
     * **Variant:** depends on your DLC
-    * **Patch:** [UFO4P and item name patch](https://www.nexusmods.com/fallout4/mods/79708) (v1.1-1.0.0)
+    * **Patch:** [UFO4P and item name patch](https://www.nexusmods.com/fallout4/mods/79708) (v1.1-1.0.2)
 
 ## 4.12 Settlements<a name="settlements"></a> <small><sup>[top ▲](#toc)</sup></small>
 I think Fallout 4's settlements are very flawed.
