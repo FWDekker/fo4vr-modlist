@@ -1,5 +1,5 @@
 ﻿# Florine's Fallout 4 VR
-_Last updated: 2024-03-20_
+_Last updated: 2024-04-01_
 
 > A thorough, beginner-friendly guide for a stable, vanilla-ish experience.
 
@@ -22,15 +22,23 @@ good, but too non-vanilla for my tastes.
 Meanwhile, my list only deviates from vanilla when I think there's a very good reason, like replacing VATS with bullet
 time because the former just isn't nice in VR.
 
-
 **Performance**  
 I didn't really focus on performance because I have a powerful PC.
 However, I mostly avoided mods that negatively affect performance.
 
+**Support**  
+If you don't understand something, experience in-game issues, have suggestions, or just need some help,
+[check out the Discussions page](https://github.com/FWDekker/fo4vr-modlist/discussions) or
+[open an issue](https://github.com/FWDekker/fo4vr-modlist/issues). 
+
 ---
 
 **Table of contents**  
-<a name="toc"></a>[**1 How to read this guide**](#how-to-read) | [**2 Setup**](#setup) | [**3 Configuration**](#configuration) | [**4 List of mods**](#list-of-mods) | [**5 Playing the game**](#playing-the-game)
+<a name="toc"></a>[**1 How to read this guide**](#how-to-read)
+| [**2 Setup**](#setup)
+| [**3 Configuration**](#configuration)
+| [**4 List of mods**](#list-of-mods)
+| [**5 Playing the game**](#playing-the-game)
 
 ---
 
@@ -40,10 +48,26 @@ However, I mostly avoided mods that negatively affect performance.
 > Read this guide carefully.
 
 This section deals with the basics:
-Why FO4VR modding is difficult, how this guide deals with version numbers, and common abbreviations.
+[Why FO4VR modding is difficult](#about-modding-fo4vr),
+[how this guide deals with version numbers](#about-version-numbers),
+[how to pick and choose mods from this guide](#about-tags),
+and [common abbreviations](#abbreviations).
 
 ## 1.1 About modding Fallout 4 VR<a name="about-modding-fo4vr"></a> <small><sup>[top ▲](#toc)</sup></small>
-(**TODO: Lower your expectations, instabilities, difficulties, etc.**)
+When I tried FO4VR without mods, I intensely disliked the experience, and decided I wanted to add mods.
+If you're used to modding Bethesda games, you'll know that it's usually _probably_ fine to just throw a whole bunch of
+mods together, as long as you follow the authors' directions on what mods are incompatible.
+Unfortunately, that's not true for FO4VR.
+The VR version is missing several updates that were released only for the non-VR version, and as a result mods made for
+the non-VR version may use features that simply don't exist in the VR version.
+Using mods blindly _will_ result in the game crashing regularly.
+
+Overall, you should lower your expectations when modding FO4VR compared to non-VR FO4.
+The modding scene just isn't as advanced as that of Skyrim VR.
+You may find that your favourite mods just don't work very well in FO4VR, and when browsing mods you should always
+carefully consider whether the benefits outweigh the risks.
+
+This modding guide describes the tradeoffs I made, leaning mostly towards the careful side.
 
 ## 1.2 About version numbers<a name="about-version-numbers"></a> <small><sup>[top ▲](#toc)</sup></small>
 Whenever I mention a tool or a mod, I will write down which version and variant I used.
@@ -122,10 +146,12 @@ You can remove old files as follows.
     Doing so may result in specific mods/tools unexpectedly failing, because Windows doesn't like it when software
     changes things in `Program Files (x86)`.
   * If you're fine with not putting FO4VR on your `C:\` drive,
-    [install FO4VR on another drive as explained in Steam's help pages](https://help.steampowered.com/en/faqs/view/4BD4-4528-6B2E-8327).
+    [install FO4VR on another drive as explained in Steam's help
+    pages](https://help.steampowered.com/en/faqs/view/4BD4-4528-6B2E-8327).
     For performance reasons, you should prefer installing on an SSD.
   * If you don't want to or cannot put FO4VR on another drive,
-    [move your entire Steam installation to another directory as explain in Steam's help pages](https://help.steampowered.com/en/faqs/view/4BD4-4528-6B2E-8327).
+    [move your entire Steam installation to another directory as explain in Steam's help
+    pages](https://help.steampowered.com/en/faqs/view/4BD4-4528-6B2E-8327).
     Personally, I went for `C:\Users\[username]\Steam\`.
   * No, there is no simpler way. Yes, this is required.
 * **Fallout 4 with all DLC** (v1.10.163) <sub>![recommended]</sub>  
@@ -166,10 +192,14 @@ These settings relate to stability, visual quality, and performance.
 > This will set up important files and registry entries.
 
 ## 3.1 Basic settings<a name="basic-settings"></a> <small><sup>[top ▲](#toc)</sup></small>
-1. Steam > Fallout 4 VR > Settings > General > Uncheck "Enable the Steam Overlay while in-game"  
-   If you cannot uncheck the option, you disabled it globally, which is fine too.
-2. `[fo4vr_dir]\Fallout4VR.exe` > Properties > Compatibility > Check "Disable full-screen optimisations"
-3. While in-game in VR, in Settings:
+1. **Steam**  
+   Go to the settings for Fallout 4 VR.
+   Go to `General` and disable `Enable the Steam Overlay while in-game`.  
+   (If you cannot disable this option, you disabled it globally, which is fine too.)
+2. **Windows Explorer**  
+   Navigate to `[fo4vr_dir]`, right-click `Fallout4VR.exe`, and click `Properties`.
+   Go to `Compatibility` and enable `Disable full-screen optimisations`.
+3. While in-game in VR, in FO4VR's main menu, go to `Settings` and apply the following settings.
    1. _Gameplay_
 
       | Setting    | Value    |
@@ -200,7 +230,6 @@ These settings relate to stability, visual quality, and performance.
       | Anti-aliasing         | TAA   |
       | Anisotropic filtering | 16    |
       | Character lighting    | Off   |
-4. MO2: (**TODO: F4SEVR?**)
 
 ## 3.2 INI configuration<a name="ini-configuration"></a> <small><sup>[top ▲](#toc)</sup></small>
 INI files contain extra game settings that are not found in the game's menus.
@@ -237,6 +266,10 @@ INI files obey the following rules.
 
 > [!IMPORTANT]
 > Make sure each section/variable occurs at most once.
+
+> [!TIP]
+> You can copy-paste all non-optional configs below effortlessly at once
+> [from Section 3.2.3](#ini-configuration-combined).
 
 **Default MO2 settings** <sub>![required]</sub>
 ```ini
@@ -306,13 +339,56 @@ bVrSwimDeliberateResurface=1
 bUseWandDirectionalMovement=0
 ```
 
-### 3.2.3 Additional settings
+**Disable in-game tutorial notifications** <sub>![optional]</sub>
+```ini
+[Interface]
+bShowTutorials=0
+```
+
+### 3.2.3 All non-optional configs<a name="ini-configuration-combined"></a>
+The block below contains all non-optional configs from Section 3.2.2.
+You can copy-paste it into your `fallout4custom.ini` file.
+You don't need to keep the old contents, just overwrite it with the block below.
+
+```ini
+[General]
+sLocalSavePath=__MO_Saves\
+bUseMyGamesDirectory=1
+[Archive]
+sResourceDataDirsFinal=
+bInvalidateOlderFiles=1
+sResourceStartUpArchiveList=Fallout4 - Startup.ba2, Fallout4 - Shaders.ba2, Fallout4 - Interface.ba2, Fallout4_VR - Shaders.ba2
+sResourceIndexFileList=Fallout4 - Textures1.ba2, Fallout4 - Textures2.ba2, Fallout4 - Textures3.ba2, Fallout4 - Textures4.ba2, Fallout4 - Textures5.ba2, Fallout4 - Textures6.ba2, Fallout4 - Textures7.ba2, Fallout4 - Textures8.ba2, Fallout4 - Textures9.ba2, Fallout4_VR - Main.ba2, Fallout4_VR - Textures.ba2
+[VRDisplay]
+fRenderTargetSizeMultiplier=1.0
+[Display]
+fTAAPostSharpen=0.675
+fTAASharpen=1.0000
+fTAAHighFreq=0.8000
+fTAALowFreq=0.5000
+fTAAPostOverlay=0.675
+uPipboyTargetHeight=1400
+uPipboyTargetWidth=1752
+[Controls]
+fSprintStopDirectionThresholdDegrees=360.0000
+[Workshop]
+fItemRotationSpeed=0.4
+[VR]
+fSwimSpeedScalar=1.2500
+fVrSwimDragCoefficient=0.0500
+fVrSwimHMDFloatThreshold=0.7200
+bVrSwimDeliberateResurface=1
+```
+
+### 3.2.4 Additional settings
 Above are the settings that I used.
 There's many more settings you can tweak.
 Here's a bunch of other resources that may be useful for you.
 
-* <sub>![reddit]</sub> [INI Tweak Megathread](https://www.reddit.com/r/fo4vr/comments/7kenxb/)
-* <sub>![reddit]</sub> [Comprehensive modding and tweaking guide for Fallout 4 VR](https://www.reddit.com/r/fo4vr/comments/d55jzy/)
+* <sub>![reddit]</sub>
+  [INI Tweak Megathread](https://www.reddit.com/r/fo4vr/comments/7kenxb/)
+* <sub>![reddit]</sub>
+  [Comprehensive modding and tweaking guide for Fallout 4 VR](https://www.reddit.com/r/fo4vr/comments/d55jzy/)
 
 
 
@@ -393,15 +469,9 @@ These do not affect your game directly, but are required by many other mods.
 These mods fix bugs, either in the base game or in other mods.
 
 1. **[Fallout 4 Version Check Patcher](https://www.nexusmods.com/fallout4/mods/42497)** (v1.00) <sub>![required]</sub>  
-   (**TODO: Move this to Section 1.1?**)
-   FO4VR and FO4 don't have the exact same engine because FO4VR is derived from an older version of FO4.
-   If someone makes a mod for FO4, it will contain the version number of the engine it's made for.
-   If you then use this mod in FO4VR, you'll get warnings because the mod uses a newer version of the engine you're
-   using.
-   This mod disables those warnings.
-   The only major relevant bug that can accidentally occur because of this version mismatch is that your game will crash 
-   immediately when you load an incompatible mod, so if you see the warning (without using this mod) then it means you
-   didn't have problems anyway...
+   [As explained in the introduction](#about-modding-fo4vr), most mods will be created for the wrong game version.
+   The game warns you of this in the main menu.
+   This mod disables those warnings, because they're annoying and there's not a whole lot you can do about it anyway.
 2. **[Unofficial Fallout 4 Patch - UFO4P](https://www.nexusmods.com/fallout4/mods/4598)** (v2.1.5) <sub>![required]</sub>  
    Fixes a bunch of bugs, big and small, in the base game.
    Though there are some incompatibilities because VR is not supported by the mod authors (like with most other mods on
@@ -516,7 +586,7 @@ However, it doesn't hurt to improve sound effects for VR, and to add more high-q
    Adds more different kinds of footstep sounds.
    * **Variant:** "BA2"
 7. **[Not Great Not Terrible - Scarier Geiger Counter Sounds](https://www.nexusmods.com/fallout4/mods/45354)** (v1.0) <sub>![optional]</sub>  
-   Replaces geiger counter sounds to be more intense.
+   Replaces Geiger counter sounds to be more intense.
    * **Variant:** "Quieter Version" _or_ "Main File"
 
 ## 4.8 UI<a name="ui"></a> <small><sup>[top ▲](#toc)</sup></small>
@@ -644,8 +714,8 @@ Some (but not all) of them assume you play in Survival mode, which I recommend y
    Lets you bring a tent with you so you can sleep anywhere.
    * **Note:** [In-game configuration required.](#configure-mods)
 4. **[Loot Logic and Reduction With optional Harvest Restrictions](https://www.nexusmods.com/fallout4/mods/21366)** (v1.5.3.1) <sub>![recommended]</sub>  
-   Reduces loot found in containers. Otherwise you'll quickly find you'll have so much ammo and chems the game just
-   totally isn't challenging anymore.
+   Reduces loot found in containers.
+   Otherwise you'll quickly find you'll have so much ammo and chems the game just totally isn't challenging anymore.
 5. **[NPC Loot Drop rebalance](https://www.nexusmods.com/fallout4/mods/24163)** (v1.0) <sub>![recommended]</sub>  
    Reduces loot found on NPCs, in line with the above mod.
 6. **[Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/29447)** (v1.5.4) <sub>![recommended]</sub>  
@@ -676,7 +746,7 @@ Some (but not all) of them assume you play in Survival mode, which I recommend y
 
 ## 4.12 Settlements<a name="settlements"></a> <small><sup>[top ▲](#toc)</sup></small>
 I think Fallout 4's settlements are very flawed.
-In VR, they are not necessarily more or less flawed than in non-VR, so the mods in this section are not VR-specific.
+In VR, they are not necessarily _more_ flawed, so the mods in this section aren't VR-specific.
 However, several of these mods require VR-specific tweaks.
 That said, this entire section is recommended, because the VR experience is no worse than the non-VR experience with or
 without these.
@@ -719,6 +789,7 @@ If you don't intend to engage with settlements at all, you can skip this section
      1. Install type: FO4VR
      2. Sim Settlements 1: "Sim Settlements"
      3. Sim Settlements 2: Do not select
+   * **Note:** [In-game configuration recommended.](#configure-mods)
 5. **[Local Leader Tweaks](https://www.nexusmods.com/fallout4/mods/16661)** (v1.0) <sub>![recommended]</sub>  
    The Local Leader perk is required to unlock some of the most important parts of using settlements.
    I think that it's stupid that these perks, which cost quite some effort to unlock if you don't run a Charisma build,
@@ -869,26 +940,42 @@ After having answered these questions, use the holotape again, and select the fo
 2. Tools > Configuration Tools > Configuration Wizard
 3. Tools > Configuration Tools > Performance Wizard
 
-(**TODO: Link to tutorials (or should I do that in the mod list?)**)
+#### How to create a settlement
+1. Build a City Planners Desk. (**TODO: Which menu?**)
+2. Select the blueprint on top of the City Planners Desk and assign a leader.
+3. All items in the settlement will now be scrapped, and a new foundation will be built.
+   Wait until the camera stops flying around.
+4. Build a Logistics Station. (**TODO: Which menu?**)
+5. Assign a settler to the Logistics Station.
+6. Build an IDEK locker. (**TODO: How?**)
 
-After creating a settlement, you can select a leader and city plan.
-Doing so will run a setup script, during which the player camera will fly into the air, which you may find
-uncomfortable.
-Though you can disable this using the Sim Settlements holotape, you then lose the advantage of knowing when the setup
-script is done.
-If you leave the settlement before the script is done, your settlement will not initialise correctly.
-The best remedy is, unfortunately, to remove your headset and check on your monitor when it's done.
+Optionally, create a portable City Planners Desk and a portable Logistics Station so you can quickly set up new
+settlements whenever you encounter one.
+(**TODO: Where to craft these?**)
+
+> [!NOTE]
+> You can disable or skip the cutscene that plays when the settlement is initialising.
+> However, you then run the risk of breaking the script if you leave the settlement before the script is finished.
+> If the cutscene makes you nauseous, I recommend simply taking off your headset and checking your monitor when it's
+> done.
+
+### 5.4.7 IDEK's Logistics Station 2
+(**TODO: Describe how to designate a locker.**)
 
 
 # 6 Conclusion <small><sup>[top ▲](#toc)</sup></small>
 That's it!
 I hope this guide was useful for you :-)
 
+If you don't understand something, experience in-game issues, have suggestions, or just need some help,
+[check out the Discussions page](https://github.com/FWDekker/fo4vr-modlist/discussions) or
+[open an issue](https://github.com/FWDekker/fo4vr-modlist/issues).
 
-  [required]:    https://img.shields.io/badge/required-red?style=flat-square
 
-  [recommended]: https://img.shields.io/badge/recommended-orange?style=flat-square
+  [required]:    https://img.shields.io/badge/required-red?style=flat-square "required"
 
-  [optional]:    https://img.shields.io/badge/optional-blue?style=flat-square
+  [recommended]: https://img.shields.io/badge/recommended-orange?style=flat-square "recommended"
 
-  [reddit]:      https://img.shields.io/badge/-%2300000000?style=flat-square&logo=reddit
+  [optional]:    https://img.shields.io/badge/optional-blue?style=flat-square "optional"
+
+  [reddit]:      https://img.shields.io/badge/-%2300000000?style=flat-square&logo=reddit "Reddit"
