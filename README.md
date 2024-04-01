@@ -782,7 +782,7 @@ If you don't intend to engage with settlements at all, you can skip this section
    In Fallout 4, you can connect your settlements using supply routes, which allows the settlements to share resources.
    Unfortunately, this feature is super annoying to use, hard to get right, and hard to manage.
    This mod automates most of that part:
-   You just build one object, assign a settler, and the mod will handle all the routing.
+   You just build one station per settlement, assign a settler, and the mod will handle all the rest.
    There's also a bunch of other really useful features which improve the stability of your trading routes.
    * **Installer:**
      1. Install type: FO4VR
@@ -939,7 +939,7 @@ To activate [Campsite](https://www.nexusmods.com/fallout4/mods/11734), you'll ne
 [somewhere in Sanctuary](https://youtu.be/E7VLBtH4gyA).
 Once you've found the book, you'll be able to craft camping items at any chemistry workbench.
 
-### 5.4.6 Sim Settlements <small><sup>[top ▲](#toc)</sup></small>
+### 5.4.6 Sim Settlements<a href="configure-sim-settlements"></a> <small><sup>[top ▲](#toc)</sup></small>
 [Sim Settlements](https://www.nexusmods.com/fallout4/mods/21872) can only be configured after you've played the game 
 a bit.
 Specifically, you'll need to reach the [Museum of Freedom](https://fallout.fandom.com/wiki/Museum_of_Freedom), which is
@@ -957,17 +957,19 @@ After having answered these questions, use the holotape again, and select the fo
 3. Tools > Configuration Tools > Performance Wizard
 
 #### How to create a settlement
-1. Build a City Planners Desk. (**TODO: Which menu?**)
-2. Select the blueprint on top of the City Planners Desk and assign a leader.
-3. All items in the settlement will now be scrapped, and a new foundation will be built.
+1. Build a City Planner's Desk (found under "Crafting").
+2. Select the City Plan blueprint on top of the City Planner's Desk and assign a leader.
+   If no leaders are available, you'll have to continue playing the game until you find more.
+   All followers can be leaders, [in addition to all NPCs listed in this mod](https://www.nexusmods.com/fallout4/mods/30495).
+3. After assigning a leader, a cutscene starts during which your camera will fly around the settlement.
+   All items in the settlement will be scrapped, and a new foundation will be built.
    Wait until the camera stops flying around.
-4. Build a Logistics Station. (**TODO: Which menu?**)
-5. Assign a settler to the Logistics Station.
-6. Build an IDEK locker. (**TODO: How?**)
+4. Build a Logistics Desk (found under "Special").
+5. Assign a settler to the Logistics Desk.
+   (If the settler keeps getting unassigned, wait until you have more settlers in that settlement and try again.)
+6. Build a Logistics Locker (found under "Special" after [configuring IDEK's Logistics Station 2](#configure-ideks-logistics-station-2)).
 
-Optionally, create a portable City Planners Desk and a portable Logistics Station so you can quickly set up new
-settlements whenever you encounter one.
-(**TODO: Where to craft these?**)
+Optionally, using the City Planner's Desk (aim to the left of the City Plan blueprint), craft a Packed City Planner's Desk (found under "Tools") and, using a Chemistry Station, craft a Packed Logistics Desk (found under "Utility"), so you can quickly set up new settlements whenever you find one.
 
 > [!NOTE]
 > You can disable or skip the cutscene that plays when the settlement is initialising.
@@ -975,8 +977,22 @@ settlements whenever you encounter one.
 > If the cutscene makes you nauseous, I recommend simply taking off your headset and checking your monitor when it's
 > done.
 
-### 5.4.7 IDEK's Logistics Station 2
-(**TODO: Describe how to designate a locker.**)
+### 5.4.7 IDEK's Logistics Station 2<a href="configure-ideks-logistics-station-2"></a>
+The essential parts of this mod require zero configuration.
+However, if you want to easily move items between settlements, you'll need to tell this mod what your main settlement is.
+(Don't worry, you can always easily and safely choose a new main settlement.)
+
+1. Go to your main settlement.
+2. Build a Logistics Desk.
+3. Interact with the Logistics Desk.
+   (The desk itself, not the terminal on top of it).
+4. Select "Set Up Locker".
+5. Read the popup message and select "OK".
+6. Go to any workbench or container in this settlement, and transfer the Logistics Storage Designator into the storage of your settlement.
+7. Read the popup message and select "Yes, keep my stuff safe!"
+8. In any other settlement(s), build a Logistics Locker (found under "Special").
+
+To move items between settlements, simply interact with the Logistics Locker.
 
 
 # 6 Conclusion <small><sup>[top ▲](#toc)</sup></small>
