@@ -194,12 +194,12 @@ These settings relate to stability, visual quality, and performance.
 ## 3.1 Basic settings<a name="basic-settings"></a> <small><sup>[top ▲](#toc)</sup></small>
 1. **Steam**  
    Go to the settings for Fallout 4 VR.
-   Go to `General` and disable `Enable the Steam Overlay while in-game`.  
+   Go to "General" and disable "Enable the Steam Overlay while in-game".  
    (If you cannot disable this option, you disabled it globally, which is fine too.)
 2. **Windows Explorer**  
-   Navigate to `[fo4vr_dir]`, right-click `Fallout4VR.exe`, and click `Properties`.
-   Go to `Compatibility` and enable `Disable full-screen optimisations`.
-3. While in-game in VR, in FO4VR's main menu, go to `Settings` and apply the following settings.
+   Navigate to `[fo4vr_dir]`, right-click `Fallout4VR.exe`, and click "Properties".
+   Go to "Compatibility" and enable "Disable full-screen optimisations".
+3. While in-game in VR, in FO4VR's main menu, go to "Settings" and apply the following settings.
    1. _Gameplay_
 
       | Setting    | Value    |
@@ -237,9 +237,8 @@ INI files contain extra game settings that are not found in the game's menus.
 To edit these settings,
 1. shut down FO4VR if it's running,
 2. open MO2,
-3. in the main toolbar, click `Tools` (the icon has puzzle pieces),
-4. click `INI Editor`, and
-5. select the tab `fallout4custom.ini`.
+3. in the main menu, click "Tools", then "Tool Plugins", and then "INI Editor", and
+4. select the tab `fallout4custom.ini`.
 
 ### 3.2.1 How does an INI file work?
 Take a look at the tab `fallout4.ini` to get a feel of what an INI looks like.
@@ -478,7 +477,7 @@ These mods fix bugs, either in the base game or in other mods.
    this list), overall the pros outweigh the cons.
    * **Requires:** all DLC
    * **Patch:** [Unofficial Fallout 4 VR Fix](https://www.nexusmods.com/fallout4/mods/47117) (v1)
-   * **Patch:** [VR weapon and armor keyword crash patch](https://www.nexusmods.com/fallout4/mods/79711) (v2.1.5-1.0.2)
+   * **Patch:** [VR weapon and armor keyword crash patch](https://www.nexusmods.com/fallout4/mods/79711) (v2.1.5-1.0.3)
 3. **[DLCVR - Fallout 4 VR and DLC standalone bug fixes](https://www.nexusmods.com/fallout4/mods/28842)** (v1.0.4) <sub>![required]</sub>  
    Fixes issues specific to FO4FH and FO4NW, relating to invisible floors and so on.
    * **Requires:** FO4FH _or_ FO4NW
@@ -543,7 +542,7 @@ Personally, I eventually disabled these because I preferred higher graphical qua
    * **Variant:** "Better Performance - Non ESP Version"
 7. **[Classic Ghouls Redux](https://www.nexusmods.com/fallout4/mods/57362)** (v1) <sub>![optional]</sub>  
    Changes (non-feral) ghoul textures to look more like ghouls from Fallout 3.
-   * **Patch:** [UFO4P and LotC patch](https://www.nexusmods.com/fallout4/mods/79713) (v1-1.0.3)
+   * **Patch:** [UFO4P and LotC patch](https://www.nexusmods.com/fallout4/mods/79713) (v1-1.0.4)
 
 ## 4.6 Lighting<a name="lighting"></a> <small><sup>[top ▲](#toc)</sup></small>
 By default, the world looks _really_ overexposed, which makes the outside like outright ugly.
@@ -701,33 +700,33 @@ Mods in this category affect the difficulty.
 Some (but not all) of them assume you play in Survival mode, which I recommend you do anyway.
 
 1. **[Survival Options](https://www.nexusmods.com/fallout4/mods/14650)** (v1.7.1) <sub>![recommended]</sub>  
-   Allows you to customise your survival mode experience. Lets you re-enable fast travel, manual saves, auto-saves, and
-   change damage multipliers.
+   Allows you to customise your survival mode experience.
+   Lets you re-enable manual saves, configure automatic saves, and change damage multipliers.
    * Recommended even for non-survival playthroughs!
    * **Installer:** everything
    * **Note:** [In-game configuration required.](#configure-mods)
-2. **[Settlement Fast Travel Survival Mod](https://www.nexusmods.com/fallout4/mods/58708)** (v1.05) <sub>![recommended]</sub>
+3. **[Settlement Fast Travel Survival Mod](https://www.nexusmods.com/fallout4/mods/58708)** (v1.05) <sub>![recommended]</sub>  
    Re-enables a restricted form of fast travel.
    You can use this together with the above mod.
    * **Requires:** FO4AU _and_ FO4FH _and_ FO4VW _and_ FO4NW
-3. **[Campsite](https://www.nexusmods.com/fallout4/mods/11734)** (v1.0.4) <sub>![recommended]</sub>  
+4. **[Campsite](https://www.nexusmods.com/fallout4/mods/11734)** (v1.0.4) <sub>![recommended]</sub>  
    Lets you bring a tent with you so you can sleep anywhere.
    * **Note:** [In-game configuration required.](#configure-mods)
-4. **[Loot Logic and Reduction With optional Harvest Restrictions](https://www.nexusmods.com/fallout4/mods/21366)** (v1.5.3.1) <sub>![recommended]</sub>  
+5. **[Loot Logic and Reduction With optional Harvest Restrictions](https://www.nexusmods.com/fallout4/mods/21366)** (v1.5.3.1) <sub>![recommended]</sub>  
    Reduces loot found in containers.
    Otherwise you'll quickly find you'll have so much ammo and chems the game just totally isn't challenging anymore.
-5. **[NPC Loot Drop rebalance](https://www.nexusmods.com/fallout4/mods/24163)** (v1.0) <sub>![recommended]</sub>  
+6. **[NPC Loot Drop rebalance](https://www.nexusmods.com/fallout4/mods/24163)** (v1.0) <sub>![recommended]</sub>  
    Reduces loot found on NPCs, in line with the above mod.
-6. **[Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/29447)** (v1.5.4) <sub>![recommended]</sub>  
+7. **[Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/29447)** (v1.5.4) <sub>![recommended]</sub>  
    In survival, you have less carrying capacity and heavier items. These backpacks will come in use.
    * **Requires:** FO4AU _and_ FO4FH _and_ FO4NW
    * **Variant:** "1.5.4"
    * **Installer:** "Scripted Level List Inject"
    * **Patch:** [Dirty Edit Patch](https://www.nexusmods.com/fallout4/mods/79705) (v1.5.4-1.0.2)
    * **Note:** [In-game configuration required.](#configure-mods)
-7. **[Dogmeat's Backpack](https://www.nexusmods.com/fallout4/mods/10111)** (v2.0) <sub>![recommended]</sub>  
+8. **[Dogmeat's Backpack](https://www.nexusmods.com/fallout4/mods/10111)** (v2.0) <sub>![recommended]</sub>  
    As above, but now for your companion.
-8. **[Dogmeat's Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/62037)** (v1.3) <sub>![recommended]</sub>  
+9. **[Dogmeat's Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/62037)** (v1.3) <sub>![recommended]</sub>  
    Re-balances the above mod to be in line with the one above that.
    * **Requires:** The two mods above this one.
 9. **[Headshot Damage Multiplier](https://www.nexusmods.com/fallout4/mods/33546)** (v1.0) <sub>![recommended]</sub>
@@ -742,7 +741,7 @@ Some (but not all) of them assume you play in Survival mode, which I recommend y
 10. **[Radiation Overhaul - 4x More Radiation Across the Wasteland](https://www.nexusmods.com/fallout4/mods/13790)** (v1.1) <sub>![optional]</sub>  
     Makes radiation actually dangerous.
     * **Variant:** depends on your DLC
-    * **Patch:** [UFO4P and item name patch](https://www.nexusmods.com/fallout4/mods/79708) (v1.1-1.0.2)
+    * **Patch:** [UFO4P and item name patch](https://www.nexusmods.com/fallout4/mods/79708) (v1.1-1.0.3)
 
 ## 4.12 Settlements<a name="settlements"></a> <small><sup>[top ▲](#toc)</sup></small>
 I think Fallout 4's settlements are very flawed.
@@ -804,8 +803,14 @@ If you don't intend to engage with settlements at all, you can skip this section
 > Make sure [FRIK](https://www.nexusmods.com/fallout4/mods/53464) remains disabled until you have exited the vault.
 
 > [!WARNING]
-> Check that all .esp files are actually activated.
+> On the right-hand side of MO2, under the tab "Plugins", check that 
+> Check that all `.esp` files are actually activated.
 > Additionally, sort your load order one more time, just to be sure.
+
+> [!NOTE]
+> In MO2, in the list of plugins, some mods will be crossed out (with ~~strikethrough~~).
+> This is just MO2's weird way of informing you that it's a textures-only mod.
+> Ignore the strikethrough, but keep the mod enabled.
 
 You should now have a good selection of mods from the previous selection installed.
 You should have installed all required mods, probably several recommended mods, and maybe some optional mods.
@@ -815,12 +820,22 @@ After that, you can start playing the prologue.
 Finally, you'll need to configure a few final mods.
 This section will take you through the entire process.
 
-## 5.1 General tips <small><sup>[top ▲](#toc)</sup></small>
+## 5.1 General tips<a href="general-tips"></a> <small><sup>[top ▲](#toc)</sup></small>
 ### 5.1.1 Launching
 * Always launch F4SEVR, and always launch through MO2.
   Do not launch through Steam.
   Otherwise, your mods will not load.
-  (**TODO: Describe how to add F4SEVR in MO2**)
+
+  The following steps will tell MO2 how to launch F4SEVR.
+  1. In MO2, in the main menu, click "Tools" and then "Executables",
+  2. in the list on the left, select "Fallout 4 VR",
+  3. above the list on the left, click the plus icon, and choose "Clone selected",
+  4. on the right, change "Title" to "F4SEVR",
+  5. on the right, in "Binary", replace `Fallout4VR.exe` with `f4sevr_loader.exe`, and
+  6. in the bottom-right, click "OK" to close the dialog,
+
+  To launch F4SEVR (and thus the game) from MO2, click the dropdown menu with "Fallout 4 VR" and select "F4SEVR".
+  Then simply press "Run".
 * Unplug any controllers/gamepads you don't want to use before launching the game.
   FO4(VR) does not support multiple controllers at the same time, and gets confused when you try.
 * Start your VR controllers before launching the game.
@@ -833,12 +848,13 @@ This section will take you through the entire process.
 * Quicksaves are unreliable and are sometimes broken.
   Autosaves are slightly better, but I still wouldn't rely on them.
   Save manually and save often.
-  You can also install [Survival Options](https://www.nexusmods.com/fallout4/mods/14650) and
+  As covered by this guide, I recommend that you install [Survival Options](https://www.nexusmods.com/fallout4/mods/14650) and
   [configure the mod](#configure-mods) to perform a manual save at specific moments.
 * Do not open your Pip-Boy while your flashlight is on.
   Doing so may cause the game to crash.
-* Swimming sucks ass in VR.
-  Avoid water.
+* Swimming sucks ass in VR;
+  you have to stick out your arms in front of you, hold both triggers, and pull your arms towards you, releasing the triggers while your arms are still moving.
+  Unlike in Skyrim VR, you cannot disable this.
 
 ## 5.2 Configure controls<a name="configure-controls"></a> <small><sup>[top ▲](#toc)</sup></small>
 This section applies to Valve Index controllers only.
