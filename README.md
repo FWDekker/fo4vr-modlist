@@ -29,7 +29,10 @@ However, I mostly avoided mods that negatively affect performance.
 **Support**  
 If you don't understand something, experience in-game issues, have suggestions, or just need some help,
 [check out the Discussions page](https://github.com/FWDekker/fo4vr-modlist/discussions) or
-[open an issue](https://github.com/FWDekker/fo4vr-modlist/issues). 
+[open an issue](https://github.com/FWDekker/fo4vr-modlist/issues).
+
+> [!TIP]
+> Use the hamburger menu (≡) in the top-right corner to easily navigate between sections.
 
 ---
 
@@ -41,7 +44,6 @@ If you don't understand something, experience in-game issues, have suggestions, 
 | [**5 Playing the game**](#playing-the-game)
 
 ---
-
 
 # 1 How to read this guide<a name="how-to-read"></a> <small><sup>[top ▲](#toc)</sup></small>
 > [!TIP]
@@ -240,7 +242,7 @@ To edit these settings,
 3. in the main menu, click "Tools", then "Tool Plugins", and then "INI Editor", and
 4. select the tab `fallout4custom.ini`.
 
-### 3.2.1 How does an INI file work?
+### 3.2.1 How does an INI file work? <small><sup>[top ▲](#toc)</sup></small>
 Take a look at the tab `fallout4.ini` to get a feel of what an INI looks like.
 
 INI files obey the following rules.
@@ -259,7 +261,7 @@ INI files obey the following rules.
   If you start section `[Display]`, then start section `[VR]`, and then again start section `[Display]`, the settings in
   the second `[Display]` section are ignored.
 
-### 3.2.2 Settings you should add
+### 3.2.2 Settings you should add <small><sup>[top ▲](#toc)</sup></small>
 > [!IMPORTANT]
 > The following changes should go into `fallout4custom.ini`.
 
@@ -344,7 +346,7 @@ bUseWandDirectionalMovement=0
 bShowTutorials=0
 ```
 
-### 3.2.3 All non-optional configs<a name="ini-configuration-combined"></a>
+### 3.2.3 All non-optional configs<a name="ini-configuration-combined"></a> <small><sup>[top ▲](#toc)</sup></small>
 The block below contains all non-optional configs from Section 3.2.2.
 You can copy-paste it into your `fallout4custom.ini` file.
 You don't need to keep the old contents, just overwrite it with the block below.
@@ -379,7 +381,7 @@ fVrSwimHMDFloatThreshold=0.7200
 bVrSwimDeliberateResurface=1
 ```
 
-### 3.2.4 Additional settings
+### 3.2.4 Additional settings <small><sup>[top ▲](#toc)</sup></small>
 Above are the settings that I used.
 There's many more settings you can tweak.
 Here's a bunch of other resources that may be useful for you.
@@ -821,7 +823,7 @@ Finally, you'll need to configure a few final mods.
 This section will take you through the entire process.
 
 ## 5.1 General tips<a href="general-tips"></a> <small><sup>[top ▲](#toc)</sup></small>
-### 5.1.1 Launching
+### 5.1.1 Launching <small><sup>[top ▲](#toc)</sup></small>
 * Always launch F4SEVR, and always launch through MO2.
   Do not launch through Steam.
   Otherwise, your mods will not load.
@@ -844,7 +846,7 @@ This section will take you through the entire process.
   This is necessary because the game is trying to show you a warning that you've removed a mod that the save relies on,
   but for some reason this warning is invisible in the main menu (but works correctly after loading another save).
 
-### 5.1.2 Playing
+### 5.1.2 Playing <small><sup>[top ▲](#toc)</sup></small>
 * Quicksaves are unreliable and are sometimes broken.
   Autosaves are slightly better, but I still wouldn't rely on them.
   Save manually and save often.
@@ -984,7 +986,7 @@ can quickly set up new settlements whenever you find one.
 > If the cutscene makes you nauseous, I recommend simply taking off your headset and checking your monitor when it's
 > done.
 
-### 5.4.7 IDEK's Logistics Station 2<a href="configure-ideks-logistics-station-2"></a>
+### 5.4.7 IDEK's Logistics Station 2<a href="configure-ideks-logistics-station-2"></a> <small><sup>[top ▲](#toc)</sup></small>
 The essential parts of this mod require zero configuration.
 However, if you want to easily move items between settlements, you'll need to tell this mod what your main settlement
 is.
