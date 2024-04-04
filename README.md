@@ -1,5 +1,5 @@
 ﻿# Florine's Fallout 4 VR
-_Last updated: 2024-04-01_
+_Version 1.0.0, see the [CHANGELOG.md](CHANGELOG.md)_
 
 > A thorough, beginner-friendly guide for a stable, vanilla-ish experience.
 
