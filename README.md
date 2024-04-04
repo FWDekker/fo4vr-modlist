@@ -22,9 +22,14 @@ good, but too non-vanilla for my tastes.
 Meanwhile, my list only deviates from vanilla when I think there's a very good reason, like replacing VATS with bullet
 time because the former just isn't nice in VR.
 
-**Performance**  
-I didn't really focus on performance because I have a powerful PC.
-However, I mostly avoided mods that negatively affect performance.
+**Limitations**  
+I did my best to make my guide universally applicable to all players.
+Still, there's a few limitations which you should keep in mind.
+
+* I didn't really focus on performance, because I have a powerful PC.
+  However, I mostly avoided mods that negatively affect performance.
+* I personally run a Valve Index and use an AMD GPU.
+  This is irrelevant for the vast majority of this guide, except [when including external libraries](#external-libraries).
 
 **Support**  
 If you don't understand something, experience in-game issues, have suggestions, or just need some help,
