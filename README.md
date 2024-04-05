@@ -488,6 +488,14 @@ These are essentially toolkits that directly alter the game engine, and are requ
      2. Go to "Files", click "Manual download", and again click "Download".
      3. Extract the downloaded file into `[fo4vr_dir]`.
      4. If you did this correctly, you should have the file `IpHlpAPI.dll` in the same directory as `Fallout4VR.exe`.
+5. **[Binaural 3D Surround Sound for Headphones - HRTF](https://www.nexusmods.com/fallout4/mods/39692)** (v2.4) <sub>![recommended]</sub>  
+   Adds binaural sound, allowing you to more accurately pinpoint the source of a sound by the sound alone.
+   The difference is quite subtle, and people who often play headphones may not even notice the difference, but this might give FO4VR's sound that extra bit of realism that makes the difference for you.
+   * **Installation instructions:**
+     1. Go to the [NexusMods page](https://www.nexusmods.com/fallout4/mods/39692).
+     2. Go to "Files", click "Manual download" at the main file, and again click "Download".
+     3. Extract the downloaded file into `[fo4vr_dir]`.
+     4. If you did this correctly, you should have the file `x3daudio1_7.dll` in the same directory as `Fallout4VR.exe`.
 
 > [!NOTE]
 > From now on, all listed mods should be downloaded and installed through MO2.
@@ -533,12 +541,12 @@ These mods fix bugs, either in the base game or in other mods.
    If you wear power armour and fall from a height, you will create a shock wave that damages NPCs around you.
    Friendly NPCs damaged this way may become hostile, even if you do so by accident.
    This mod ensures that you do not accidentally turn friendly NPCs hostile this way.
-9. **[Radio Reverb Fix](https://www.nexusmods.com/fallout4/mods/16563)** (v1) <sub>![recommended]</sub>  
-   Applies reverb to your radio when applicable.
-   * **Variant:** "Subtle" _or_ main file
-10. **[Bird Fix](https://www.nexusmods.com/fallout4/mods/45429)** (v1) <sub>![required]</sub>  
-    Fixes a bug where birds are _always_ flying into buildings for some reason.
-    * **Note:** You can ignore the listed dependencies.
+9. **[Bird Fix](https://www.nexusmods.com/fallout4/mods/45429)** (v1) <sub>![required]</sub>  
+   Fixes a bug where birds are _always_ flying into buildings for some reason.
+   * **Note:** You can ignore the listed dependencies.
+10. **[Radio Reverb Fix](https://www.nexusmods.com/fallout4/mods/16563)** (v1) <sub>![optional]</sub>  
+    Applies reverb to your radio when applicable.
+    * **Variant:** "Subtle" _or_ main file
 
 ## 4.4 Performance<a name="performance"></a> <small><sup>[top ▲](#toc)</sup></small>
 FO4VR is notorious for having sub-par performance.
