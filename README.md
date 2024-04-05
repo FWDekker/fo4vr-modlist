@@ -300,7 +300,8 @@ To enable supersampling, use the SteamVR settings.
 fRenderTargetSizeMultiplier=1.0
 ```
 
-**Fix glowing hair** <sub>![required]</sub>
+**Fix glowing hair** <sub>![required]</sub>  
+Fixes a bug where hair appears with the wrong colour or glows in the dark.
 ```ini
 [HairLighting]
 fHairPrimSpecPow=2.0
@@ -561,6 +562,7 @@ Personally, I eventually disabled these because I preferred higher graphical qua
      If you're lazy, just spam "Next".
 2. **[Visible Galaxy 4k and Framework](https://www.nexusmods.com/fallout4/mods/19127)** (v1.0) <sub>![required]</sub>
    * **Variant:** "Visible Galaxy"
+   * **Note:** Required only because it's required by the mod below.
 3. **[Fallout 4 HD Overhaul 2k](https://www.nexusmods.com/fallout4/mods/65720)** (v1.0 / v1.01) <sub>![required]</sub>  
    FO4VR's default textures are too ugly for VR, and the high-resolution texture pack is (supposedly) too
    VRAM-consuming.
@@ -570,7 +572,7 @@ Personally, I eventually disabled these because I preferred higher graphical qua
 4. **[Vivid Fallout - All in One](https://www.nexusmods.com/fallout4/mods/25714)** (v1.9) <sub>![recommended]</sub>  
    Adds even nicer textures, but may have some performance impact.
    * **Variant:** "Best choice"
-5. **[Water Enhanced](https://www.nexusmods.com/fallout4/mods/3281)** (v1) <sub>![required]</sub>  
+5. **[Water Enhanced](https://www.nexusmods.com/fallout4/mods/3281)** (v1) <sub>![recommended]</sub>  
    Improves water textures.
    * **Variant:** "2K Water"
 6. **[Detailed Feral Ghouls](https://www.nexusmods.com/fallout4/mods/20555)** (v3.1) <sub>![recommended]</sub>
@@ -658,7 +660,7 @@ What we're left with is a single UI mod, which actually works fine.
    * **Variant:** "nocollide actors"
 3. **[Realistic Death Physics - No Animations](https://www.nexusmods.com/fallout4/mods/4371)** (v1.2) <sub>![recommended]</sub>
    * **Variant:** "Vanilla Animations" (even if you have DLC)
-4. **[PipBoy VR light](https://www.nexusmods.com/fallout4/mods/29245)** (v1.1) <sub>![required]</sub>  
+4. **[PipBoy VR light](https://www.nexusmods.com/fallout4/mods/29245)** (v1.1) <sub>![recommended]</sub>  
    In VR, the default Pip-Boy light (the "flashlight") is just a weak glow around you.
    I really liked the flashlight in Half-Life: Alyx.
    This mod changes the shape of the Pip-Boy's light to be like a flashlight, and does so with no performance overhead.
@@ -717,7 +719,7 @@ The following selection of mods is a combination of important fixes and subjecti
    The game shows some visual effects at 20% health left, but that's usually too late.
    This mod increases that threshold to 50%.
    * **Variant:** "50"
-7. **[More Noticeable Hit Effect](https://www.nexusmods.com/fallout4/mods/6157)** (v1.0) <sub>![required]</sub>  
+7. **[More Noticeable Hit Effect](https://www.nexusmods.com/fallout4/mods/6157)** (v1.0) <sub>![recommended]</sub>  
    I noticed that during fights I usually had no idea if bullets were flying past me or into me.
    This mod makes it much more noticeable when you are being hit.
    * **Variant:** "aMedium"
