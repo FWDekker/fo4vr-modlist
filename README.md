@@ -300,6 +300,17 @@ To enable supersampling, use the SteamVR settings.
 fRenderTargetSizeMultiplier=1.0
 ```
 
+**Fix glowing hair** <sub>![required]</sub>
+```ini
+[HairLighting]
+fHairPrimSpecPow=2.0
+fHairPrimSpecScale=0.01
+fHairPrimSpecShift=0.26
+fHairSecSpecScale=0.01
+fHairSecSpecPow=2.0
+fHairSecSpecShift=0.26
+```
+
 **Improve TAA performance/quality trade-off** <sub>![recommended]</sub>  
 Most other FO4VR guides recommend these same values.
 ```ini
@@ -316,6 +327,13 @@ fTAAPostOverlay=0.675
 [Display]
 uPipboyTargetHeight=1400
 uPipboyTargetWidth=1752
+```
+
+**Increase UI rendering quality** <sub>![recommended]</sub>
+```ini
+[VRUI]
+iVRUIRenderTargetHeight=4096
+iVRUIRenderTargetWidth=4096
 ```
 
 **Allow sprinting regardless of head orientation** <sub>![recommended]</sub>
@@ -367,6 +385,13 @@ sResourceStartUpArchiveList=Fallout4 - Startup.ba2, Fallout4 - Shaders.ba2, Fall
 sResourceIndexFileList=Fallout4 - Textures1.ba2, Fallout4 - Textures2.ba2, Fallout4 - Textures3.ba2, Fallout4 - Textures4.ba2, Fallout4 - Textures5.ba2, Fallout4 - Textures6.ba2, Fallout4 - Textures7.ba2, Fallout4 - Textures8.ba2, Fallout4 - Textures9.ba2, Fallout4_VR - Main.ba2, Fallout4_VR - Textures.ba2
 [VRDisplay]
 fRenderTargetSizeMultiplier=1.0
+[HairLighting]
+fHairPrimSpecPow=2.0
+fHairPrimSpecScale=0.01
+fHairPrimSpecShift=0.26
+fHairSecSpecScale=0.01
+fHairSecSpecPow=2.0
+fHairSecSpecShift=0.26
 [Display]
 fTAAPostSharpen=0.675
 fTAASharpen=1.0000
@@ -375,6 +400,9 @@ fTAALowFreq=0.5000
 fTAAPostOverlay=0.675
 uPipboyTargetHeight=1400
 uPipboyTargetWidth=1752
+[VRUI]
+iVRUIRenderTargetHeight=4096
+iVRUIRenderTargetWidth=4096
 [Controls]
 fSprintStopDirectionThresholdDegrees=360.0000
 [Workshop]
