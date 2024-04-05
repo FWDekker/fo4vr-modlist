@@ -704,26 +704,20 @@ The following selection of mods is a combination of important fixes and subjecti
    * **Requires:** FO4FH _and_ FO4NW
    * **Note:** [In-game configuration required.](#configure-mods)
 4. **[Critical Hits Outside of VATS](https://www.nexusmods.com/fallout4/mods/12653)** (v1.1.3) <sub>![required]</sub>  
-   The above Bullet Time mod actually disables VATS, and thus completely removes critical hits from the game.
-   This mod allows you to score critical hits again, even outside of bullet time.
-5. **[Hip-Fire Perk Replacers](https://www.nexusmods.com/fallout4/mods/40702)** (v1.2) <sub>![required]</sub>  
-   In vanilla, hip-fire is when you shoot without aiming down the sights.
-   In VR, hip-fire doesn't exist.
-   As a result, hip-fire perks are useless.
-   This mod makes those perks useful again.
-   * **Variant:** depends on your DLC
-6. **[Weapon Accuracy Redone for VR](https://www.nexusmods.com/fallout4/mods/40669)** (v1.0) <sub>![required]</sub>  
+   The above Bullet Time mod internally works by disabling VATS, and thus (almost) completely removes critical hits from the game.
+   This mod makes it so all hits have a small chance of being a critical hit, even outside of bullet time.
+5. **[Weapon Accuracy Redone for VR](https://www.nexusmods.com/fallout4/mods/40669)** (v1.0) <sub>![required]</sub>  
    In VR it's super annoying if you're clearly aiming at an enemy and then the game decides the shot didn't hit because
-   of some random die.
+   of some random die roll.
    This mod reduces weapon spread and recoil to make accuracy in VR more rewarding.
    * **Variant:** depends on your DLC
-7. **[Better Low Health](https://www.nexusmods.com/fallout4/mods/6018)** (v1.0) <sub>![recommended]</sub>  
+6. **[Better Low Health](https://www.nexusmods.com/fallout4/mods/6018)** (v1.0) <sub>![recommended]</sub>  
    Your health bar is visible on the inside of your wrist, but that's also where you're holding your gun, so during
    combat you typically don't really know how much health you have left.
    The game shows some visual effects at 20% health left, but that's usually too late.
    This mod increases that threshold to 50%.
    * **Variant:** "50"
-8. **[More Noticeable Hit Effect](https://www.nexusmods.com/fallout4/mods/6157)** (v1.0) <sub>![required]</sub>  
+7. **[More Noticeable Hit Effect](https://www.nexusmods.com/fallout4/mods/6157)** (v1.0) <sub>![required]</sub>  
    I noticed that during fights I usually had no idea if bullets were flying past me or into me.
    This mod makes it much more noticeable when you are being hit.
    * **Variant:** "aMedium"
