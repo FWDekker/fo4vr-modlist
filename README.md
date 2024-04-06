@@ -29,7 +29,8 @@ Still, there's a few limitations which you should keep in mind.
 * I didn't really focus on performance, because I have a powerful PC.
   However, I mostly avoided mods that negatively affect performance.
 * I personally run a Valve Index and use an AMD GPU.
-  This is irrelevant for the vast majority of this guide, except [when including external libraries](#external-libraries).
+  This is irrelevant for the vast majority of this guide, except
+  [when including external libraries](#external-libraries).
 
 **Support**  
 If you're experiencing in-game issues, check the [issues and solutions](#issues-and-solutions).
@@ -52,17 +53,18 @@ If you don't understand something, experience in-game issues, have suggestions, 
 
 ---
 
+
+
 # 1 How to read this guide<a name="how-to-read"></a> <small><sup>[top ▲](#toc)</sup></small>
 > [!TIP]
 > Read this guide carefully.
 
 This section deals with the basics:
-[Why FO4VR modding is difficult](#about-modding-fo4vr),
-[how this guide deals with version numbers](#about-version-numbers),
-[how to pick and choose mods from this guide](#about-tags),
-and [common abbreviations](#abbreviations).
+Why FO4VR modding is difficult ([Section 1.1](#about-modding-fo4vr)), how this guide deals with version numbers
+([Section 1.2](#about-version-numbers)), how to pick and choose mods from this guide ([Section 1.3](#about-tags)), and
+common abbreviations ([Section 1.4](#abbreviations)).
 
-## 1.1 About modding Fallout 4 VR<a name="about-modding-fo4vr"></a> <small><sup>[top ▲](#toc)</sup></small>
+## 1.1 About modding Fallout 4 VR<a name="about-modding-fo4vr"></a> <small><sup>[up ▲](#how-to-read)</sup></small>
 When I tried FO4VR without mods, I intensely disliked the experience, and decided I wanted to add mods.
 If you're used to modding Bethesda games, you'll know that it's usually _probably_ fine to just throw a whole bunch of
 mods together, as long as you follow the authors' directions on what mods are incompatible.
@@ -78,7 +80,7 @@ carefully consider whether the benefits outweigh the risks.
 
 This modding guide describes the tradeoffs I made, leaning mostly towards the careful side.
 
-## 1.2 About version numbers<a name="about-version-numbers"></a> <small><sup>[top ▲](#toc)</sup></small>
+## 1.2 About version numbers<a name="about-version-numbers"></a> <small><sup>[up ▲](#how-to-read)</sup></small>
 Whenever I mention a tool or a mod, I will write down which version and variant I used.
 For example, I might write "F4SEVR (v0.6.20)" to mean that I downloaded version 0.6.20 of
 [F4SEVR](https://f4se.silverlock.org/).
@@ -87,7 +89,7 @@ If the version I wrote down is still the latest version when you're reading this
 If a newer version exists, and I don't explicitly mention you should download the version I mention, then you'll have to
 judge for yourself whether it's more likely the update will _fix_ bugs or will _add_ bugs.
 
-## 1.3 About tags<a name="about-tags"></a> <small><sup>[top ▲](#toc)</sup></small>
+## 1.3 About tags<a name="about-tags"></a> <small><sup>[up ▲](#how-to-read)</sup></small>
 Some choices I make are more vanilla than others, and some choices make sense for people who already played Fallout 4,
 but make no sense for first-time Fallout 4 players.
 Therefore, I will tag tools and mods to let you know what to expect.
@@ -99,7 +101,7 @@ Here is a list of tags.
 | ![recommended] | Good for all players. Install this, unless you seriously disagree. |
 | ![optional]    | Good, but personal preference. Install if you want.                |
 
-## 1.4 Abbreviations<a name="abbreviations"></a> <small><sup>[top ▲](#toc)</sup></small>
+## 1.4 Abbreviations<a name="abbreviations"></a> <small><sup>[up ▲](#how-to-read)</sup></small>
 | Abbreviation      | Meaning                                     | Example                                   |
 |-------------------|---------------------------------------------|-------------------------------------------|
 | **FO4VR**         | Fallout 4 VR                                |                                           |
@@ -113,11 +115,13 @@ Here is a list of tags.
 | **`[username]`**  | Your Windows username                       | `florine`                                 |
 
 
-# 2 Setup<a name="setup"></a> <small><sup>[top ▲](#toc)</sup></small>
-Before you can start modding FO4VR, you need to make sure you have a clean install and have the right software
-installed.
 
-## 2.1 Removing old files<a name="removing-old-files"></a> <small><sup>[top ▲](#toc)</sup></small>
+# 2 Setup<a name="setup"></a> <small><sup>[top ▲](#toc)</sup></small>
+Before you can start modding FO4VR, you need to make sure you have a clean install ([Section 2.1](#removing-old-files)),
+have the right software installed ([Section 2.2](#software-requirements)), and, if you want, added the DLC to FO4VR
+([Section 2.3](#using-dlc-in-fo4vr)).
+
+## 2.1 Removing old files<a name="removing-old-files"></a> <small><sup>[up ▲](#setup)</sup></small>
 > [!TIP]
 > If you haven't installed FO4VR yet, check the [software requirements](#software-requirements) to learn the correct
 > installation directory.
@@ -142,7 +146,7 @@ You can remove old files as follows.
    2. In Steam, verify the integrity of FO4VR's game files.
       ([Check Steam's help pages to learn how.](https://help.steampowered.com/en/faqs/view/0C48-FCBD-DA71-93EB))
 
-## 2.2 Software requirements<a name="software-requirements"></a> <small><sup>[top ▲](#toc)</sup></small>
+## 2.2 Software requirements<a name="software-requirements"></a> <small><sup>[up ▲](#setup)</sup></small>
 > [!WARNING]
 > You should install FO4VR into the right directory.
 > Read this section carefully!
@@ -176,10 +180,11 @@ You can remove old files as follows.
       It doesn't really matter which you choose.
     * Enable profile-specific INIs.
     * Enable profile-specific saves.
-* **[Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist)** ([direct link](https://aka.ms/vs/17/release/vc_redist.x64.exe)) <sub>![required]</sub>
+* **[Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist)**
+  ([direct link](https://aka.ms/vs/17/release/vc_redist.x64.exe)) <sub>![required]</sub>
 * **[7-Zip](https://7-zip.org/)** <sub>![required]</sub>
 
-## 2.3 Using DLC in FO4VR<a name="using-dlc-in-fo4vr"></a> <small><sup>[top ▲](#toc)</sup></small>
+## 2.3 Using DLC in FO4VR<a name="using-dlc-in-fo4vr"></a> <small><sup>[up ▲](#setup)</sup></small>
 FO4VR does not include the DLC, which sucks.
 Luckily, if you have non-VR FO4, you can just copy the DLC files into your FO4VR installation and then install a few
 patches (included in the [mod list](#list-of-mods)).
@@ -191,6 +196,7 @@ To copy non-VR FO4's DLC into FO4VR,
 3. copy those files to `[fo4vr_dir]\Data\`.
 
 
+
 # 3 Configuration<a name="configuration"></a> <small><sup>[top ▲](#toc)</sup></small>
 You should now have the required software.
 Before you install mods, there's some settings to tweak.
@@ -200,7 +206,10 @@ These settings relate to stability, visual quality, and performance.
 > Even if you skip these steps, at least launch the game once.
 > This will set up important files and registry entries.
 
-## 3.1 Basic settings<a name="basic-settings"></a> <small><sup>[top ▲](#toc)</sup></small>
+We start by navigating a few settings menus ([Section 3.1](#basic-configuration)), and then we do some more detailed 
+adjustments using INI configuration ([Section 3.2](#ini-configuration)).
+
+## 3.1 Basic configuration<a name="basic-configuration"></a> <small><sup>[up ▲](#configuration)</sup></small>
 1. **Steam**  
    Go to the settings for Fallout 4 VR.
    Go to "General" and disable "Enable the Steam Overlay while in-game".  
@@ -240,7 +249,7 @@ These settings relate to stability, visual quality, and performance.
       | Anisotropic filtering | 16    |
       | Character lighting    | Off   |
 
-## 3.2 INI configuration<a name="ini-configuration"></a> <small><sup>[top ▲](#toc)</sup></small>
+## 3.2 INI configuration<a name="ini-configuration"></a> <small><sup>[up ▲](#configuration)</sup></small>
 INI files contain extra game settings that are not found in the game's menus.
 
 To edit these settings,
@@ -249,7 +258,7 @@ To edit these settings,
 3. in the main menu, click "Tools", then "Tool Plugins", and then "INI Editor", and
 4. select the tab `fallout4custom.ini`.
 
-### 3.2.1 How does an INI file work? <small><sup>[top ▲](#toc)</sup></small>
+### 3.2.1 How does an INI file work? <small><sup>[up ▲](#ini-configuration)</sup></small>
 Take a look at the tab `fallout4.ini` to get a feel of what an INI looks like.
 
 INI files obey the following rules.
@@ -268,7 +277,7 @@ INI files obey the following rules.
   If you start section `[Display]`, then start section `[VR]`, and then again start section `[Display]`, the settings in
   the second `[Display]` section are ignored.
 
-### 3.2.2 Settings you should add <small><sup>[top ▲](#toc)</sup></small>
+### 3.2.2 Settings you should add <small><sup>[up ▲](#ini-configuration)</sup></small>
 > [!IMPORTANT]
 > The following changes should go into `fallout4custom.ini`.
 
@@ -372,7 +381,7 @@ bUseWandDirectionalMovement=0
 bShowTutorials=0
 ```
 
-### 3.2.3 All non-optional configs<a name="ini-configuration-combined"></a> <small><sup>[top ▲](#toc)</sup></small>
+### 3.2.3 All non-optional configs<a name="ini-configuration-combined"></a> <small><sup>[up ▲](#ini-configuration)</sup></small>
 The block below contains all non-optional configs from Section 3.2.2.
 You can copy-paste it into your `fallout4custom.ini` file.
 You don't need to keep the old contents, just overwrite it with the block below.
@@ -417,8 +426,8 @@ fVrSwimHMDFloatThreshold=0.7200
 bVrSwimDeliberateResurface=1
 ```
 
-### 3.2.4 Additional settings <small><sup>[top ▲](#toc)</sup></small>
-Above are the settings that I used.
+### 3.2.4 Additional INI settings <small><sup>[up ▲](#ini-configuration)</sup></small>
+Above are the INI settings that I used.
 There's many more settings you can tweak.
 Here's a bunch of other resources that may be useful for you.
 
@@ -434,7 +443,10 @@ Here's a bunch of other resources that may be useful for you.
 > Make sure you know [what the abbreviations mean](#abbreviations) and understand
 > [the relevance of version numbers](#about-version-numbers).
 
-## 4.1 External libraries<a name="external-libraries"></a> <small><sup>[top ▲](#toc)</sup></small>
+> [!TIP]
+> Use the hamburger menu (≡) in the top-right corner to easily navigate between sections.
+
+## 4.1 External libraries<a name="external-libraries"></a> <small><sup>[up ▲](#list-of-mods)</sup></small>
 First of all, here's a few required mods/tools.
 These are essentially toolkits that directly alter the game engine, and are required by many other mods.
 
@@ -506,8 +518,9 @@ These are essentially toolkits that directly alter the game engine, and are requ
      3. Extract the downloaded file into `[fo4vr_dir]`.
      4. If you did this correctly, you should have the file `IpHlpAPI.dll` in the same directory as `Fallout4VR.exe`.
 5. **[Binaural 3D Surround Sound for Headphones - HRTF](https://www.nexusmods.com/fallout4/mods/39692)** (v2.4) <sub>![recommended]</sub>  
-   Adds binaural sound, allowing you to more accurately pinpoint the source of a sound by the sound alone.
-   The difference is quite subtle, and people who often play headphones may not even notice the difference, but this might give FO4VR's sound that extra bit of realism that makes the difference for you.
+   Adds binaural sound, allowing you to more accurately pinpoint the source of a sound.
+   The difference is quite subtle (people who often game headphones may not notice the difference), but for some people
+   it makes a big difference in immersion.
    * **Installation instructions:**
      1. Go to the [NexusMods page](https://www.nexusmods.com/fallout4/mods/39692).
      2. Go to "Files", click "Manual download" at the main file, and again click "Download".
@@ -517,7 +530,7 @@ These are essentially toolkits that directly alter the game engine, and are requ
 > [!NOTE]
 > From now on, all listed mods should be downloaded and installed through MO2.
 
-## 4.2 Libraries<a name="libraries"></a> <small><sup>[top ▲](#toc)</sup></small>
+## 4.2 Libraries<a name="libraries"></a> <small><sup>[up ▲](#list-of-mods)</sup></small>
 These mods provide utilities used in other mods.
 These do not affect your game directly, but are required by many other mods.
 
@@ -525,7 +538,7 @@ These do not affect your game directly, but are required by many other mods.
 2. **[VR Address Library for F4SEVR](https://www.nexusmods.com/fallout4/mods/64879)** (v1.6.1) <sub>![required]</sub>
 3. **[Fallout4 VR Tools](https://www.nexusmods.com/fallout4/mods/45167)** (v0.1) <sub>![required]</sub>
 
-## 4.3 Stability and Patches<a name="stability-and-patches"></a> <small><sup>[top ▲](#toc)</sup></small>
+## 4.3 Stability and Patches<a name="stability-and-patches"></a> <small><sup>[up ▲](#list-of-mods)</sup></small>
 These mods fix bugs, either in the base game or in other mods.
 
 1. **[Fallout 4 Version Check Patcher](https://www.nexusmods.com/fallout4/mods/42497)** (v1.00) <sub>![required]</sub>  
@@ -565,7 +578,7 @@ These mods fix bugs, either in the base game or in other mods.
     Applies reverb to your radio when applicable.
     * **Variant:** "Subtle" _or_ main file
 
-## 4.4 Performance<a name="performance"></a> <small><sup>[top ▲](#toc)</sup></small>
+## 4.4 Performance<a name="performance"></a> <small><sup>[up ▲](#list-of-mods)</sup></small>
 FO4VR is notorious for having sub-par performance.
 The following mods help improve performance.
 If you notice after some playing that you have high FPS, you can consider disabling these for (arguably) more
@@ -578,7 +591,7 @@ Personally, I eventually disabled these because I preferred higher graphical qua
 2. **[FAR - Faraway Area Reform](https://www.nexusmods.com/fallout4/mods/20713)** (v1.2) <sub>![recommended]</sub>
    * **Variant:** "Default Resolution"
 
-## 4.5 Graphics<a name="graphics"></a> <small><sup>[top ▲](#toc)</sup></small>
+## 4.5 Graphics<a name="graphics"></a> <small><sup>[up ▲](#list-of-mods)</sup></small>
 1. **[Burst Impact Blast FX](https://www.nexusmods.com/fallout4/mods/57789)** (v9.51 + v0.952) <sub>![recommended]</sub>
    * **Requires:** FO4AU _and_ FO4FH _and_ FO4NW
    * **Variant:** main file _and_ "BIB-FX Fixed Bloatfly's too-large effect"
@@ -606,7 +619,7 @@ Personally, I eventually disabled these because I preferred higher graphical qua
    Changes (non-feral) ghoul textures to look more like ghouls from Fallout 3.
    * **Patch:** [UFO4P and LotC patch](https://www.nexusmods.com/fallout4/mods/79713) (v1-1.0.4)
 
-## 4.6 Lighting<a name="lighting"></a> <small><sup>[top ▲](#toc)</sup></small>
+## 4.6 Lighting<a name="lighting"></a> <small><sup>[up ▲](#list-of-mods)</sup></small>
 By default, the world looks _really_ overexposed, which makes the outside like outright ugly.
 I used a combination of mods recommended by [dropadred](https://www.reddit.com/user/dropadred/), as
 [described in this thread](https://www.reddit.com/r/fo4vr/comments/r8rrsm/).
@@ -631,7 +644,7 @@ I used a combination of mods recommended by [dropadred](https://www.reddit.com/u
 5. **[Interiors Enhanced - Darker Ambient Light and Fog](https://www.nexusmods.com/fallout4/mods/8768)** (v2.0) <sub>![required]</sub>
    * **Variant:** depends on your DLC
 
-## 4.7 Sound<a name="sound"></a> <small><sup>[top ▲](#toc)</sup></small>
+## 4.7 Sound<a name="sound"></a> <small><sup>[up ▲](#list-of-mods)</sup></small>
 The sound is actually fine in VR.
 However, it doesn't hurt to improve sound effects for VR, and to add more high-quality music. 
 
@@ -650,7 +663,7 @@ However, it doesn't hurt to improve sound effects for VR, and to add more high-q
    Replaces Geiger counter sounds to be more intense.
    * **Variant:** "Quieter Version" _or_ "Main File"
 
-## 4.8 UI<a name="ui"></a> <small><sup>[top ▲](#toc)</sup></small>
+## 4.8 UI<a name="ui"></a> <small><sup>[up ▲](#list-of-mods)</sup></small>
 The UI in VR is unintuitive to navigate, and the key bindings shown in the UI are usually incorrect.
 Unfortunately, there are currently no good UI mods for VR.
 [FallUI](https://www.nexusmods.com/fallout4/mods/48758) (v2.2.1) sort of works, but suffers from a variety of bugs in
@@ -670,7 +683,7 @@ What we're left with is a single UI mod, which actually works fine.
      file `MultiActivateMenu.swf`.
      This fixes a VR-specific bug where no icons are shown when talking with followers.
 
-## 4.9 Gameplay<a name="gameplay"></a> <small><sup>[top ▲](#toc)</sup></small>
+## 4.9 Gameplay<a name="gameplay"></a> <small><sup>[up ▲](#list-of-mods)</sup></small>
 1. **[FRIK - Full Player Body with IK](https://www.nexusmods.com/fallout4/mods/53464)** (v0.58) <sub>![required]</sub>  
    Allows you to see your hands.
    Absolutely required for immersion.
@@ -705,7 +718,7 @@ What we're left with is a single UI mod, which actually works fine.
    Pretty cool.
    * **Variant:** depends on your DLC
 
-## 4.10 Combat<a name="combat"></a> <small><sup>[top ▲](#toc)</sup></small>
+## 4.10 Combat<a name="combat"></a> <small><sup>[up ▲](#list-of-mods)</sup></small>
 Combat in VR is a mixed experience.
 Many parts are fine, but a few important parts are very, very wrong.
 The following selection of mods is a combination of important fixes and subjective rebalancing.
@@ -734,7 +747,8 @@ The following selection of mods is a combination of important fixes and subjecti
    * **Requires:** FO4FH _and_ FO4NW
    * **Note:** [In-game configuration required.](#configure-mods)
 4. **[Critical Hits Outside of VATS](https://www.nexusmods.com/fallout4/mods/12653)** (v1.1.3) <sub>![required]</sub>  
-   The above Bullet Time mod internally works by disabling VATS, and thus (almost) completely removes critical hits from the game.
+   The above Bullet Time mod internally works by disabling VATS, and thus (almost) completely removes critical hits from
+   the game.
    This mod makes it so all hits have a small chance of being a critical hit, even outside of bullet time.
 5. **[Weapon Accuracy Redone for VR](https://www.nexusmods.com/fallout4/mods/40669)** (v1.0) <sub>![required]</sub>  
    In VR it's super annoying if you're clearly aiming at an enemy and then the game decides the shot didn't hit because
@@ -752,7 +766,7 @@ The following selection of mods is a combination of important fixes and subjecti
    This mod makes it much more noticeable when you are being hit.
    * **Variant:** "aMedium"
 
-## 4.11 Difficulty / Survival<a name="difficulty-survival"></a> <small><sup>[top ▲](#toc)</sup></small>
+## 4.11 Difficulty / Survival<a name="difficulty-survival"></a> <small><sup>[up ▲](#list-of-mods)</sup></small>
 Fallout 4 is not a difficult game, even at higher difficulties.
 In VR, it only gets easier.
 Mods in this category affect the difficulty.
@@ -802,7 +816,7 @@ Some (but not all) of them assume you play in Survival mode, which I recommend y
     * **Variant:** depends on your DLC
     * **Patch:** [UFO4P and item name patch](https://www.nexusmods.com/fallout4/mods/79708) (v1.1-1.0.3)
 
-## 4.12 Settlements<a name="settlements"></a> <small><sup>[top ▲](#toc)</sup></small>
+## 4.12 Settlements<a name="settlements"></a> <small><sup>[up ▲](#list-of-mods)</sup></small>
 I think Fallout 4's settlements are very flawed.
 In VR, they are not necessarily _more_ flawed, so the mods in this section aren't VR-specific.
 However, several of these mods require VR-specific tweaks.
@@ -856,6 +870,7 @@ If you don't intend to engage with settlements at all, you can skip this section
    * **Variant:** main file _and_ "Crafting add-on"
 
 
+
 # 5 Playing the game<a name="playing-the-game"></a> <small><sup>[top ▲](#toc)</sup></small> 
 > [!CAUTION]
 > Make sure [FRIK](https://www.nexusmods.com/fallout4/mods/53464) remains disabled until you have exited the vault,
@@ -875,20 +890,16 @@ You're almost there!
 You should now have a good selection of mods from the previous selection installed.
 You should have installed all required mods, probably several recommended mods, and maybe some optional mods.
 
-The plan for this section is as follows:
-* [Section 5.1](#issues-and-solutions):
-  Learn about a few quirks of FO4VR and this mod list that you should be aware of.
-* [Section 5.2](#configure-controls):
-  Configure your control scheme.
-* [Section 5.3](#complete-prologue):
-  Complete the game's prologue.
-* [Section 5.4](#configure-mods):
-  Configure a few final mods in-game.
+In this section you will learn about a few quirks of FO4VR and this mod list that you should be aware of
+([Section 5.1](#issues-and-solutions)), configure your control scheme ([Section 5.2](#configure-controls)), complete the
+game's prologue ([Section 5.3](#complete-prologue)), and finally configure a few final mods in-game
+([Section 5.4](#configure-mods)).
+After that, I promise you can play at your leisure.
 
-## 5.1 Issues and solutions<a href="issues-and-solutions"></a> <small><sup>[top ▲](#toc)</sup></small>
+## 5.1 Issues and solutions<a href="issues-and-solutions"></a> <small><sup>[up ▲](#playing-the-game)</sup></small>
 This section describes some common issues, their solutions, and how to prevent them from happening in the first place.
 
-### 5.1.1 Launching <small><sup>[top ▲](#toc)</sup></small>
+### 5.1.1 Launching <small><sup>[up ▲](#issues-and-solutions)</sup></small>
 * [Recall that you should always launch F4SEVR, and should always launch from MO2.](#external-libraries)
   Otherwise, your mods will not load.
 * Unplug any controllers/gamepads you don't want to use before launching the game.
@@ -899,7 +910,7 @@ This section describes some common issues, their solutions, and how to prevent t
   This is necessary because the game is trying to show you a warning that you've removed a mod that the save relies on,
   but for some reason this warning is invisible in the main menu (but works correctly after loading another save).
 
-### 5.1.2 Saving <small><sup>[top ▲](#toc)</sup></small>
+### 5.1.2 Saving <small><sup>[up ▲](#issues-and-solutions)</sup></small>
 * Quicksaves are unreliable and regularly cause bugs.
   Autosaves are slightly better, but I still wouldn't rely on them.
   Save manually and save often.
@@ -914,7 +925,7 @@ This section describes some common issues, their solutions, and how to prevent t
   then loading that new save.
   (TODO: PERSONALLY test that this is true!)
 
-### 5.1.3 Playing <small><sup>[top ▲](#toc)</sup></small>
+### 5.1.3 Playing <small><sup>[up ▲](#issues-and-solutions)</sup></small>
 * Do not open your Pip-Boy while your flashlight is on.
   Doing so may cause the game to crash.
 * Swimming sucks ass in VR;
@@ -935,7 +946,7 @@ This section describes some common issues, their solutions, and how to prevent t
      4. Navigate to (TODO).
      5. Delete all files in this directory.
 
-## 5.2 Configure controls<a name="configure-controls"></a> <small><sup>[top ▲](#toc)</sup></small>
+## 5.2 Configure controls<a name="configure-controls"></a> <small><sup>[up ▲](#playing-the-game)</sup></small>
 > [!NOTE]
 > This section applies to Valve Index controllers only.
 
@@ -945,7 +956,7 @@ Unfortunately, even after configuring your controls, button prompts in the game 
 You'll have to learn the buttons by heart.
 This is mostly a case of trial and error.
 
-## 5.3 Completing the prologue<a name="complete-prologue"></a> <small><sup>[top ▲](#toc)</sup></small>
+## 5.3 Completing the prologue<a name="complete-prologue"></a> <small><sup>[up ▲](#playing-the-game)</sup></small>
 You can complete the prologue normally, though the experience can be somewhat buggy.
 Here's a small list of troubleshooting tips.
 
@@ -957,15 +968,15 @@ Here's a small list of troubleshooting tips.
 * If that doesn't work for you, if this is too bothersome, use
   [SKK Fast Start new game](https://www.nexusmods.com/fallout4/mods/29227) (v020) to skip the intro.
 
-## 5.4 Configure mods<a name="configure-mods"></a> <small><sup>[top ▲](#toc)</sup></small>
+## 5.4 Configure mods<a name="configure-mods"></a> <small><sup>[up ▲](#playing-the-game)</sup></small>
 After you've exited the vault, there's a few mods you should configure.
 
-### 5.4.1 Backpacks of the Commonwealth <small><sup>[top ▲](#toc)</sup></small>
+### 5.4.1 Backpacks of the Commonwealth <small><sup>[up ▲](#configure-mods)</sup></small>
 As soon as you exit Vault 111, you'll receive a magazine from Backpacks of the Commonwealth.
 After that, you'll also be prompted to enter the spawn rate.
 Enter the recommended rate of 0%.
 
-### 5.4.2 Survival Options <small><sup>[top ▲](#toc)</sup></small>
+### 5.4.2 Survival Options <small><sup>[up ▲](#configure-mods)</sup></small>
 The following settings apply to both survival playthroughs and non-survival playthroughs.
 
 Open your inventory, go to Misc, and use the holotape "\[Settings\] Survival Options Holotape".
@@ -988,7 +999,7 @@ Item".
 This will add a "Save Item" to your inventory, to be found under Aid.
 Favourite the item and put it on your favourite wheel so you can save whenever you want.
 
-### 5.4.3 Bullet Time VATS VR <small><sup>[top ▲](#toc)</sup></small>
+### 5.4.3 Bullet Time VATS VR <small><sup>[up ▲](#configure-mods)</sup></small>
 Open your inventory, go to Misc, and use the holotape "\[Settings - Bullet Time VATS\]".
 Apply the following settings.
 
@@ -997,7 +1008,7 @@ Apply the following settings.
 | Time Dilation                                          | 50%         |
 | Movement Settings Menu > "In Bullet Time V.A.T.S." use | DIRECT MOVE |
 
-### 5.4.4 FRIK <small><sup>[top ▲](#toc)</sup></small>
+### 5.4.4 FRIK <small><sup>[up ▲](#configure-mods)</sup></small>
 > [!WARNING]
 > Make sure [FRIK](https://www.nexusmods.com/fallout4/mods/53464) remains disabled until you have exited the vault.
 
@@ -1015,12 +1026,12 @@ You will need to re-open the holotape several times.
 3. Select "Save Body Position to INI".
    (This also saves your "arms only" setting.)
 
-### 5.4.5 Campsite <small><sup>[top ▲](#toc)</sup></small>
+### 5.4.5 Campsite <small><sup>[up ▲](#configure-mods)</sup></small>
 To activate [Campsite](https://www.nexusmods.com/fallout4/mods/11734), you'll need to find a book
 [somewhere in Sanctuary](https://youtu.be/E7VLBtH4gyA).
 Once you've found the book, you'll be able to craft camping items at any chemistry workbench.
 
-### 5.4.6 Sim Settlements<a href="configure-sim-settlements"></a> <small><sup>[top ▲](#toc)</sup></small>
+### 5.4.6 Sim Settlements<a href="configure-sim-settlements"></a> <small><sup>[up ▲](#configure-mods)</sup></small>
 [Sim Settlements](https://www.nexusmods.com/fallout4/mods/21872) can only be configured after you've played the game 
 a bit.
 Specifically, you'll need to reach the [Museum of Freedom](https://fallout.fandom.com/wiki/Museum_of_Freedom), which is
@@ -1063,7 +1074,7 @@ can quickly set up new settlements whenever you find one.
 > If the cutscene makes you nauseous, I recommend simply taking off your headset and checking your monitor when it's
 > done.
 
-### 5.4.7 IDEK's Logistics Station 2<a href="configure-ideks-logistics-station-2"></a> <small><sup>[top ▲](#toc)</sup></small>
+### 5.4.7 IDEK's Logistics Station 2<a href="configure-ideks-logistics-station-2"></a> <small><sup>[up ▲](#configure-mods)</sup></small>
 The essential parts of this mod require zero configuration.
 However, if you want to easily move items between settlements, you'll need to tell this mod what your main settlement
 is.
@@ -1081,6 +1092,7 @@ is.
 8. In any other settlement(s), build a Logistics Locker (found under "Special").
 
 From now on, to move items between settlements, simply interact with the Logistics Locker.
+
 
 
 # 6 Conclusion<a href="conclusion"></a> <small><sup>[top ▲](#toc)</sup></small>
