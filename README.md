@@ -32,6 +32,8 @@ Still, there's a few limitations which you should keep in mind.
   This is irrelevant for the vast majority of this guide, except [when including external libraries](#external-libraries).
 
 **Support**  
+If you're experiencing in-game issues, check the [issues and solutions](#issues-and-solutions).
+
 If you don't understand something, experience in-game issues, have suggestions, or just need some help,
 [check out the Discussions page](https://github.com/FWDekker/fo4vr-modlist/discussions) or
 [open an issue](https://github.com/FWDekker/fo4vr-modlist/issues).
@@ -452,6 +454,21 @@ These are essentially toolkits that directly alter the game engine, and are requ
         `Fallout4VR.exe`.
         If this is not the case, you probably created the directory `[fo4vr_dir]\f4sevr_0_6_20\`, and you should copy
         the contents of that directory into `[fo4vr_dir]`.
+   * **Post-installation instructions:**
+     Always launch F4SEVR, and always launch through MO2.
+     Do not launch through Steam.
+     Otherwise, your mods will not load.
+
+     The following steps will tell MO2 how to launch F4SEVR.
+       1. In MO2, in the main menu, click "Tools" and then "Executables",
+       2. in the list on the left, select "Fallout 4 VR",
+       3. above the list on the left, click the plus icon, and choose "Clone selected",
+       4. on the right, change "Title" to "F4SEVR",
+       5. on the right, in "Binary", replace `Fallout4VR.exe` with `f4sevr_loader.exe`, and
+       6. in the bottom-right, click "OK" to close the dialog,
+
+     To launch F4SEVR (and thus the game) from MO2, click the dropdown menu with "Fallout 4 VR" and select "F4SEVR".
+     Then simply press "Run".
 2. **[fo4vr_improvements](https://github.com/fholger/f4ovr_improvements)** (vcas_v2) <sub>![required]</sub>  
    Improves some filters and shaders specifically for VR, and fixes issues the game has with some controllers.
    * **Note:**
@@ -658,7 +675,10 @@ What we're left with is a single UI mod, which actually works fine.
    Allows you to see your hands.
    Absolutely required for immersion.
    * **Variant:** "alpha 58"
-   * **Important:** Download this mod, but **keep it deactivated in MO2 for now**.
+   * **Important:**
+     Download this mod, but **keep it deactivated in MO2 for now**.
+     Alternatively, [use this patch](https://www.nexusmods.com/fallout4/mods/71840) (v1.0).
+     (TODO: PERSONALLY test how well this works!)
    * **Note:** [In-game configuration required.](#configure-mods)
    * **Untested alternative:** [Idle Hands](https://www.nexusmods.com/fallout4/mods/42922)
 2. **[Player Collision Options - nocollide actors](https://www.nexusmods.com/fallout4/mods/41866)** (v1.0) <sub>![required]</sub>  
@@ -805,7 +825,6 @@ If you don't intend to engage with settlements at all, you can skip this section
    * **Untested alternative:** [Sim Settlements 2](https://www.nexusmods.com/fallout4/mods/47976)  
      There are guides out there on how to get Sim Settlements 2 working on FO4VR, but these have not been tested with
      this guide.
-     I recommend you err on the side of caution and avoid Sim Settlements 2.
 2. **[Leaders Of The Commonwealth](https://www.nexusmods.com/fallout4/mods/30495)** (v2) <sub>![recommended]</sub>  
    With basic Sim Settlements, only your followers are leaders.
    Especially at the start of the game, it's frustrating if your settlements can't grow because you don't have enough
@@ -839,7 +858,8 @@ If you don't intend to engage with settlements at all, you can skip this section
 
 # 5 Playing the game<a name="playing-the-game"></a> <small><sup>[top ▲](#toc)</sup></small> 
 > [!CAUTION]
-> Make sure [FRIK](https://www.nexusmods.com/fallout4/mods/53464) remains disabled until you have exited the vault.
+> Make sure [FRIK](https://www.nexusmods.com/fallout4/mods/53464) remains disabled until you have exited the vault,
+> unless [you have the appropriate patch installed](https://www.nexusmods.com/fallout4/mods/71840).
 
 > [!WARNING]
 > On the right-hand side of MO2, under the tab "Plugins", check that 
@@ -849,32 +869,28 @@ If you don't intend to engage with settlements at all, you can skip this section
 > [!NOTE]
 > In MO2, in the list of plugins, some mods will be crossed out (with ~~strikethrough~~).
 > This is just MO2's weird way of informing you that it's a textures-only mod.
-> Ignore the strikethrough, but keep the mod enabled.
+> Ignore the strikethrough, and keep the mod enabled.
 
+You're almost there!
 You should now have a good selection of mods from the previous selection installed.
 You should have installed all required mods, probably several recommended mods, and maybe some optional mods.
 
-Next up is to learn about a few quirks of FO4VR you need to be aware of during playing.
-After that, you can start playing the prologue.
-Finally, you'll need to configure a few final mods.
-This section will take you through the entire process.
+The plan for this section is as follows:
+* [Section 5.1](#issues-and-solutions):
+  Learn about a few quirks of FO4VR and this mod list that you should be aware of.
+* [Section 5.2](#configure-controls):
+  Configure your control scheme.
+* [Section 5.3](#complete-prologue):
+  Complete the game's prologue.
+* [Section 5.4](#configure-mods):
+  Configure a few final mods in-game.
 
-## 5.1 General tips<a href="general-tips"></a> <small><sup>[top ▲](#toc)</sup></small>
+## 5.1 Issues and solutions<a href="issues-and-solutions"></a> <small><sup>[top ▲](#toc)</sup></small>
+This section describes some common issues, their solutions, and how to prevent them from happening in the first place.
+
 ### 5.1.1 Launching <small><sup>[top ▲](#toc)</sup></small>
-* Always launch F4SEVR, and always launch through MO2.
-  Do not launch through Steam.
+* [Recall that you should always launch F4SEVR, and should always launch from MO2.](#external-libraries)
   Otherwise, your mods will not load.
-
-  The following steps will tell MO2 how to launch F4SEVR.
-  1. In MO2, in the main menu, click "Tools" and then "Executables",
-  2. in the list on the left, select "Fallout 4 VR",
-  3. above the list on the left, click the plus icon, and choose "Clone selected",
-  4. on the right, change "Title" to "F4SEVR",
-  5. on the right, in "Binary", replace `Fallout4VR.exe` with `f4sevr_loader.exe`, and
-  6. in the bottom-right, click "OK" to close the dialog,
-
-  To launch F4SEVR (and thus the game) from MO2, click the dropdown menu with "Fallout 4 VR" and select "F4SEVR".
-  Then simply press "Run".
 * Unplug any controllers/gamepads you don't want to use before launching the game.
   FO4(VR) does not support multiple controllers at the same time, and gets confused when you try.
 * Start your VR controllers before launching the game.
@@ -883,22 +899,45 @@ This section will take you through the entire process.
   This is necessary because the game is trying to show you a warning that you've removed a mod that the save relies on,
   but for some reason this warning is invisible in the main menu (but works correctly after loading another save).
 
-### 5.1.2 Playing <small><sup>[top ▲](#toc)</sup></small>
-* Quicksaves are unreliable and are sometimes broken.
+### 5.1.2 Saving <small><sup>[top ▲](#toc)</sup></small>
+* Quicksaves are unreliable and regularly cause bugs.
   Autosaves are slightly better, but I still wouldn't rely on them.
   Save manually and save often.
+  (This is true for both FO4VR and non-VR FO4.)
+
   As covered by this guide, I recommend that you install
   [Survival Options](https://www.nexusmods.com/fallout4/mods/14650) and [configure the mod](#configure-mods) to
-  automatically create manual saves.
+  automatically create manual saves (even if you do not play Survival difficulty).
+* If you save while wearing power armour, loading that save may cause issues with
+  [FRIK](https://www.nexusmods.com/fallout4/mods/53464).
+  If you load such a save anyway, you can usually resolve FRIK's issues by exiting your power armour, saving again, and
+  then loading that new save.
+  (TODO: PERSONALLY test that this is true!)
+
+### 5.1.3 Playing <small><sup>[top ▲](#toc)</sup></small>
 * Do not open your Pip-Boy while your flashlight is on.
   Doing so may cause the game to crash.
 * Swimming sucks ass in VR;
   you have to stick out your arms in front of you, hold both triggers, and pull your arms towards you, releasing the
   triggers while your arms are still moving.
   Unlike in Skyrim VR, you cannot disable this.
+* If your bullets don't fly where you expect them to, there may be several causes.
+  1. Ensure you have [Weapon Accuracy Redone for VR](https://www.nexusmods.com/fallout4/mods/40669) installed.
+     Otherwise, your bullets will spray in random directions.
+  2. [FRIK](https://www.nexusmods.com/fallout4/mods/53464) supports holding guns with two hands.
+     Though this is super cool, FRIK currently does not align the weapon correctly.
+     Avoid two-handed mode.
+  3. You may (accidentally) have configured weapon offsets in FRIK.
+     You can remove your weapon offset configurations as follows.
+     1. Open MO2.
+     2. Right-click FRIK.
+     3. Click "Open in Explorer".
+     4. Navigate to (TODO).
+     5. Delete all files in this directory.
 
 ## 5.2 Configure controls<a name="configure-controls"></a> <small><sup>[top ▲](#toc)</sup></small>
-This section applies to Valve Index controllers only.
+> [!NOTE]
+> This section applies to Valve Index controllers only.
 
 With the game running, with your headset on, open the SteamVR overlay.
 Select "Controller bindings", select "Choose another", and select "Fallout VR Essential Bindings".
@@ -912,10 +951,11 @@ Here's a small list of troubleshooting tips.
 
 * If your gun aim is completely wrong, just use the baton for now.
   Aiming will be better once you've activated [FRIK](https://www.nexusmods.com/fallout4/mods/53464) after the prologue.
-* If the game keeps crashing while leaving the vault using the elevator, temporarily disable UFO4P.
-  You should re-enable UFO4P after having left the vault.
-* If this all sounds too bothersome, use [SKK Fast Start new game](https://www.nexusmods.com/fallout4/mods/29227)
-  (v020).
+* If the game keeps crashing while leaving the vault using the elevator, disable UFO4P and start a new game.
+  (Do not reuse your old save.)
+  Then, after you've left the vault, save, exit, and re-enable UFO4P.
+* If that doesn't work for you, if this is too bothersome, use
+  [SKK Fast Start new game](https://www.nexusmods.com/fallout4/mods/29227) (v020) to skip the intro.
 
 ## 5.4 Configure mods<a name="configure-mods"></a> <small><sup>[top ▲](#toc)</sup></small>
 After you've exited the vault, there's a few mods you should configure.
@@ -1043,7 +1083,7 @@ is.
 From now on, to move items between settlements, simply interact with the Logistics Locker.
 
 
-# 6 Conclusion <small><sup>[top ▲](#toc)</sup></small>
+# 6 Conclusion<a href="conclusion"></a> <small><sup>[top ▲](#toc)</sup></small>
 That's it!
 I hope this guide was useful for you :-)
 
