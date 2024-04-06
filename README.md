@@ -521,7 +521,7 @@ These mods fix bugs, either in the base game or in other mods.
    this list), overall the pros outweigh the cons.
    * **Requires:** all DLC
    * **Patch:** [Unofficial Fallout 4 VR Fix](https://www.nexusmods.com/fallout4/mods/47117) (v1)
-   * **Patch:** [VR weapon and armor keyword crash patch](https://www.nexusmods.com/fallout4/mods/79711) (v2.1.5-1.0.3)
+   * **Patch:** [VR weapon and armor keyword crash patch](https://www.nexusmods.com/fallout4/mods/79711) (v2.1.5-1.0.4)
 3. **[DLCVR - Fallout 4 VR and DLC standalone bug fixes](https://www.nexusmods.com/fallout4/mods/28842)** (v1.0.4) <sub>![required]</sub>  
    Fixes issues specific to FO4FH and FO4NW, relating to invisible floors and so on.
    * **Requires:** FO4FH _or_ FO4NW
@@ -744,28 +744,28 @@ Some (but not all) of them assume you play in Survival mode, which I recommend y
    * Recommended even for non-survival playthroughs!
    * **Installer:** everything
    * **Note:** [In-game configuration required.](#configure-mods)
-3. **[Settlement Fast Travel Survival Mod](https://www.nexusmods.com/fallout4/mods/58708)** (v1.05) <sub>![recommended]</sub>  
+2. **[Settlement Fast Travel Survival Mod](https://www.nexusmods.com/fallout4/mods/58708)** (v1.05) <sub>![recommended]</sub>  
    Re-enables a restricted form of fast travel.
    You can use this together with the above mod.
    * **Requires:** FO4AU _and_ FO4FH _and_ FO4VW _and_ FO4NW
-4. **[Campsite](https://www.nexusmods.com/fallout4/mods/11734)** (v1.0.4) <sub>![recommended]</sub>  
+3. **[Campsite](https://www.nexusmods.com/fallout4/mods/11734)** (v1.0.4) <sub>![recommended]</sub>  
    Lets you bring a tent with you so you can sleep anywhere.
    * **Note:** [In-game configuration required.](#configure-mods)
-5. **[Loot Logic and Reduction With optional Harvest Restrictions](https://www.nexusmods.com/fallout4/mods/21366)** (v1.5.3.1) <sub>![recommended]</sub>  
+4. **[Loot Logic and Reduction With optional Harvest Restrictions](https://www.nexusmods.com/fallout4/mods/21366)** (v1.5.3.1) <sub>![recommended]</sub>  
    Reduces loot found in containers.
    Otherwise you'll quickly find you'll have so much ammo and chems the game just totally isn't challenging anymore.
-6. **[NPC Loot Drop rebalance](https://www.nexusmods.com/fallout4/mods/24163)** (v1.0) <sub>![recommended]</sub>  
+5. **[NPC Loot Drop rebalance](https://www.nexusmods.com/fallout4/mods/24163)** (v1.0) <sub>![recommended]</sub>  
    Reduces loot found on NPCs, in line with the above mod.
-7. **[Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/29447)** (v1.5.4) <sub>![recommended]</sub>  
+6. **[Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/29447)** (v1.5.4) <sub>![recommended]</sub>  
    In survival, you have less carrying capacity and heavier items. These backpacks will come in use.
    * **Requires:** FO4AU _and_ FO4FH _and_ FO4NW
    * **Variant:** "1.5.4"
    * **Installer:** "Scripted Level List Inject"
    * **Patch:** [Dirty Edit Patch](https://www.nexusmods.com/fallout4/mods/79705) (v1.5.4-1.0.2)
    * **Note:** [In-game configuration required.](#configure-mods)
-8. **[Dogmeat's Backpack](https://www.nexusmods.com/fallout4/mods/10111)** (v2.0) <sub>![recommended]</sub>  
+7. **[Dogmeat's Backpack](https://www.nexusmods.com/fallout4/mods/10111)** (v2.0) <sub>![recommended]</sub>  
    As above, but now for your companion.
-9. **[Dogmeat's Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/62037)** (v1.3) <sub>![recommended]</sub>  
+8. **[Dogmeat's Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/62037)** (v1.3) <sub>![recommended]</sub>  
    Re-balances the above mod to be in line with the one above that.
    * **Requires:** The two mods above this one.
 9. **[Headshot Damage Multiplier](https://www.nexusmods.com/fallout4/mods/33546)** (v1.0) <sub>![recommended]</sub>
