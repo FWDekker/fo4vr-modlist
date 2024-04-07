@@ -907,11 +907,9 @@ This section describes some common issues, their solutions, and how to prevent t
 ### 5.1.2 Saving <small><sup>[up ▲](#issues-and-solutions)</sup></small>
 * Make sure you manually save regularly.
   Auto-saves are cool, but if it's all you have, you can't go back very far if you get stuck.
-* If you save while wearing power armour, loading that save may cause issues with
-  [FRIK](https://www.nexusmods.com/fallout4/mods/53464).
-  If you load such a save anyway, you can usually resolve FRIK's issues by exiting your power armour, saving again, and
-  then loading that new save.
-  (TODO: PERSONALLY test that this is true!)
+* Loading a save in which you wear power armour causes temporary issues with [FRIK](https://www.nexusmods.com/fallout4/mods/53464).
+  Your arms will be invisible, and after you exit the power armour, your body will be stretched in weird ways.
+  To resolve the issue, exit the power armour, save your game, return to the main menu, and then load your game again.
 
 ### 5.1.3 Playing <small><sup>[up ▲](#issues-and-solutions)</sup></small>
 * Do not open your Pip-Boy while your flashlight is on.
@@ -931,7 +929,7 @@ This section describes some common issues, their solutions, and how to prevent t
      1. Open MO2.
      2. Right-click FRIK.
      3. Click "Open in Explorer".
-     4. Navigate to (TODO).
+     4. Enter directory `F4SE\Plugins\FRIK_weapon_offsets\FRIK_weapon_offsets\`.
      5. Delete all files in this directory.
 
 ## 5.2 Configure controls<a name="configure-controls"></a> <small><sup>[up ▲](#playing-the-game)</sup></small>
@@ -970,17 +968,17 @@ The following settings apply to both survival playthroughs and non-survival play
 Open your inventory, go to Misc, and use the holotape "\[Settings\] Survival Options Holotape".
 Apply the following settings.
 
-| Category                                | Option                     | Value                                     |
-|-----------------------------------------|----------------------------|-------------------------------------------|
-| Combat Options                          | Incoming Damage Multiplier | 3.0                                       |
-|                                         | Outgoing Damage Multiplier | 1.0                                       |
-| Save Options > Cell Change Save Options | Toggle                     | Current:On                                |
-|                                         | Change To                  | Current:Auto Save (TODO: Verify spelling) |
-| Save Options > Timed Save Options       | Toggle                     | Current:On                                |
-|                                         | Change To                  | Current:Auto Save                         |
-|                                         | Interval                   | 7 Minutes                                 |
-| Save Options > Level Up Save Options    | Toggle                     | Current:On                                |
-|                                         | Change To                  | Current:Auto Save                         |
+| Category                                | Option                     | Value            |
+|-----------------------------------------|----------------------------|------------------|
+| Combat Options                          | Incoming Damage Multiplier | 3.0              |
+|                                         | Outgoing Damage Multiplier | 1.0              |
+| Save Options > Cell Change Save Options | Toggle                     | Current:On       |
+|                                         | Change To                  | Current:Autosave |
+| Save Options > Timed Save Options       | Toggle                     | Current:On       |
+|                                         | Change To                  | Current:Autosave |
+|                                         | Interval                   | 7 Minutes        |
+| Save Options > Level Up Save Options    | Toggle                     | Current:On       |
+|                                         | Change To                  | Current:Autosave |
 
 Finally, if you are doing a survival playthrough, in the same holotape, under the "Save Options" menu, select "Give Save
 Item".
