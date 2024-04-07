@@ -56,9 +56,6 @@ If you don't understand something, experience in-game issues, have suggestions, 
 
 
 # 1 How to read this guide<a name="how-to-read"></a> <small><sup>[top ▲](#toc)</sup></small>
-> [!TIP]
-> Read this guide carefully.
-
 This section deals with the basics:
 Why FO4VR modding is difficult ([Section 1.1](#about-modding-fo4vr)), how this guide deals with version numbers
 ([Section 1.2](#about-version-numbers)), how to pick and choose mods from this guide ([Section 1.3](#about-tags)), and
@@ -545,11 +542,15 @@ These mods fix bugs, either in the base game or in other mods.
    [As explained in the introduction](#about-modding-fo4vr), most mods will be created for the wrong game version.
    The game warns you of this in the main menu.
    This mod disables those warnings, because they're annoying and there's not a whole lot you can do about it anyway.
-2. **[Unofficial Fallout 4 Patch - UFO4P](https://www.nexusmods.com/fallout4/mods/4598)** (v2.1.5) <sub>![required]</sub>  
-   Fixes a bunch of bugs, big and small, in the base game.
-   Though there are some incompatibilities because VR is not supported by the mod authors (like with most other mods on
-   this list), overall the pros outweigh the cons.
+2. **[Unofficial Fallout 4 Patch - UFO4P](https://www.nexusmods.com/fallout4/mods/4598)** (v2.1.5) <sub>![recommended]</sub>  
+   Fixes a bunch of bugs, big and small, in the base game and add-ons.
+   UFO4P's authors do not officially support VR, but overall the pros outweigh the cons.
    * **Requires:** all DLC
+   * **Note:**
+     Some users report that UFO4P soft locks the DLC (especially with FO4FH).
+     I have not experienced these bugs myself, and have not received such bug reports for this mod list specifically.
+     Some people have strong opinions about UFO4P, so I'll leave the choice whether to install this one up to you.
+     Either way, note that UFO4P (like many complex mods) should not be removed from your save after having used them.
    * **Patch:** [Unofficial Fallout 4 VR Fix](https://www.nexusmods.com/fallout4/mods/47117) (v1)
    * **Patch:** [VR weapon and armor keyword crash patch](https://www.nexusmods.com/fallout4/mods/79711) (v2.1.5-1.0.4)
 3. **[DLCVR - Fallout 4 VR and DLC standalone bug fixes](https://www.nexusmods.com/fallout4/mods/28842)** (v1.0.4) <sub>![required]</sub>  
@@ -673,7 +674,7 @@ all.
 can't configure them through MCM.
 What we're left with is a single UI mod, which actually works fine.
 
-1. **[Full Dialog VR](https://www.nexusmods.com/fallout4/mods/28516/)** (v1.1) <sub>![recommended]</sub>
+1. **[Full Dialog VR](https://www.nexusmods.com/fallout4/mods/28516/)** (v1.1) <sub>![recommended]</sub>  
    In conversations, you usually have four response options.
    The game summarises these using keywords.
    This is annoying, because your character may say something completely different from what you expected.
@@ -802,7 +803,7 @@ Some (but not all) of them assume you play in Survival mode, which I recommend y
 8. **[Dogmeat's Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/62037)** (v1.3) <sub>![recommended]</sub>  
    Re-balances the above mod to be in line with the one above that.
    * **Requires:** The two mods above this one.
-9. **[Headshot Damage Multiplier](https://www.nexusmods.com/fallout4/mods/33546)** (v1.0) <sub>![recommended]</sub>
+9. **[Headshot Damage Multiplier](https://www.nexusmods.com/fallout4/mods/33546)** (v1.0) <sub>![recommended]</sub>  
    In survival, your outgoing damage is reduced and enemy health is increased.
    Unfortunately, this results in bullet sponge enemies, where you can unload an entire shotgun magazine into someone's
    face and they somehow survive.
