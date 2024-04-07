@@ -44,8 +44,8 @@ If you don't understand something, experience in-game issues, have suggestions, 
 
 ---
 
-**Table of contents**  
-<a name="toc"></a>[**1 How to read this guide**](#how-to-read)
+<a name="toc"></a>**Table of contents**  
+[**1 How to read this guide**](#how-to-read)
 | [**2 Setup**](#setup)
 | [**3 Configuration**](#configuration)
 | [**4 List of mods**](#list-of-mods)
@@ -165,7 +165,7 @@ You can remove old files as follows.
     Personally, I went for `C:\Users\[username]\Steam\`.
   * No, there is no simpler way. Yes, this is required.
 * **Fallout 4 with all DLC** (v1.10.163) <sub>![recommended]</sub>  
-  [More information below.](#using-dlc-in-fo4vr)
+  [More information in Section 2.3.](#using-dlc-in-fo4vr)
 * **[Mod Organizer 2](https://www.modorganizer.org/)** (v2.5.0) <sub>![required]</sub>
   * Use the `.exe` installer.
   * For performance reasons, you should prefer installing on an SSD.
@@ -197,13 +197,9 @@ To copy non-VR FO4's DLC into FO4VR,
 # 3 Configuration<a name="configuration"></a> <small><sup>[top ▲](#toc)</sup></small>
 You should now have the required software.
 Before you install mods, there's some settings to tweak.
-These settings relate to stability, visual quality, and performance.
+These settings relate to stability, visual quality, performance, and general gameplay.
 
-> [!NOTE]
-> Even if you skip these steps, at least launch the game once.
-> This will set up important files and registry entries.
-
-We start by navigating a few settings menus ([Section 3.1](#basic-configuration)), and then we do some more detailed 
+We start by navigating a few settings menus ([Section 3.1](#basic-configuration)) and then we do some more detailed 
 adjustments using INI configuration ([Section 3.2](#ini-configuration)).
 
 ## 3.1 Basic configuration<a name="basic-configuration"></a> <small><sup>[up ▲](#configuration)</sup></small>
@@ -214,16 +210,13 @@ adjustments using INI configuration ([Section 3.2](#ini-configuration)).
 2. **Windows Explorer**  
    Navigate to `[fo4vr_dir]`, right-click `Fallout4VR.exe`, and click "Properties".
    Go to "Compatibility" and enable "Disable full-screen optimisations".
-3. While in-game in VR, in FO4VR's main menu, go to "Settings" and apply the following settings.
-   1. _Gameplay_
+3. **FO4VR**  
+   While in-game in VR, in FO4VR's main menu, go to "Settings" and apply the following settings.
+   1. _Gameplay_ <sub>![optional]</sub>
 
       | Setting    | Value    |
       |------------|----------|
       | Difficulty | Survival |
-
-      If you don't want to use survival, disable "Save on Rest", "Save on Wait", and "Save on Travel", install
-      [Survival Options](https://www.nexusmods.com/fallout4/mods/14650), and follow the
-      [in-game configuration](#configure-mods), explained later on.
    2. _Display_
 
       | Setting          | Value |
@@ -255,7 +248,11 @@ To edit these settings,
 3. in the main menu, click "Tools", then "Tool Plugins", and then "INI Editor", and
 4. select the tab `fallout4custom.ini`.
 
-### 3.2.1 How does an INI file work? <small><sup>[up ▲](#ini-configuration)</sup></small>
+This section covers how INI files work ([Section 3.2.1](#how-do-ini-files-work)), a collection of INI settings you
+should add ([Section 3.2.2](#ini-settings-you-should-add)), and external links to additional INI settings
+([Section 3.2.3](#additional-ini-settings)).
+
+### 3.2.1 How do INI files work?<a name="how-do-ini-files-work"></a> <small><sup>[up ▲](#ini-configuration)</sup></small>
 Take a look at the tab `fallout4.ini` to get a feel of what an INI looks like.
 
 INI files obey the following rules.
@@ -274,16 +271,57 @@ INI files obey the following rules.
   If you start section `[Display]`, then start section `[VR]`, and then again start section `[Display]`, the settings in
   the second `[Display]` section are ignored.
 
-### 3.2.2 Settings you should add <small><sup>[up ▲](#ini-configuration)</sup></small>
+### 3.2.2 INI settings you should add<a name="ini-settings-you-should-add"></a> <small><sup>[up ▲](#ini-configuration)</sup></small>
 > [!IMPORTANT]
 > The following changes should go into `fallout4custom.ini`.
 
 > [!IMPORTANT]
 > Make sure each section/variable occurs at most once.
 
-> [!TIP]
-> You can copy-paste all non-optional configs below effortlessly at once
-> [from Section 3.2.3](#ini-configuration-combined).
+**Combined non-optional settings**  
+The block below combines all non-optional INI settings from this section.
+You can copy-paste it directly into your `fallout4custom.ini` file.
+You don't need to keep the old contents, just overwrite it with the block below.
+
+```ini
+[General]
+sLocalSavePath=__MO_Saves\
+bUseMyGamesDirectory=1
+[Archive]
+sResourceDataDirsFinal=
+bInvalidateOlderFiles=1
+sResourceStartUpArchiveList=Fallout4 - Startup.ba2, Fallout4 - Shaders.ba2, Fallout4 - Interface.ba2, Fallout4_VR - Shaders.ba2
+sResourceIndexFileList=Fallout4 - Textures1.ba2, Fallout4 - Textures2.ba2, Fallout4 - Textures3.ba2, Fallout4 - Textures4.ba2, Fallout4 - Textures5.ba2, Fallout4 - Textures6.ba2, Fallout4 - Textures7.ba2, Fallout4 - Textures8.ba2, Fallout4 - Textures9.ba2, Fallout4_VR - Main.ba2, Fallout4_VR - Textures.ba2
+[VRDisplay]
+fRenderTargetSizeMultiplier=1.0
+[HairLighting]
+fHairPrimSpecPow=2.0
+fHairPrimSpecScale=0.01
+fHairPrimSpecShift=0.26
+fHairSecSpecScale=0.01
+fHairSecSpecPow=2.0
+fHairSecSpecShift=0.26
+[Display]
+fTAAPostSharpen=0.675
+fTAASharpen=1.0000
+fTAAHighFreq=0.8000
+fTAALowFreq=0.5000
+fTAAPostOverlay=0.675
+uPipboyTargetHeight=1400
+uPipboyTargetWidth=1752
+[VRUI]
+iVRUIRenderTargetHeight=4096
+iVRUIRenderTargetWidth=4096
+[Controls]
+fSprintStopDirectionThresholdDegrees=360.0000
+[Workshop]
+fItemRotationSpeed=0.4
+[VR]
+fSwimSpeedScalar=1.2500
+fVrSwimDragCoefficient=0.0500
+fVrSwimHMDFloatThreshold=0.7200
+bVrSwimDeliberateResurface=1
+```
 
 **Default MO2 settings** <sub>![required]</sub>
 ```ini
@@ -378,52 +416,7 @@ bUseWandDirectionalMovement=0
 bShowTutorials=0
 ```
 
-### 3.2.3 All non-optional configs<a name="ini-configuration-combined"></a> <small><sup>[up ▲](#ini-configuration)</sup></small>
-The block below contains all non-optional configs from Section 3.2.2.
-You can copy-paste it into your `fallout4custom.ini` file.
-You don't need to keep the old contents, just overwrite it with the block below.
-
-```ini
-[General]
-sLocalSavePath=__MO_Saves\
-bUseMyGamesDirectory=1
-[Archive]
-sResourceDataDirsFinal=
-bInvalidateOlderFiles=1
-sResourceStartUpArchiveList=Fallout4 - Startup.ba2, Fallout4 - Shaders.ba2, Fallout4 - Interface.ba2, Fallout4_VR - Shaders.ba2
-sResourceIndexFileList=Fallout4 - Textures1.ba2, Fallout4 - Textures2.ba2, Fallout4 - Textures3.ba2, Fallout4 - Textures4.ba2, Fallout4 - Textures5.ba2, Fallout4 - Textures6.ba2, Fallout4 - Textures7.ba2, Fallout4 - Textures8.ba2, Fallout4 - Textures9.ba2, Fallout4_VR - Main.ba2, Fallout4_VR - Textures.ba2
-[VRDisplay]
-fRenderTargetSizeMultiplier=1.0
-[HairLighting]
-fHairPrimSpecPow=2.0
-fHairPrimSpecScale=0.01
-fHairPrimSpecShift=0.26
-fHairSecSpecScale=0.01
-fHairSecSpecPow=2.0
-fHairSecSpecShift=0.26
-[Display]
-fTAAPostSharpen=0.675
-fTAASharpen=1.0000
-fTAAHighFreq=0.8000
-fTAALowFreq=0.5000
-fTAAPostOverlay=0.675
-uPipboyTargetHeight=1400
-uPipboyTargetWidth=1752
-[VRUI]
-iVRUIRenderTargetHeight=4096
-iVRUIRenderTargetWidth=4096
-[Controls]
-fSprintStopDirectionThresholdDegrees=360.0000
-[Workshop]
-fItemRotationSpeed=0.4
-[VR]
-fSwimSpeedScalar=1.2500
-fVrSwimDragCoefficient=0.0500
-fVrSwimHMDFloatThreshold=0.7200
-bVrSwimDeliberateResurface=1
-```
-
-### 3.2.4 Additional INI settings <small><sup>[up ▲](#ini-configuration)</sup></small>
+### 3.2.3 Additional INI settings<a name="additional-ini-settings"></a> <small><sup>[up ▲](#ini-configuration)</sup></small>
 Above are the INI settings that I used.
 There's many more settings you can tweak.
 Here's a bunch of other resources that may be useful for you.
@@ -463,7 +456,7 @@ These are essentially toolkits that directly alter the game engine, and are requ
         `Fallout4VR.exe`.
         If this is not the case, you probably created the directory `[fo4vr_dir]\f4sevr_0_6_20\`, and you should copy
         the contents of that directory into `[fo4vr_dir]`.
-   * **Post-installation instructions:**
+   * **Post-installation instructions:**  
      Always launch F4SEVR, and always launch through MO2.
      Do not launch through Steam.
      Otherwise, your mods will not load.
@@ -693,7 +686,7 @@ What we're left with is a single UI mod, which actually works fine.
      Download this mod, but **keep it deactivated in MO2 for now**.
      Alternatively, [use this patch](https://www.nexusmods.com/fallout4/mods/71840) (v1.0).
      (TODO: PERSONALLY test how well this works!)
-   * **Note:** [In-game configuration required.](#configure-mods)
+   * **Note:** [In-game configuration required.](#configure-frik)
    * **Untested alternative:** [Idle Hands](https://www.nexusmods.com/fallout4/mods/42922)
 2. **[Player Collision Options - nocollide actors](https://www.nexusmods.com/fallout4/mods/41866)** (v1.0) <sub>![required]</sub>  
    Normally, when you get close to an NPC in VR, the game will push you back. This is annoying and disorienting when you
@@ -746,7 +739,7 @@ The following selection of mods is a combination of important fixes and subjecti
    This sucks in VR, because you don't get to aim the gun and pull the trigger yourself.
    This mod replaces VATS with bullet time.
    * **Requires:** FO4FH _and_ FO4NW
-   * **Note:** [In-game configuration required.](#configure-mods)
+   * **Note:** [In-game configuration required.](#configure-bullet-time-vats-vr)
 4. **[Critical Hits Outside of VATS](https://www.nexusmods.com/fallout4/mods/12653)** (v1.1.3) <sub>![required]</sub>  
    The above Bullet Time mod internally works by disabling VATS, and thus (almost) completely removes critical hits from
    the game.
@@ -778,14 +771,14 @@ Some (but not all) of them assume you play in Survival mode, which I recommend y
    Lets you re-enable manual saves, configure automatic saves, and change damage multipliers.
    * Recommended even for non-survival playthroughs!
    * **Installer:** everything
-   * **Note:** [In-game configuration required.](#configure-mods)
+   * **Note:** [In-game configuration required.](#configure-survival-options)
 2. **[Settlement Fast Travel Survival Mod](https://www.nexusmods.com/fallout4/mods/58708)** (v1.05) <sub>![recommended]</sub>  
    Re-enables a restricted form of fast travel.
    You can use this together with the above mod.
    * **Requires:** FO4AU _and_ FO4FH _and_ FO4VW _and_ FO4NW
 3. **[Campsite](https://www.nexusmods.com/fallout4/mods/11734)** (v1.0.4) <sub>![recommended]</sub>  
    Lets you bring a tent with you so you can sleep anywhere.
-   * **Note:** [In-game configuration required.](#configure-mods)
+   * **Note:** [In-game configuration required.](#configure-campsite)
 4. **[Loot Logic and Reduction With optional Harvest Restrictions](https://www.nexusmods.com/fallout4/mods/21366)** (v1.5.3.1) <sub>![recommended]</sub>  
    Reduces loot found in containers.
    Otherwise you'll quickly find you'll have so much ammo and chems the game just totally isn't challenging anymore.
@@ -797,7 +790,7 @@ Some (but not all) of them assume you play in Survival mode, which I recommend y
    * **Variant:** "1.5.4"
    * **Installer:** "Scripted Level List Inject"
    * **Patch:** [Dirty Edit Patch](https://www.nexusmods.com/fallout4/mods/79705) (v1.5.4-1.0.2)
-   * **Note:** [In-game configuration required.](#configure-mods)
+   * **Note:** [In-game configuration required.](#configure-backpacks-of-the-commonwealth)
 7. **[Dogmeat's Backpack](https://www.nexusmods.com/fallout4/mods/10111)** (v2.0) <sub>![recommended]</sub>  
    As above, but now for your companion.
 8. **[Dogmeat's Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/62037)** (v1.3) <sub>![recommended]</sub>  
@@ -836,7 +829,7 @@ If you don't intend to engage with settlements at all, you can skip this section
    all buildings in the settlement.
    It just works.
    * **Variant:** "Three In One **v4.1.7**"
-   * **Note:** [In-game configuration required.](#configure-mods)
+   * **Note:** [In-game configuration required.](#configure-sim-settlements)
    * **Untested alternative:** [Sim Settlements 2](https://www.nexusmods.com/fallout4/mods/47976)  
      There are guides out there on how to get Sim Settlements 2 working on FO4VR, but these have not been tested with
      this guide.
@@ -861,7 +854,7 @@ If you don't intend to engage with settlements at all, you can skip this section
      1. Install type: FO4VR
      2. Sim Settlements 1: "Sim Settlements"
      3. Sim Settlements 2: Do not select
-   * **Note:** [In-game configuration recommended.](#configure-mods)
+   * **Note:** [In-game configuration recommended.](#configure-ideks-logistics-station-2)
 5. **[Local Leader Tweaks](https://www.nexusmods.com/fallout4/mods/16661)** (v1.0) <sub>![recommended]</sub>  
    The Local Leader perk is required to unlock some of the most important parts of using settlements.
    I think that it's stupid that these perks, which cost quite some effort to unlock if you don't run a Charisma build,
@@ -897,7 +890,7 @@ game's prologue ([Section 5.3](#complete-prologue)), and finally configure a few
 ([Section 5.4](#configure-mods)).
 After that, I promise you can play at your leisure.
 
-## 5.1 Issues and solutions<a href="issues-and-solutions"></a> <small><sup>[up ▲](#playing-the-game)</sup></small>
+## 5.1 Issues and solutions<a name="issues-and-solutions"></a> <small><sup>[up ▲](#playing-the-game)</sup></small>
 This section describes some common issues, their solutions, and how to prevent them from happening in the first place.
 
 ### 5.1.1 Launching <small><sup>[up ▲](#issues-and-solutions)</sup></small>
@@ -912,14 +905,8 @@ This section describes some common issues, their solutions, and how to prevent t
   but for some reason this warning is invisible in the main menu (but works correctly after loading another save).
 
 ### 5.1.2 Saving <small><sup>[up ▲](#issues-and-solutions)</sup></small>
-* Quicksaves are unreliable and regularly cause bugs.
-  Autosaves are slightly better, but I still wouldn't rely on them.
-  Save manually and save often.
-  (This is true for both FO4VR and non-VR FO4.)
-
-  As covered by this guide, I recommend that you install
-  [Survival Options](https://www.nexusmods.com/fallout4/mods/14650) and [configure the mod](#configure-mods) to
-  automatically create manual saves (even if you do not play Survival difficulty).
+* Make sure you manually save regularly.
+  Auto-saves are cool, but if it's all you have, you can't go back very far if you get stuck.
 * If you save while wearing power armour, loading that save may cause issues with
   [FRIK](https://www.nexusmods.com/fallout4/mods/53464).
   If you load such a save anyway, you can usually resolve FRIK's issues by exiting your power armour, saving again, and
@@ -972,35 +959,35 @@ Here's a small list of troubleshooting tips.
 ## 5.4 Configure mods<a name="configure-mods"></a> <small><sup>[up ▲](#playing-the-game)</sup></small>
 After you've exited the vault, there's a few mods you should configure.
 
-### 5.4.1 Backpacks of the Commonwealth <small><sup>[up ▲](#configure-mods)</sup></small>
+### 5.4.1 Backpacks of the Commonwealth<a name="configure-backpacks-of-the-commonwealth"></a> <small><sup>[up ▲](#configure-mods)</sup></small>
 As soon as you exit Vault 111, you'll receive a magazine from Backpacks of the Commonwealth.
 After that, you'll also be prompted to enter the spawn rate.
 Enter the recommended rate of 0%.
 
-### 5.4.2 Survival Options <small><sup>[up ▲](#configure-mods)</sup></small>
+### 5.4.2 Survival Options<a name="configure-survival-options"></a> <small><sup>[up ▲](#configure-mods)</sup></small>
 The following settings apply to both survival playthroughs and non-survival playthroughs.
 
 Open your inventory, go to Misc, and use the holotape "\[Settings\] Survival Options Holotape".
 Apply the following settings.
 
-| Category                                | Option                     | Value               |
-|-----------------------------------------|----------------------------|---------------------|
-| Combat Options                          | Incoming Damage Multiplier | 3.0                 |
-|                                         | Outgoing Damage Multiplier | 1.0                 |
-| Save Options > Cell Change Save Options | Toggle                     | Current:On          |
-|                                         | Change To                  | Current:Normal Save |
-| Save Options > Timed Save Options       | Toggle                     | Current:On          |
-|                                         | Change To                  | Current:Normal Save |
-|                                         | Interval                   | 7 Minutes           |
-| Save Options > Level Up Save Options    | Toggle                     | Current:On          |
-|                                         | Change To                  | Current:Normal Save |
+| Category                                | Option                     | Value                                     |
+|-----------------------------------------|----------------------------|-------------------------------------------|
+| Combat Options                          | Incoming Damage Multiplier | 3.0                                       |
+|                                         | Outgoing Damage Multiplier | 1.0                                       |
+| Save Options > Cell Change Save Options | Toggle                     | Current:On                                |
+|                                         | Change To                  | Current:Auto Save (TODO: Verify spelling) |
+| Save Options > Timed Save Options       | Toggle                     | Current:On                                |
+|                                         | Change To                  | Current:Auto Save                         |
+|                                         | Interval                   | 7 Minutes                                 |
+| Save Options > Level Up Save Options    | Toggle                     | Current:On                                |
+|                                         | Change To                  | Current:Auto Save                         |
 
 Finally, if you are doing a survival playthrough, in the same holotape, under the "Save Options" menu, select "Give Save
 Item".
 This will add a "Save Item" to your inventory, to be found under Aid.
 Favourite the item and put it on your favourite wheel so you can save whenever you want.
 
-### 5.4.3 Bullet Time VATS VR <small><sup>[up ▲](#configure-mods)</sup></small>
+### 5.4.3 Bullet Time VATS VR<a name="configure-bullet-time-vats-vr"></a> <small><sup>[up ▲](#configure-mods)</sup></small>
 Open your inventory, go to Misc, and use the holotape "\[Settings - Bullet Time VATS\]".
 Apply the following settings.
 
@@ -1009,13 +996,13 @@ Apply the following settings.
 | Time Dilation                                          | 50%         |
 | Movement Settings Menu > "In Bullet Time V.A.T.S." use | DIRECT MOVE |
 
-### 5.4.4 FRIK <small><sup>[up ▲](#configure-mods)</sup></small>
+### 5.4.4 FRIK<a name="configure-frik"></a> <small><sup>[up ▲](#configure-mods)</sup></small>
 > [!WARNING]
 > Make sure [FRIK](https://www.nexusmods.com/fallout4/mods/53464) remains disabled until you have exited the vault.
 
 Save the game (using the "Save Item" you added using [Survival Options](https://www.nexusmods.com/fallout4/mods/14650)),
-exit the game, enable FRIK (and re-enable UFO4P while you're at it, if you disabled it), re-sort your mods with LOOT,
-and then re-launch the game.
+exit the game, enable FRIK (and enable UFO4P while you're at it, if you disabled it), re-sort your mods, and then
+re-launch the game.
 
 Open your inventory, go to Misc, and use the holotape "FRIK Configuration".
 Apply the following settings.
@@ -1027,12 +1014,12 @@ You will need to re-open the holotape several times.
 3. Select "Save Body Position to INI".
    (This also saves your "arms only" setting.)
 
-### 5.4.5 Campsite <small><sup>[up ▲](#configure-mods)</sup></small>
+### 5.4.5 Campsite<a name="configure-campsite"></a> <small><sup>[up ▲](#configure-mods)</sup></small>
 To activate [Campsite](https://www.nexusmods.com/fallout4/mods/11734), you'll need to find a book
 [somewhere in Sanctuary](https://youtu.be/E7VLBtH4gyA).
 Once you've found the book, you'll be able to craft camping items at any chemistry workbench.
 
-### 5.4.6 Sim Settlements<a href="configure-sim-settlements"></a> <small><sup>[up ▲](#configure-mods)</sup></small>
+### 5.4.6 Sim Settlements<a name="configure-sim-settlements"></a> <small><sup>[up ▲](#configure-mods)</sup></small>
 [Sim Settlements](https://www.nexusmods.com/fallout4/mods/21872) can only be configured after you've played the game 
 a bit.
 Specifically, you'll need to reach the [Museum of Freedom](https://fallout.fandom.com/wiki/Museum_of_Freedom), which is
@@ -1075,7 +1062,7 @@ can quickly set up new settlements whenever you find one.
 > If the cutscene makes you nauseous, I recommend simply taking off your headset and checking your monitor when it's
 > done.
 
-### 5.4.7 IDEK's Logistics Station 2<a href="configure-ideks-logistics-station-2"></a> <small><sup>[up ▲](#configure-mods)</sup></small>
+### 5.4.7 IDEK's Logistics Station 2<a name="configure-ideks-logistics-station-2"></a> <small><sup>[up ▲](#configure-mods)</sup></small>
 The essential parts of this mod require zero configuration.
 However, if you want to easily move items between settlements, you'll need to tell this mod what your main settlement
 is.
@@ -1096,7 +1083,7 @@ From now on, to move items between settlements, simply interact with the Logisti
 
 
 
-# 6 Conclusion<a href="conclusion"></a> <small><sup>[top ▲](#toc)</sup></small>
+# 6 Conclusion<a name="conclusion"></a> <small><sup>[top ▲](#toc)</sup></small>
 That's it!
 I hope this guide was useful for you :-)
 
