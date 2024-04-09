@@ -539,12 +539,12 @@ These mods fix bugs, either in the base game or in other mods.
    Fixes a bunch of bugs, big and small, in the base game and add-ons.
    UFO4P's authors do not officially support VR, but overall the pros outweigh the cons.
    * **Requires:** all DLC
+   * **Important:** Download this mod, but **keep it deactivated in MO2 for now**.
    * **Note:**
      Some users report that UFO4P soft locks the DLC (especially with FO4FH).
      I have not experienced these bugs myself, and have not received such bug reports for this mod list specifically.
      Some people have strong opinions about UFO4P, so I'll leave the choice whether to install this one up to you.
      Either way, note that UFO4P (like many complex mods) should not be removed from your save after having used them.
-   * **Patch:** [Unofficial Fallout 4 VR Fix](https://www.nexusmods.com/fallout4/mods/47117) (v1)
    * **Patch:** [VR weapon and armor keyword crash patch](https://www.nexusmods.com/fallout4/mods/79711) (v2.1.5-1.0.4)
 3. **[DLCVR - Fallout 4 VR and DLC standalone bug fixes](https://www.nexusmods.com/fallout4/mods/28842)** (v1.0.4) <sub>![required]</sub>  
    Fixes issues specific to FO4FH and FO4NW, relating to invisible floors and so on.
@@ -682,11 +682,8 @@ What we're left with is a single UI mod, which actually works fine.
    Allows you to see your hands.
    Absolutely required for immersion.
    * **Variant:** "alpha 58"
-   * **Important:**
-     Download this mod, but **keep it deactivated in MO2 for now**.
-     Alternatively, [use this patch](https://www.nexusmods.com/fallout4/mods/71840) (v1.0).
-     (TODO: PERSONALLY test how well this works!)
-   * **Note:** [In-game configuration required.](#configure-frik)
+   * **Important:** Download this mod, but **keep it deactivated in MO2 for now**.
+   * **Note:** [In-game configuration required.](#configure-ufo4p-and-frik)
    * **Untested alternative:** [Idle Hands](https://www.nexusmods.com/fallout4/mods/42922)
 2. **[Player Collision Options - nocollide actors](https://www.nexusmods.com/fallout4/mods/41866)** (v1.0) <sub>![required]</sub>  
    Normally, when you get close to an NPC in VR, the game will push you back. This is annoying and disorienting when you
@@ -865,14 +862,13 @@ If you don't intend to engage with settlements at all, you can skip this section
 
 
 
-# 5 Playing the game<a name="playing-the-game"></a> <small><sup>[top ▲](#toc)</sup></small> 
+# 5 Playing the game<a name="playing-the-game"></a> <small><sup>[top ▲](#toc)</sup></small>
 > [!CAUTION]
-> Make sure [FRIK](https://www.nexusmods.com/fallout4/mods/53464) remains disabled until you have exited the vault,
-> unless [you have the appropriate patch installed](https://www.nexusmods.com/fallout4/mods/71840).
+> On the left-hand side of MO2, make sure [UFO4P](https://www.nexusmods.com/fallout4/mods/4598) and
+> [FRIK](https://www.nexusmods.com/fallout4/mods/53464) remain disabled until you have exited the vault.
 
 > [!WARNING]
-> On the right-hand side of MO2, under the tab "Plugins", check that 
-> Check that all `.esp` files are actually activated.
+> On the right-hand side of MO2, under the tab "Plugins", check that all `.esp` files are actually activated.
 > Additionally, sort your load order one more time, just to be sure.
 
 > [!NOTE]
@@ -946,26 +942,48 @@ This is mostly a case of trial and error.
 You can complete the prologue normally, though the experience can be somewhat buggy.
 Here's a small list of troubleshooting tips.
 
+* You can skip the prologue in its entirety using
+  [SKK Fast Start new game](https://www.nexusmods.com/fallout4/mods/29227) (v020).
 * If your gun aim is completely wrong, just use the baton for now.
-  Aiming will be better once you've activated [FRIK](https://www.nexusmods.com/fallout4/mods/53464) after the prologue.
-* If the game keeps crashing while leaving the vault using the elevator, disable UFO4P and start a new game.
-  (Do not reuse your old save.)
-  Then, after you've left the vault, save, exit, and re-enable UFO4P.
-* If that doesn't work for you, if this is too bothersome, use
-  [SKK Fast Start new game](https://www.nexusmods.com/fallout4/mods/29227) (v020) to skip the intro.
+  Aiming will be better once you've activated [FRIK](https://www.nexusmods.com/fallout4/mods/53464), after the prologue.
+* If the game crashes when you take the elevator to leave the vault, you didn't disable
+  [UFO4P](https://www.nexusmods.com/fallout4/mods/4598).
+  Exit the game, disable UFO4P, and start a new game.
+  (Do not reuse your existing save, that's dangerous.)
 
 ## 5.4 Configure mods<a name="configure-mods"></a> <small><sup>[up ▲](#playing-the-game)</sup></small>
-After you've exited the vault, there's a few mods you should configure.
+Now that you've finished the prologue, it's time to configure a few final mods.
 
 ### 5.4.1 Backpacks of the Commonwealth<a name="configure-backpacks-of-the-commonwealth"></a> <small><sup>[up ▲](#configure-mods)</sup></small>
 As soon as you exit Vault 111, you'll receive a magazine from Backpacks of the Commonwealth.
 After that, you'll also be prompted to enter the spawn rate.
 Enter the recommended rate of 0%.
 
-### 5.4.2 Survival Options<a name="configure-survival-options"></a> <small><sup>[up ▲](#configure-mods)</sup></small>
-The following settings apply to both survival playthroughs and non-survival playthroughs.
+### 5.4.2 UFO4P and FRIK<a name="configure-ufo4p-and-frik"></a> <small><sup>[up ▲](#configure-mods)</sup></small>
+> [!WARNING]
+> Make sure [UFO4P](https://www.nexusmods.com/fallout4/mods/4598) and
+> [FRIK](https://www.nexusmods.com/fallout4/mods/53464) remain disabled until you have exited the vault.
 
-Open your inventory, go to Misc, and use the holotape "\[Settings\] Survival Options Holotape".
+Exit the game completely (which creates an exit save, which can be loaded only once), enable UFO4P and FRIK in MO2,
+re-sort your mods, then re-launch the game, and load your exit save.
+
+Open your inventory, go to Misc, and use the holotape "FRIK Configuration".
+Apply the following settings.
+You will need to re-open the holotape several times.
+
+1. Stand up straight, relaxed, hands by your side.
+   Select "CALIBRATE".
+2. Select "Toggle Arms Only Mode!".
+3. Select "Save Body Position to INI".
+   (This also saves your "arms only" setting.)
+
+### 5.4.3 Survival Options<a name="configure-survival-options"></a> <small><sup>[up ▲](#configure-mods)</sup></small>
+> [!NOTE]
+> You can skip these settings if you don't play on survival difficulty.
+
+Find a chemistry station and craft the holotape "\[Settings\] Survival Options Holotape", found under "Utility".
+([You can find a chemistry station in Sanctuary Hills.](img/chemistry-station.jpg))
+Next, open your inventory, go to Misc, and use the holotape you crafted.
 Apply the following settings.
 
 | Category                                | Option                     | Value            |
@@ -985,32 +1003,16 @@ Item".
 This will add a "Save Item" to your inventory, to be found under Aid.
 Favourite the item and put it on your favourite wheel so you can save whenever you want.
 
-### 5.4.3 Bullet Time VATS VR<a name="configure-bullet-time-vats-vr"></a> <small><sup>[up ▲](#configure-mods)</sup></small>
-Open your inventory, go to Misc, and use the holotape "\[Settings - Bullet Time VATS\]".
+### 5.4.4 Bullet Time VATS VR<a name="configure-bullet-time-vats-vr"></a> <small><sup>[up ▲](#configure-mods)</sup></small>
+Find a chemistry station and craft the holotape "\[Settings - Bullet Time VATS\]".
+([You can find a chemistry station in Sanctuary Hills.](img/chemistry-station.jpg))
+Open your inventory, go to Misc, and use the holotape you crafted.
 Apply the following settings.
 
 | Option                                                 | Value       |
 |--------------------------------------------------------|-------------|
 | Time Dilation                                          | 50%         |
 | Movement Settings Menu > "In Bullet Time V.A.T.S." use | DIRECT MOVE |
-
-### 5.4.4 FRIK<a name="configure-frik"></a> <small><sup>[up ▲](#configure-mods)</sup></small>
-> [!WARNING]
-> Make sure [FRIK](https://www.nexusmods.com/fallout4/mods/53464) remains disabled until you have exited the vault.
-
-Save the game (using the "Save Item" you added using [Survival Options](https://www.nexusmods.com/fallout4/mods/14650)),
-exit the game, enable FRIK (and enable UFO4P while you're at it, if you disabled it), re-sort your mods, and then
-re-launch the game.
-
-Open your inventory, go to Misc, and use the holotape "FRIK Configuration".
-Apply the following settings.
-You will need to re-open the holotape several times.
-
-1. Stand up straight, relaxed, hands by your side.
-   Select "CALIBRATE".
-2. Select "Toggle Arms Only Mode!".
-3. Select "Save Body Position to INI".
-   (This also saves your "arms only" setting.)
 
 ### 5.4.5 Campsite<a name="configure-campsite"></a> <small><sup>[up ▲](#configure-mods)</sup></small>
 To activate [Campsite](https://www.nexusmods.com/fallout4/mods/11734), you'll need to find a book
@@ -1077,7 +1079,7 @@ is.
 7. Read the popup message and select "Yes, keep my stuff safe!"
 8. In any other settlement(s), build a Logistics Locker (found under "Special").
 
-From now on, to move items between settlements, simply interact with the Logistics Locker.
+From now on, to move items between settlements, simply interact with a Logistics Locker.
 
 
 
