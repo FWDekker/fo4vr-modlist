@@ -212,32 +212,33 @@ adjustments using INI configuration ([Section 3.2](#ini-configuration)).
    Go to "Compatibility" and enable "Disable full-screen optimisations".
 3. **FO4VR**  
    While in-game in VR, in FO4VR's main menu, go to "Settings" and apply the following settings.
-   1. _Gameplay_ <sub>![optional]</sub>
+   1. _Gameplay_
 
-      | Setting    | Value    |
-      |------------|----------|
-      | Difficulty | Survival |
+      | Setting    | Value    | Tag                    |
+      |------------|----------|------------------------|
+      | Difficulty | Survival | <sub>![optional]</sub> |
    2. _Display_
 
-      | Setting          | Value |
-      |------------------|-------|
-      | Floating markers | Off   |
-   3. _VR_
+      | Setting          | Value | Tag                    |
+      |------------------|-------|------------------------|
+      | Floating markers | Off   | <sub>![optional]</sub> |
+   3. _VR_  
+      I expect the game to work fine if you change the optional settings, but haven't tested that.
 
-      | Setting                        | Value     |
-      |--------------------------------|-----------|
-      | Direct movement                | On        |
-      | Pip-Boy location               | Projected |
-      | Comfort vignette while moving  | Off       |
-      | Comfort vignette while turning | Off       |
-      | Rotation type                  | Smooth    |
+      | Setting                        | Value     | Tag                    |
+      |--------------------------------|-----------|------------------------|
+      | Direct movement                | On        | <sub>![optional]</sub> |
+      | Pip-Boy location               | Projected | <sub>![required]</sub> |
+      | Comfort vignette while moving  | Off       | <sub>![optional]</sub> |
+      | Comfort vignette while turning | Off       | <sub>![optional]</sub> |
+      | Rotation type                  | Smooth    | <sub>![optional]</sub> |
    4. _Performance_
 
-      | Setting               | Value |
-      |-----------------------|-------|
-      | Anti-aliasing         | TAA   |
-      | Anisotropic filtering | 16    |
-      | Character lighting    | Off   |
+      | Setting               | Value | Tag                    |
+      |-----------------------|-------|------------------------|
+      | Anti-aliasing         | TAA   | <sub>![required]</sub> |
+      | Anisotropic filtering | 16    | <sub>![required]</sub> |
+      | Character lighting    | Off   | <sub>![required]</sub> |
 
 ## 3.2 INI configuration<a name="ini-configuration"></a> <small><sup>[up ▲](#configuration)</sup></small>
 INI files contain extra game settings that are not found in the game's menus.
