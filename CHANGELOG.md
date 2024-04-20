@@ -1,4 +1,16 @@
 # Changelog
+## [unreleased]
+### Changed
+* Updated [Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/29447) from v1.5.4 to v1.5.6.
+* Updated [UFO4P - VR weapon and armor keyword crash patch](https://www.nexusmods.com/fallout4/mods/79711) from v2.1.5-1.0.4 to v2.1.5-1.0.5.
+* Updated [Classic Ghouls Redux - UFO4P and LotC patch](https://www.nexusmods.com/fallout4/mods/79713) from v1-1.0.4 to v1-1.0.5.
+* Updated [Radiation Overhaul - UFO4P and item name patch](https://www.nexusmods.com/fallout4/mods/79708) from v1.1-1.0.3 to v1.1-1.0.4.
+* Clarified which individual in-game settings are required, recommended, and optional.
+
+### Removed
+* Removed [Backpacks of the Commonwealth - Dirty Edit Patch](https://www.nexusmods.com/fallout4/mods/79705).
+
+
 ## [1.1.0] -- 2024-04-09
 Thank you, everyone, for the great reactions!
 
