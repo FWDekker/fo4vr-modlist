@@ -1,7 +1,15 @@
 # Changelog
-## [unreleased]
+## [1.1.1] -- 2024-04-24
+This version contains a few minor updates to mods and a few clarifications in the installation instructions. 
+
+### How to upgrade
+Follow these steps to update your mod list from v1.1.0 to v1.1.1 of my guide.
+
+* Update [Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/29447) from v1.5.4 to v1.5.6.
+* Remove [Backpacks of the Commonwealth - Dirty Edit Patch](https://www.nexusmods.com/fallout4/mods/79705).
+
 ### Added
-* Added small note on [FRIK](https://www.nexusmods.com/fallout4/mods/53464) alpha 64.
+* Added small note on [FRIK](https://www.nexusmods.com/fallout4/mods/53464) alpha 64. This version is currently untested in my guide, but is _probably_ fine.
 
 ### Changed
 * Updated [Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/29447) from v1.5.4 to v1.5.6.
@@ -15,6 +23,7 @@
 * Removed [Backpacks of the Commonwealth - Dirty Edit Patch](https://www.nexusmods.com/fallout4/mods/79705).
 
 ### Fixed
+* Corrected the version number of [Buffout 4 NG](https://www.nexusmods.com/fallout4/mods/64880) from v1.13.1 to v1.31.1. ([#12](https://github.com/FWDekker/fo4vr-modlist/issues/12))
 * Fixed a small typo in the [vrperfkit](https://github.com/fholger/vrperfkit) installation instructions.
 
 
