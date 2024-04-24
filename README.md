@@ -493,10 +493,9 @@ These are essentially toolkits that directly alter the game engine, and are requ
      2. Extract the downloaded file into `[fo4vr_dir]`.
         When prompted, choose to overwrite existing files.
      3. If you did this correctly, you should have the file `vrperfkit.yml` in the same directory as `Fallout4VR.exe`.
-     4. After installing, find the file `vrperfkit.yml`, open it with Notepad, and change `method: cat` to
+     4. :warning: After installing, find the file `vrperfkit.yml`, open it with Notepad, and change `method: cas` to
         `method: fsr`.
-        * Otherwise (at least on my machine), the game looks fine on my monitor, but inside my VR headset the screen is
-          black.
+        (If you skip this step, you'll probably get a black screen inside your headset.)
    * **Note:**
      If you verify the integrity of your game files in Steam, Steam will (partially) overwrite this mod, and you will
      have to re-install this mod.
