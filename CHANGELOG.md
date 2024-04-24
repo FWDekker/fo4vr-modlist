@@ -1,5 +1,8 @@
 # Changelog
 ## [unreleased]
+### Added
+* Added small note on [FRIK](https://www.nexusmods.com/fallout4/mods/53464) alpha 64.
+
 ### Changed
 * Updated [Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/29447) from v1.5.4 to v1.5.6.
 * Updated [UFO4P - VR weapon and armor keyword crash patch](https://www.nexusmods.com/fallout4/mods/79711) from v2.1.5-1.0.4 to v2.1.5-1.0.5.

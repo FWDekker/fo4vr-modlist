@@ -682,8 +682,9 @@ What we're left with is a single UI mod, which actually works fine.
 1. **[FRIK - Full Player Body with IK](https://www.nexusmods.com/fallout4/mods/53464)** (v0.58) <sub>![required]</sub>  
    Allows you to see your hands.
    Absolutely required for immersion.
-   * **Variant:** "alpha 58"
    * **Important:** Download this mod, but **keep it deactivated in MO2 for now**.
+   * **Note:**
+     The recent v0.64 has better left-handed support, and is probably fine, but I haven't personally tested it yet.
    * **Note:** [In-game configuration required.](#configure-ufo4p-and-frik)
    * **Untested alternative:** [Idle Hands](https://www.nexusmods.com/fallout4/mods/42922)
 2. **[Player Collision Options - nocollide actors](https://www.nexusmods.com/fallout4/mods/41866)** (v1.0) <sub>![required]</sub>  
