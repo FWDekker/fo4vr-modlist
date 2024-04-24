@@ -212,32 +212,33 @@ adjustments using INI configuration ([Section 3.2](#ini-configuration)).
    Go to "Compatibility" and enable "Disable full-screen optimisations".
 3. **FO4VR**  
    While in-game in VR, in FO4VR's main menu, go to "Settings" and apply the following settings.
-   1. _Gameplay_ <sub>![optional]</sub>
+   1. _Gameplay_
 
-      | Setting    | Value    |
-      |------------|----------|
-      | Difficulty | Survival |
+      | Setting    | Value    | Tag                    |
+      |------------|----------|------------------------|
+      | Difficulty | Survival | <sub>![optional]</sub> |
    2. _Display_
 
-      | Setting          | Value |
-      |------------------|-------|
-      | Floating markers | Off   |
-   3. _VR_
+      | Setting          | Value | Tag                    |
+      |------------------|-------|------------------------|
+      | Floating markers | Off   | <sub>![optional]</sub> |
+   3. _VR_  
+      I expect the game to work fine if you change the optional settings, but haven't tested that.
 
-      | Setting                        | Value     |
-      |--------------------------------|-----------|
-      | Direct movement                | On        |
-      | Pip-Boy location               | Projected |
-      | Comfort vignette while moving  | Off       |
-      | Comfort vignette while turning | Off       |
-      | Rotation type                  | Smooth    |
+      | Setting                        | Value     | Tag                    |
+      |--------------------------------|-----------|------------------------|
+      | Direct movement                | On        | <sub>![optional]</sub> |
+      | Pip-Boy location               | Projected | <sub>![required]</sub> |
+      | Comfort vignette while moving  | Off       | <sub>![optional]</sub> |
+      | Comfort vignette while turning | Off       | <sub>![optional]</sub> |
+      | Rotation type                  | Smooth    | <sub>![optional]</sub> |
    4. _Performance_
 
-      | Setting               | Value |
-      |-----------------------|-------|
-      | Anti-aliasing         | TAA   |
-      | Anisotropic filtering | 16    |
-      | Character lighting    | Off   |
+      | Setting               | Value | Tag                    |
+      |-----------------------|-------|------------------------|
+      | Anti-aliasing         | TAA   | <sub>![required]</sub> |
+      | Anisotropic filtering | 16    | <sub>![required]</sub> |
+      | Character lighting    | Off   | <sub>![required]</sub> |
 
 ## 3.2 INI configuration<a name="ini-configuration"></a> <small><sup>[up ▲](#configuration)</sup></small>
 INI files contain extra game settings that are not found in the game's menus.
@@ -492,10 +493,9 @@ These are essentially toolkits that directly alter the game engine, and are requ
      2. Extract the downloaded file into `[fo4vr_dir]`.
         When prompted, choose to overwrite existing files.
      3. If you did this correctly, you should have the file `vrperfkit.yml` in the same directory as `Fallout4VR.exe`.
-     4. After installing, find the file `vrperfkit.yml`, open it with Notepad, and change `method: cat` to
+     4. :warning: After installing, find the file `vrperfkit.yml`, open it with Notepad, and change `method: cas` to
         `method: fsr`.
-        * Otherwise (at least on my machine), the game looks fine on my monitor, but inside my VR headset the screen is
-          black.
+        (If you skip this step, you'll probably get a black screen inside your headset.)
    * **Note:**
      If you verify the integrity of your game files in Steam, Steam will (partially) overwrite this mod, and you will
      have to re-install this mod.
@@ -545,7 +545,7 @@ These mods fix bugs, either in the base game or in other mods.
      I have not experienced these bugs myself, and have not received such bug reports for this mod list specifically.
      Some people have strong opinions about UFO4P, so I'll leave the choice whether to install this one up to you.
      Either way, note that UFO4P (like many complex mods) should not be removed from your save after having used them.
-   * **Patch:** [VR weapon and armor keyword crash patch](https://www.nexusmods.com/fallout4/mods/79711) (v2.1.5-1.0.4)
+   * **Patch:** [VR weapon and armor keyword crash patch](https://www.nexusmods.com/fallout4/mods/79711) (v2.1.5-1.0.5)
 3. **[DLCVR - Fallout 4 VR and DLC standalone bug fixes](https://www.nexusmods.com/fallout4/mods/28842)** (v1.0.4) <sub>![required]</sub>  
    Fixes issues specific to FO4FH and FO4NW, relating to invisible floors and so on.
    * **Requires:** FO4FH _or_ FO4NW
@@ -556,7 +556,7 @@ These mods fix bugs, either in the base game or in other mods.
    * **Variant:** "No wild edits"
 5. **[Buffout 4](https://www.nexusmods.com/fallout4/mods/47359)** (v1.28.6) <sub>![required]</sub>  
    Fixes engine bugs and adds a crash logger.
-6. **[Buffout 4 NG with PDB support](https://www.nexusmods.com/fallout4/mods/64880)** (v1.13.1) <sub>![required]</sub>  
+6. **[Buffout 4 NG with PDB support](https://www.nexusmods.com/fallout4/mods/64880)** (v1.31.1) <sub>![required]</sub>  
    Same as above, but for VR.
 7. **[Multiple Floors Sandboxing](https://www.nexusmods.com/fallout4/mods/15608)** (v1.0) <sub>![required]</sub>  
    In locations with multiple storeys, NPCs walk only on the ground storey.
@@ -611,7 +611,7 @@ Personally, I eventually disabled these because I preferred higher graphical qua
    * **Variant:** "Better Performance - Non ESP Version"
 7. **[Classic Ghouls Redux](https://www.nexusmods.com/fallout4/mods/57362)** (v1) <sub>![optional]</sub>  
    Changes (non-feral) ghoul textures to look more like ghouls from Fallout 3.
-   * **Patch:** [UFO4P and LotC patch](https://www.nexusmods.com/fallout4/mods/79713) (v1-1.0.4)
+   * **Patch:** [UFO4P and LotC patch](https://www.nexusmods.com/fallout4/mods/79713) (v1-1.0.5)
 
 ## 4.6 Lighting<a name="lighting"></a> <small><sup>[up ▲](#list-of-mods)</sup></small>
 By default, the world looks _really_ overexposed, which makes the outside like outright ugly.
@@ -681,8 +681,9 @@ What we're left with is a single UI mod, which actually works fine.
 1. **[FRIK - Full Player Body with IK](https://www.nexusmods.com/fallout4/mods/53464)** (v0.58) <sub>![required]</sub>  
    Allows you to see your hands.
    Absolutely required for immersion.
-   * **Variant:** "alpha 58"
    * **Important:** Download this mod, but **keep it deactivated in MO2 for now**.
+   * **Note:**
+     The recent v0.64 has better left-handed support, and is probably fine, but I haven't personally tested it yet.
    * **Note:** [In-game configuration required.](#configure-ufo4p-and-frik)
    * **Untested alternative:** [Idle Hands](https://www.nexusmods.com/fallout4/mods/42922)
 2. **[Player Collision Options - nocollide actors](https://www.nexusmods.com/fallout4/mods/41866)** (v1.0) <sub>![required]</sub>  
@@ -781,12 +782,10 @@ Some (but not all) of them assume you play in Survival mode, which I recommend y
    Otherwise you'll quickly find you'll have so much ammo and chems the game just totally isn't challenging anymore.
 5. **[NPC Loot Drop rebalance](https://www.nexusmods.com/fallout4/mods/24163)** (v1.0) <sub>![recommended]</sub>  
    Reduces loot found on NPCs, in line with the above mod.
-6. **[Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/29447)** (v1.5.4) <sub>![recommended]</sub>  
+6. **[Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/29447)** (v1.5.6) <sub>![recommended]</sub>  
    In survival, you have less carrying capacity and heavier items. These backpacks will come in use.
    * **Requires:** FO4AU _and_ FO4FH _and_ FO4NW
-   * **Variant:** "1.5.4"
    * **Installer:** "Scripted Level List Inject"
-   * **Patch:** [Dirty Edit Patch](https://www.nexusmods.com/fallout4/mods/79705) (v1.5.4-1.0.2)
    * **Note:** [In-game configuration required.](#configure-backpacks-of-the-commonwealth)
 7. **[Dogmeat's Backpack](https://www.nexusmods.com/fallout4/mods/10111)** (v2.0) <sub>![recommended]</sub>  
    As above, but now for your companion.
@@ -805,7 +804,7 @@ Some (but not all) of them assume you play in Survival mode, which I recommend y
 10. **[Radiation Overhaul - 4x More Radiation Across the Wasteland](https://www.nexusmods.com/fallout4/mods/13790)** (v1.1) <sub>![optional]</sub>  
     Makes radiation actually dangerous.
     * **Variant:** depends on your DLC
-    * **Patch:** [UFO4P and item name patch](https://www.nexusmods.com/fallout4/mods/79708) (v1.1-1.0.3)
+    * **Patch:** [UFO4P and item name patch](https://www.nexusmods.com/fallout4/mods/79708) (v1.1-1.0.4)
 
 ## 4.12 Settlements<a name="settlements"></a> <small><sup>[up ▲](#list-of-mods)</sup></small>
 I think Fallout 4's settlements are very flawed.

@@ -1,4 +1,32 @@
 # Changelog
+## [1.1.1] -- 2024-04-24
+This version contains a few minor updates to mods and a few clarifications in the installation instructions. 
+
+### How to upgrade
+Follow these steps to update your mod list from v1.1.0 to v1.1.1 of my guide.
+
+* Update [Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/29447) from v1.5.4 to v1.5.6.
+* Remove [Backpacks of the Commonwealth - Dirty Edit Patch](https://www.nexusmods.com/fallout4/mods/79705).
+
+### Added
+* Added small note on [FRIK](https://www.nexusmods.com/fallout4/mods/53464) alpha 64. This version is currently untested in my guide, but is _probably_ fine.
+
+### Changed
+* Updated [Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/29447) from v1.5.4 to v1.5.6.
+* Updated [UFO4P - VR weapon and armor keyword crash patch](https://www.nexusmods.com/fallout4/mods/79711) from v2.1.5-1.0.4 to v2.1.5-1.0.5.
+* Updated [Classic Ghouls Redux - UFO4P and LotC patch](https://www.nexusmods.com/fallout4/mods/79713) from v1-1.0.4 to v1-1.0.5.
+* Updated [Radiation Overhaul - UFO4P and item name patch](https://www.nexusmods.com/fallout4/mods/79708) from v1.1-1.0.3 to v1.1-1.0.4.
+* Clarified which individual in-game settings are required, recommended, and optional.
+* Emphasised the need to change the config for [vrperfkit](https://github.com/fholger/vrperfkit) to ensure the game properly displays in the headset, since several users overlooked this.
+
+### Removed
+* Removed [Backpacks of the Commonwealth - Dirty Edit Patch](https://www.nexusmods.com/fallout4/mods/79705).
+
+### Fixed
+* Corrected the version number of [Buffout 4 NG](https://www.nexusmods.com/fallout4/mods/64880) from v1.13.1 to v1.31.1. ([#12](https://github.com/FWDekker/fo4vr-modlist/issues/12))
+* Fixed a small typo in the [vrperfkit](https://github.com/fholger/vrperfkit) installation instructions.
+
+
 ## [1.1.0] -- 2024-04-09
 Thank you, everyone, for the great reactions!
 
