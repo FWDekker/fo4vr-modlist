@@ -1,4 +1,11 @@
 # Changelog
+## [unreleased]
+### Changed
+* Changed [xSE PluginPreloader F4](https://www.nexusmods.com/fallout4/mods/33946) from _required_ to _recommended_.
+* Changed [Multiple Floors Sandboxing](https://www.nexusmods.com/fallout4/mods/15608) from _required_ to _recommended_.
+* Changed [No Aggro Impact Landing (Power Armor)](https://www.nexusmods.com/fallout4/mods/9019) from _required_ to _recommended_.
+
+
 ## [1.1.1] -- 2024-04-24
 This version contains a few minor updates to mods and a few clarifications in the installation instructions. 
 
