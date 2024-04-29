@@ -1,5 +1,5 @@
 ﻿# Florine's Fallout 4 VR
-v1.1.0 • [changelog](CHANGELOG.md) • [how to update](CHANGELOG.md)
+v1.1.1 • [changelog](CHANGELOG.md) • [how to update](CHANGELOG.md)
 
 > A thorough, beginner-friendly guide for a stable, vanilla-ish experience.
 
