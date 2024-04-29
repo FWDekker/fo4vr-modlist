@@ -500,8 +500,9 @@ These are essentially toolkits that directly alter the game engine, and are requ
      If you verify the integrity of your game files in Steam, Steam will (partially) overwrite this mod, and you will
      have to re-install this mod.
    * **Untested alternative:** [Fallout4 Upscaler VR](https://www.nexusmods.com/fallout4/mods/73715)
-4. **[xSE PluginPreloader F4](https://www.nexusmods.com/fallout4/mods/33946)** (v0.2.5.1) <sub>![recommended]</sub>  
-   Will pre-load F4SEVR scripts before loading a save.
+4. **[xSE PluginPreloader F4](https://www.nexusmods.com/fallout4/mods/33946)** (v0.2.5.1) <sub>![required]</sub>  
+   Will pre-load F4SEVR scripts before loading a save (and is required for
+   [Buffout 4 NG with PDB support](https://www.nexusmods.com/fallout4/mods/64880)).
    * **Installation instructions:**
      1. Go to the [NexusMods page](https://www.nexusmods.com/fallout4/mods/33946).
      2. Go to "Files", click "Manual download", and again click "Download".
