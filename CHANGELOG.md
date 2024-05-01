@@ -1,5 +1,15 @@
 # Changelog
-## [unreleased]
+## [1.1.2] -- 2024-05-01
+This version contains a few fixes for new users, but nothing significant for existing users.
+
+### How to upgrade
+No steps are required to update your mod list from v1.1.1 to v1.1.2 of my guide.
+
+### Added
+* Added instructions for dealing with DLC incompatibilities due to the non-VR FO4 next-gen update. ([#14](https://github.com/FWDekker/fo4vr-modlist/pull/14))
+* Added an acknowledgements section to the guide.
+* Added [KindaWorks](https://github.com/KindaWorks) to the acknowledgements. ([#14](https://github.com/FWDekker/fo4vr-modlist/pull/14))
+
 ### Changed
 * Changed [Multiple Floors Sandboxing](https://www.nexusmods.com/fallout4/mods/15608) from _required_ to _recommended_.
 * Changed [No Aggro Impact Landing (Power Armor)](https://www.nexusmods.com/fallout4/mods/9019) from _required_ to _recommended_.

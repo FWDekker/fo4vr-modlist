@@ -1,5 +1,5 @@
 ﻿# Florine's Fallout 4 VR
-v1.1.0 • [changelog](CHANGELOG.md) • [how to update](CHANGELOG.md)
+v1.1.2 • [changelog](CHANGELOG.md) • [how to update](CHANGELOG.md)
 
 > A thorough, beginner-friendly guide for a stable, vanilla-ish experience.
 
@@ -50,6 +50,8 @@ If you don't understand something, experience in-game issues, have suggestions, 
 | [**3 Configuration**](#configuration)
 | [**4 List of mods**](#list-of-mods)
 | [**5 Playing the game**](#playing-the-game)
+| [**6 Conclusion**](#conclusion)
+| [**7 Acknowledgements**](#acknowledgements)
 
 ---
 
@@ -1107,6 +1109,17 @@ I hope this guide was useful for you :-)
 If you don't understand something, experience in-game issues, have suggestions, or just need some help,
 [check out the Discussions page](https://github.com/FWDekker/fo4vr-modlist/discussions) or
 [open an issue](https://github.com/FWDekker/fo4vr-modlist/issues).
+
+
+# 7 Acknowledgements<a name="acknowledgements"></a> <small><sup>[top ▲](#toc)</sup></small>
+I want to thank everyone who contributed something to my FO4VR guide, no matter the size of that contribution.
+
+In chronological order of contribution:
+* Thanks to [KindaWorks](https://github.com/KindaWorks) for [figuring out that the next-gen update for non-VR FO4 means
+  you now have to downgrade Automatron](https://github.com/FWDekker/fo4vr-modlist/pull/14)!
+
+If I should add, remove, or change anything here, just
+[open an issue](https://github.com/FWDekker/fo4vr-modlist/issues/new) or [email me](https://fwdekker.com/about/)!
 
 
   [required]:    https://img.shields.io/badge/required-red?style=flat-square "required"
