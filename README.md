@@ -109,7 +109,6 @@ Here is a list of tags.
 | **MO2**           | Mod Organizer 2                             |                                           |
 | **`[fo4_dir]`**   | Where you installed non-VR FO4              | `C:\Steam\steamapps\common\Fallout 4\`    |
 | **`[fo4vr_dir]`** | Where you installed FO4VR                   | `C:\Steam\steamapps\common\Fallout 4 VR\` |
-| **`[steam_dir]`** | Where you installed Steam                   | `C:\Steam`                                |
 | **`[username]`**  | Your Windows username                       | `florine`                                 |
 
 
@@ -193,15 +192,22 @@ To copy non-VR FO4's DLC into FO4VR,
 2. select all files that start with `DLC`, except those that start with `DLCUltraHighResolution`, and
 3. copy those files to `[fo4vr_dir]\Data\`.
 
-If you have the latest version of the DLCs you will most probably have problems with Automatron DLC. You can either
-remove it or download older version of this DLC. To downgrade use [Steam console](steam://open/console) and paste
-in these two commands:
-* `download_depot 377160 435870 1691678129192680960`
-* `download_depot 377160 435871 5106118861901111234`
-This will download older files for the Automatron DLC and it should give you the location where they are downloaded.
-(It's `[steam_dir]/steamapps/content/app_377160/depot_xxxxxx/`) If you go to these locations you should see Data
-folder. You can just copy and paste it into the `[fo4vr_dir]`. You should probably do that after copying the rest of
-the DLCs, so you don't accidentally overwrite this one.
+Since non-VR FO4's [next-gen update](https://bethesda.net/en/article/4s2bXQEbpcrsdCZhUYLHAi/x), the Automatron DLC is no
+longer compatible with FO4VR.
+Luckily, you can still get the old files using the Steam Console.
+1. Open the Steam Console.
+   You can open the Steam Console directly by visiting `steam://open/console` in your browser, or
+   [check this guide if that doesn't work](https://steamcommunity.com/sharedfiles/filedetails/?id=873543244).
+2. In the Steam Console, run the following two commands to download the old Automatron files:
+   ```
+   download_depot 377160 435870 1691678129192680960
+   ```
+   ```
+   download_depot 377160 435871 5106118861901111234
+   ```
+3. After each command, the console will say `Depot download complete : "[path]" ([number] files, manifest [id])`.
+   After each command, go to this `[path]` in File Explorer, and copy the `Data` directory into `[fo4_dir]`, overwriting
+   files when prompted.
 
 
 
