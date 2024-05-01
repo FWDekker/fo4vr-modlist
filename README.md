@@ -192,6 +192,23 @@ To copy non-VR FO4's DLC into FO4VR,
 2. select all files that start with `DLC`, except those that start with `DLCUltraHighResolution`, and
 3. copy those files to `[fo4vr_dir]\Data\`.
 
+Since non-VR FO4's [next-gen update](https://bethesda.net/en/article/4s2bXQEbpcrsdCZhUYLHAi/x), the Automatron DLC is no
+longer compatible with FO4VR.
+Luckily, you can still get the old files using the Steam Console.
+1. Open the Steam Console.
+   You can open the Steam Console directly by visiting `steam://open/console` in your browser, or
+   [check this guide if that doesn't work](https://steamcommunity.com/sharedfiles/filedetails/?id=873543244).
+2. In the Steam Console, run the following two commands to download the old Automatron files:
+   ```
+   download_depot 377160 435870 1691678129192680960
+   ```
+   ```
+   download_depot 377160 435871 5106118861901111234
+   ```
+3. After each command, the console will say `Depot download complete : "[path]" ([number] files, manifest [id])`.
+   After each command, go to this `[path]` in File Explorer, and copy the `Data` directory into `[fo4_dir]`, overwriting
+   files when prompted.
+
 
 
 # 3 Configuration<a name="configuration"></a> <small><sup>[top ▲](#toc)</sup></small>
