@@ -1,5 +1,5 @@
 ﻿# Florine's Fallout 4 VR
-v1.1.1 • [changelog](CHANGELOG.md) • [how to update](CHANGELOG.md)
+v1.1.2 • [changelog](CHANGELOG.md) • [how to update](CHANGELOG.md)
 
 > A thorough, beginner-friendly guide for a stable, vanilla-ish experience.
 
@@ -50,6 +50,8 @@ If you don't understand something, experience in-game issues, have suggestions, 
 | [**3 Configuration**](#configuration)
 | [**4 List of mods**](#list-of-mods)
 | [**5 Playing the game**](#playing-the-game)
+| [**6 Conclusion**](#conclusion)
+| [**7 Acknowledgements**](#acknowledgements)
 
 ---
 
@@ -191,6 +193,23 @@ To copy non-VR FO4's DLC into FO4VR,
 1. go to the `[fo4_dir]\Data\` directory,
 2. select all files that start with `DLC`, except those that start with `DLCUltraHighResolution`, and
 3. copy those files to `[fo4vr_dir]\Data\`.
+
+Since non-VR FO4's [next-gen update](https://bethesda.net/en/article/4s2bXQEbpcrsdCZhUYLHAi/x), the Automatron DLC is no
+longer compatible with FO4VR.
+Luckily, you can still get the old files using the Steam Console.
+1. Open the Steam Console.
+   You can open the Steam Console directly by visiting `steam://open/console` in your browser, or
+   [check this guide if that doesn't work](https://steamcommunity.com/sharedfiles/filedetails/?id=873543244).
+2. In the Steam Console, run the following two commands to download the old Automatron files:
+   ```
+   download_depot 377160 435870 1691678129192680960
+   ```
+   ```
+   download_depot 377160 435871 5106118861901111234
+   ```
+3. After each command, the console will say `Depot download complete : "[path]" ([number] files, manifest [id])`.
+   After each command, go to this `[path]` in File Explorer, and copy the `Data` directory into `[fo4_dir]`, overwriting
+   files when prompted.
 
 
 
@@ -501,7 +520,8 @@ These are essentially toolkits that directly alter the game engine, and are requ
      have to re-install this mod.
    * **Untested alternative:** [Fallout4 Upscaler VR](https://www.nexusmods.com/fallout4/mods/73715)
 4. **[xSE PluginPreloader F4](https://www.nexusmods.com/fallout4/mods/33946)** (v0.2.5.1) <sub>![required]</sub>  
-   Will pre-load F4SEVR scripts before loading a save.
+   Will pre-load F4SEVR scripts before loading a save (and is required for
+   [Buffout 4 NG with PDB support](https://www.nexusmods.com/fallout4/mods/64880)).
    * **Installation instructions:**
      1. Go to the [NexusMods page](https://www.nexusmods.com/fallout4/mods/33946).
      2. Go to "Files", click "Manual download", and again click "Download".
@@ -558,10 +578,10 @@ These mods fix bugs, either in the base game or in other mods.
    Fixes engine bugs and adds a crash logger.
 6. **[Buffout 4 NG with PDB support](https://www.nexusmods.com/fallout4/mods/64880)** (v1.31.1) <sub>![required]</sub>  
    Same as above, but for VR.
-7. **[Multiple Floors Sandboxing](https://www.nexusmods.com/fallout4/mods/15608)** (v1.0) <sub>![required]</sub>  
+7. **[Multiple Floors Sandboxing](https://www.nexusmods.com/fallout4/mods/15608)** (v1.0) <sub>![recommended]</sub>  
    In locations with multiple storeys, NPCs walk only on the ground storey.
    This mod fixes that behaviour so NPCs walk on all storeys.
-8. **[No Aggro Impact Landing (Power Armor)](https://www.nexusmods.com/fallout4/mods/9019)** (v1.0) <sub>![required]</sub>  
+8. **[No Aggro Impact Landing (Power Armor)](https://www.nexusmods.com/fallout4/mods/9019)** (v1.0) <sub>![recommended]</sub>  
    If you wear power armour and fall from a height, you will create a shock wave that damages NPCs around you.
    Friendly NPCs damaged this way may become hostile, even if you do so by accident.
    This mod ensures that you do not accidentally turn friendly NPCs hostile this way.
@@ -1089,6 +1109,17 @@ I hope this guide was useful for you :-)
 If you don't understand something, experience in-game issues, have suggestions, or just need some help,
 [check out the Discussions page](https://github.com/FWDekker/fo4vr-modlist/discussions) or
 [open an issue](https://github.com/FWDekker/fo4vr-modlist/issues).
+
+
+# 7 Acknowledgements<a name="acknowledgements"></a> <small><sup>[top ▲](#toc)</sup></small>
+I want to thank everyone who contributed something to my FO4VR guide, no matter the size of that contribution.
+
+In chronological order of contribution:
+* Thanks to [KindaWorks](https://github.com/KindaWorks) for [figuring out that the next-gen update for non-VR FO4 means
+  you now have to downgrade Automatron](https://github.com/FWDekker/fo4vr-modlist/pull/14)!
+
+If I should add, remove, or change anything here, just
+[open an issue](https://github.com/FWDekker/fo4vr-modlist/issues/new) or [email me](https://fwdekker.com/about/)!
 
 
   [required]:    https://img.shields.io/badge/required-red?style=flat-square "required"
