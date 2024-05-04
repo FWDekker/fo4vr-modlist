@@ -1,4 +1,14 @@
 # Changelog
+## [1.1.3] -- 2024-05-05
+This version contains only one minor fix, but nothing significant for existing users.
+
+### How to upgrade
+No steps are required to update your mod list from v1.1.2 to v1.1.3 of my guide.
+
+### Fixed
+* Fixed the directory to install downgraded DLC into from `[fo4_dir]` to `[fo4vr_dir]`. ([#16](https://github.com/FWDekker/fo4vr-modlist/pull/16))
+
+
 ## [1.1.2] -- 2024-05-01
 This version contains a few fixes for new users, but nothing significant for existing users.
 

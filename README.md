@@ -1,5 +1,5 @@
 ﻿# Florine's Fallout 4 VR
-v1.1.2 • [changelog](CHANGELOG.md) • [how to update](CHANGELOG.md)
+v1.1.3 • [changelog](CHANGELOG.md) • [how to update](CHANGELOG.md)
 
 > A thorough, beginner-friendly guide for a stable, vanilla-ish experience.
 
@@ -208,8 +208,8 @@ Luckily, you can still get the old files using the Steam Console.
    download_depot 377160 435871 5106118861901111234
    ```
 3. After each command, the console will say `Depot download complete : "[path]" ([number] files, manifest [id])`.
-   After each command, go to this `[path]` in File Explorer, and copy the `Data` directory into `[fo4_dir]`, overwriting
-   files when prompted.
+   After each command, go to this `[path]` in File Explorer, and copy the `Data` directory into `[fo4vr_dir]`, 
+   overwriting files when prompted.
 
 
 
@@ -1117,6 +1117,8 @@ I want to thank everyone who contributed something to my FO4VR guide, no matter 
 In chronological order of contribution:
 * Thanks to [KindaWorks](https://github.com/KindaWorks) for [figuring out that the next-gen update for non-VR FO4 means
   you now have to downgrade Automatron](https://github.com/FWDekker/fo4vr-modlist/pull/14)!
+* Thanks to [GeekOffTheStreet](https://github.com/GeekOffTheStreet) for [reporting an incorrect directory in the DLC
+  instructions](https://github.com/FWDekker/fo4vr-modlist/issues/16)!
 
 If I should add, remove, or change anything here, just
 [open an issue](https://github.com/FWDekker/fo4vr-modlist/issues/new) or [email me](https://fwdekker.com/about/)!
