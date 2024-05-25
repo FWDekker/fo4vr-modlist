@@ -299,8 +299,7 @@ INI files obey the following rules.
 
 ### 3.2.2 INI settings you should add<a name="ini-settings-you-should-add"></a> <small><sup>[up ▲](#ini-configuration)</sup></small>
 > [!IMPORTANT]
-> The following changes should go into `fallout4custom.ini`.
-
+> The following changes should go into `fallout4custom.ini` in MO2.
 > [!IMPORTANT]
 > Make sure each section/variable occurs at most once.
 
@@ -347,6 +346,9 @@ fSwimSpeedScalar=1.2500
 fVrSwimDragCoefficient=0.0500
 fVrSwimHMDFloatThreshold=0.7200
 bVrSwimDeliberateResurface=1
+[Menu]
+iConsoleSizeScreenPercent=80
+iConsoleTextSize=40
 ```
 
 **Default MO2 settings** <sub>![required]</sub>
@@ -430,6 +432,13 @@ fVrSwimHMDFloatThreshold=0.7200
 bVrSwimDeliberateResurface=1
 ```
 
+**Increase dev console legibility** <sub>![recommended]</sub>
+```ini
+[Menu]
+iConsoleSizeScreenPercent=80
+iConsoleTextSize=40
+```
+
 **Set move direction relative to headset instead of controller** <sub>![optional]</sub>
 ```ini
 [VRInput]
@@ -450,7 +459,7 @@ Here's a bunch of other resources that may be useful for you.
 * <sub>![reddit]</sub>
   [INI Tweak Megathread](https://www.reddit.com/r/fo4vr/comments/7kenxb/)
 * <sub>![reddit]</sub>
-  [Comprehensive modding and tweaking guide for Fallout 4 VR](https://www.reddit.com/r/fo4vr/comments/d55jzy/)
+  [Comprehensive modding and tweaking guide for Fallout 4 VR](http://web.archive.org/web/20230612094028/https://old.reddit.com/r/fo4vr/comments/d55jzy/comprehensive_modding_and_tweaking_guide_for/)
 
 
 
