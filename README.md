@@ -555,11 +555,14 @@ These mods fix bugs, either in the base game or in other mods.
    [As explained in the introduction](#about-modding-fo4vr), most mods will be created for the wrong game version.
    The game warns you of this in the main menu.
    This mod disables those warnings, because they're annoying and there's not a whole lot you can do about it anyway.
-2. **[Unofficial Fallout 4 Patch - UFO4P](https://www.nexusmods.com/fallout4/mods/4598)** (v2.1.5) <sub>![recommended]</sub>  
+2. **[Unofficial Fallout 4 Patch - UFO4P](https://www.nexusmods.com/fallout4/mods/4598?tab=files&file_id=270951)** (v2.1.5) <sub>![recommended]</sub>  
    Fixes a bunch of bugs, big and small, in the base game and add-ons.
    UFO4P's authors do not officially support VR, but overall the pros outweigh the cons.
    * **Requires:** all DLC
    * **Important:** Download this mod, but **keep it deactivated in MO2 for now**.
+   * **Note:**
+     Do **not** use newer versions of UFO4P.
+     Versions newer than v2.1.5 do not work with FO4VR.
    * **Note:**
      Some users report that UFO4P soft locks the DLC (especially with FO4FH).
      I have not experienced these bugs myself, and have not received such bug reports for this mod list specifically.
