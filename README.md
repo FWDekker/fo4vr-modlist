@@ -1,4 +1,4 @@
-﻿# Florine's Fallout 4 VR
+# Florine's Fallout 4 VR
 v1.1.3 • [changelog](CHANGELOG.md) • [how to update](CHANGELOG.md)
 
 > A thorough, beginner-friendly guide for a stable, vanilla-ish experience.
@@ -185,30 +185,36 @@ You can remove old files as follows.
 
 ## 2.3 Using DLC in FO4VR<a name="using-dlc-in-fo4vr"></a> <small><sup>[up ▲](#setup)</sup></small>
 FO4VR does not include the DLC, which sucks.
-Luckily, if you have non-VR FO4, you can just copy the DLC files into your FO4VR installation and then install a few
-patches (included in the [mod list](#list-of-mods)).
+Luckily, if you have non-VR FO4, you can just partially downgrade non-VR FO4, copy the DLC files into your FO4VR 
+installation, and install a few patches (included in the [mod list](#list-of-mods)).
 If you don't have non-VR FO4 with DLC, and don't want to buy it, you can safely skip the steps that require DLC.
 
-To copy non-VR FO4's DLC into FO4VR,
+First, copy non-VR FO4's DLC into FO4VR,
 1. go to the `[fo4_dir]\Data\` directory,
 2. select all files that start with `DLC`, except those that start with `DLCUltraHighResolution`, and
 3. copy those files to `[fo4vr_dir]\Data\`.
 
-Since non-VR FO4's [next-gen update](https://bethesda.net/en/article/4s2bXQEbpcrsdCZhUYLHAi/x), the Automatron DLC is no
+Since non-VR FO4's [next-gen update](https://bethesda.net/en/article/4s2bXQEbpcrsdCZhUYLHAi/x), various DLCs are no
 longer compatible with FO4VR.
-Luckily, you can still get the old files using the Steam Console.
+Luckily, you can still get the old versions of those DLCs using the Steam Console.
+You will download those, and then overwrite the files you copied earlier.
 1. Open the Steam Console.
-   You can open the Steam Console directly by visiting `steam://open/console` in your browser, or
-   [check this guide if that doesn't work](https://steamcommunity.com/sharedfiles/filedetails/?id=873543244).
-2. In the Steam Console, run the following two commands to download the old Automatron files:
+   You can open the Steam Console directly by
+   * visiting `steam://open/console` in your browser, or
+   * pressing <kbd>⊞ Win</kbd> + <kbd>R</kbd>, writing `steam://open/console`, and pressing <kbd>Enter</kbd>, or
+   * [checking this guide](https://steamcommunity.com/sharedfiles/filedetails/?id=873543244).
+2. In the Steam Console, run the following three commands to download the old DLC files:
    ```
    download_depot 377160 435870 1691678129192680960
    ```
    ```
    download_depot 377160 435871 5106118861901111234
    ```
+   ```
+   download_depot 377160 435880 1255562923187931216
+   ```
 3. After each command, the console will say `Depot download complete : "[path]" ([number] files, manifest [id])`.
-   After each command, go to this `[path]` in File Explorer, and copy the `Data` directory into `[fo4vr_dir]`, 
+   After each command, go to this `[path]` in File Explorer, and copy the `Data` directory into `[fo4vr_dir]`,
    overwriting files when prompted.
 
 
