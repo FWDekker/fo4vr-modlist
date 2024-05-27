@@ -1,5 +1,5 @@
-﻿# Florine's Fallout 4 VR
-v1.1.3 • [changelog](CHANGELOG.md) • [how to update](CHANGELOG.md)
+# Florine's Fallout 4 VR
+v1.2.0 • [changelog](CHANGELOG.md) • [how to update](CHANGELOG.md)
 
 > A thorough, beginner-friendly guide for a stable, vanilla-ish experience.
 
@@ -152,7 +152,8 @@ You can remove old files as follows.
 
 * **Windows 11** (v23H2) <sub>![required]</sub>  
   I use Linux for everything, including gaming, but for VR gaming it's just not a good choice as of 2024.
-* **SteamVR** (v2.4.3) <sub>![required]</sub>
+  * **Note:** Windows 10 might be fine as well, but I haven't tested it.
+* **SteamVR** (v2.5.5) <sub>![required]</sub>
 * **Fallout 4 VR** (v1.2.72.0.1) <sub>![required]</sub>
   * Do **not** install FO4VR in or below `C:\Program Files (x86)\`.
     Doing so may result in specific mods/tools unexpectedly failing, because Windows doesn't like it when software
@@ -165,9 +166,11 @@ You can remove old files as follows.
     [move your entire Steam installation to another directory as explain in Steam's help
     pages](https://help.steampowered.com/en/faqs/view/4BD4-4528-6B2E-8327).
     Personally, I went for `C:\Users\[username]\Steam\`.
-  * No, there is no simpler way. Yes, this is required.
-* **Fallout 4 with all DLC** (v1.10.163) <sub>![recommended]</sub>  
-  [More information in Section 2.3.](#using-dlc-in-fo4vr)
+  * No, there is no simpler way. 
+    Yes, this is required.
+* **Fallout 4 with all DLC** (v1.10.163) <sub>![recommended]</sub>
+  [More information in Section 2.3](#using-dlc-in-fo4vr), including instructions for dealing with the
+  [next-gen patch](https://bethesda.net/en/article/4s2bXQEbpcrsdCZhUYLHAi/x).
 * **[Mod Organizer 2](https://www.modorganizer.org/)** (v2.5.0) <sub>![required]</sub>
   * Use the `.exe` installer.
   * For performance reasons, you should prefer installing on an SSD.
@@ -185,31 +188,39 @@ You can remove old files as follows.
 
 ## 2.3 Using DLC in FO4VR<a name="using-dlc-in-fo4vr"></a> <small><sup>[up ▲](#setup)</sup></small>
 FO4VR does not include the DLC, which sucks.
-Luckily, if you have non-VR FO4, you can just copy the DLC files into your FO4VR installation and then install a few
-patches (included in the [mod list](#list-of-mods)).
+Luckily, if you have non-VR FO4, you can just partially downgrade non-VR FO4, copy the DLC files into your FO4VR 
+installation, and install a few patches (included in the [mod list](#list-of-mods)).
 If you don't have non-VR FO4 with DLC, and don't want to buy it, you can safely skip the steps that require DLC.
 
-To copy non-VR FO4's DLC into FO4VR,
+First, copy non-VR FO4's DLC into FO4VR,
 1. go to the `[fo4_dir]\Data\` directory,
 2. select all files that start with `DLC`, except those that start with `DLCUltraHighResolution`, and
 3. copy those files to `[fo4vr_dir]\Data\`.
 
-Since non-VR FO4's [next-gen update](https://bethesda.net/en/article/4s2bXQEbpcrsdCZhUYLHAi/x), the Automatron DLC is no
+Since non-VR FO4's [next-gen update](https://bethesda.net/en/article/4s2bXQEbpcrsdCZhUYLHAi/x), various DLCs are no
 longer compatible with FO4VR.
-Luckily, you can still get the old files using the Steam Console.
+Luckily, you can still get the old versions of those DLCs using the Steam Console.
+You will download those, and then overwrite the files you copied earlier.
 1. Open the Steam Console.
-   You can open the Steam Console directly by visiting `steam://open/console` in your browser, or
-   [check this guide if that doesn't work](https://steamcommunity.com/sharedfiles/filedetails/?id=873543244).
-2. In the Steam Console, run the following two commands to download the old Automatron files:
+   You can open the Steam Console directly by
+   * visiting `steam://open/console` in your browser, or
+   * pressing <kbd>⊞ Win</kbd> + <kbd>R</kbd>, writing `steam://open/console`, and pressing <kbd>Enter</kbd>, or
+   * [checking this guide](https://steamcommunity.com/sharedfiles/filedetails/?id=873543244).
+2. In the Steam Console, run the following three commands to download the old DLC files:
    ```
    download_depot 377160 435870 1691678129192680960
    ```
    ```
    download_depot 377160 435871 5106118861901111234
    ```
+   ```
+   download_depot 377160 435880 1255562923187931216
+   ```
 3. After each command, the console will say `Depot download complete : "[path]" ([number] files, manifest [id])`.
-   After each command, go to this `[path]` in File Explorer, and copy the `Data` directory into `[fo4vr_dir]`, 
+   After each command, go to this `[path]` in File Explorer, and copy the `Data` directory into `[fo4vr_dir]`,
    overwriting files when prompted.
+4. In MO2, on the right-hand side, go to the tab "Plugins", find the `.esm` files at the top of the list, and make sure
+   all `.esm` files are enabled using the respective checkboxes.
 
 
 
@@ -293,8 +304,7 @@ INI files obey the following rules.
 
 ### 3.2.2 INI settings you should add<a name="ini-settings-you-should-add"></a> <small><sup>[up ▲](#ini-configuration)</sup></small>
 > [!IMPORTANT]
-> The following changes should go into `fallout4custom.ini`.
-
+> The following changes should go into `fallout4custom.ini`, which must be edited in MO2.
 > [!IMPORTANT]
 > Make sure each section/variable occurs at most once.
 
@@ -341,6 +351,9 @@ fSwimSpeedScalar=1.2500
 fVrSwimDragCoefficient=0.0500
 fVrSwimHMDFloatThreshold=0.7200
 bVrSwimDeliberateResurface=1
+[Menu]
+iConsoleSizeScreenPercent=80
+iConsoleTextSize=40
 ```
 
 **Default MO2 settings** <sub>![required]</sub>
@@ -424,6 +437,13 @@ fVrSwimHMDFloatThreshold=0.7200
 bVrSwimDeliberateResurface=1
 ```
 
+**Increase dev console legibility** <sub>![recommended]</sub>
+```ini
+[Menu]
+iConsoleSizeScreenPercent=80
+iConsoleTextSize=40
+```
+
 **Set move direction relative to headset instead of controller** <sub>![optional]</sub>
 ```ini
 [VRInput]
@@ -444,7 +464,7 @@ Here's a bunch of other resources that may be useful for you.
 * <sub>![reddit]</sub>
   [INI Tweak Megathread](https://www.reddit.com/r/fo4vr/comments/7kenxb/)
 * <sub>![reddit]</sub>
-  [Comprehensive modding and tweaking guide for Fallout 4 VR](https://www.reddit.com/r/fo4vr/comments/d55jzy/)
+  [Comprehensive modding and tweaking guide for Fallout 4 VR](http://web.archive.org/web/20230612094028/https://old.reddit.com/r/fo4vr/comments/d55jzy/comprehensive_modding_and_tweaking_guide_for/)
 
 
 
@@ -545,7 +565,7 @@ These mods provide utilities used in other mods.
 These do not affect your game directly, but are required by many other mods.
 
 1. **[Address Library for F4SE Plugins](https://www.nexusmods.com/fallout4/mods/47327)** (v1.10.163.0) <sub>![required]</sub>
-2. **[VR Address Library for F4SEVR](https://www.nexusmods.com/fallout4/mods/64879)** (v1.6.1) <sub>![required]</sub>
+2. **[VR Address Library for F4SEVR](https://www.nexusmods.com/fallout4/mods/64879)** (v1.7.0) <sub>![required]</sub>
 3. **[Fallout4 VR Tools](https://www.nexusmods.com/fallout4/mods/45167)** (v0.1) <sub>![required]</sub>
 
 ## 4.3 Stability and Patches<a name="stability-and-patches"></a> <small><sup>[up ▲](#list-of-mods)</sup></small>
@@ -555,11 +575,14 @@ These mods fix bugs, either in the base game or in other mods.
    [As explained in the introduction](#about-modding-fo4vr), most mods will be created for the wrong game version.
    The game warns you of this in the main menu.
    This mod disables those warnings, because they're annoying and there's not a whole lot you can do about it anyway.
-2. **[Unofficial Fallout 4 Patch - UFO4P](https://www.nexusmods.com/fallout4/mods/4598)** (v2.1.5) <sub>![recommended]</sub>  
+2. **[Unofficial Fallout 4 Patch - UFO4P](https://www.nexusmods.com/fallout4/mods/4598?tab=files&file_id=270951)** (v2.1.5) <sub>![recommended]</sub>  
    Fixes a bunch of bugs, big and small, in the base game and add-ons.
    UFO4P's authors do not officially support VR, but overall the pros outweigh the cons.
    * **Requires:** all DLC
    * **Important:** Download this mod, but **keep it deactivated in MO2 for now**.
+   * **Note:**
+     Do **not** use newer versions of UFO4P.
+     Versions newer than v2.1.5 do not work with FO4VR.
    * **Note:**
      Some users report that UFO4P soft locks the DLC (especially with FO4FH).
      I have not experienced these bugs myself, and have not received such bug reports for this mod list specifically.
@@ -698,12 +721,10 @@ What we're left with is a single UI mod, which actually works fine.
      This fixes a VR-specific bug where no icons are shown when talking with followers.
 
 ## 4.9 Gameplay<a name="gameplay"></a> <small><sup>[up ▲](#list-of-mods)</sup></small>
-1. **[FRIK - Full Player Body with IK](https://www.nexusmods.com/fallout4/mods/53464)** (v0.58) <sub>![required]</sub>  
+1. **[FRIK - Full Player Body with IK](https://www.nexusmods.com/fallout4/mods/53464)** (v0.66) <sub>![required]</sub>  
    Allows you to see your hands.
    Absolutely required for immersion.
    * **Important:** Download this mod, but **keep it deactivated in MO2 for now**.
-   * **Note:**
-     The recent v0.64 has better left-handed support, and is probably fine, but I haven't personally tested it yet.
    * **Note:** [In-game configuration required.](#configure-ufo4p-and-frik)
    * **Untested alternative:** [Idle Hands](https://www.nexusmods.com/fallout4/mods/42922)
 2. **[Player Collision Options - nocollide actors](https://www.nexusmods.com/fallout4/mods/41866)** (v1.0) <sub>![required]</sub>  
@@ -790,7 +811,7 @@ Some (but not all) of them assume you play in Survival mode, which I recommend y
    * Recommended even for non-survival playthroughs!
    * **Installer:** everything
    * **Note:** [In-game configuration required.](#configure-survival-options)
-2. **[Settlement Fast Travel Survival Mod](https://www.nexusmods.com/fallout4/mods/58708)** (v1.05) <sub>![recommended]</sub>  
+2. **[Settlement Fast Travel Survival Mod](https://www.nexusmods.com/fallout4/mods/58708)** (v1.06) <sub>![recommended]</sub>  
    Re-enables a restricted form of fast travel.
    You can use this together with the above mod.
    * **Requires:** FO4AU _and_ FO4FH _and_ FO4VW _and_ FO4NW
@@ -799,19 +820,23 @@ Some (but not all) of them assume you play in Survival mode, which I recommend y
    * **Note:** [In-game configuration required.](#configure-campsite)
 4. **[Loot Logic and Reduction With optional Harvest Restrictions](https://www.nexusmods.com/fallout4/mods/21366)** (v1.5.3.1) <sub>![recommended]</sub>  
    Reduces loot found in containers.
-   Otherwise you'll quickly find you'll have so much ammo and chems the game just totally isn't challenging anymore.
+   Otherwise, you'll quickly find you'll have so much ammo and chems the game just totally isn't challenging anymore.
 5. **[NPC Loot Drop rebalance](https://www.nexusmods.com/fallout4/mods/24163)** (v1.0) <sub>![recommended]</sub>  
    Reduces loot found on NPCs, in line with the above mod.
-6. **[Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/29447)** (v1.5.6) <sub>![recommended]</sub>  
+6. **[Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/29447)** (v1.6.4) <sub>![recommended]</sub>  
    In survival, you have less carrying capacity and heavier items. These backpacks will come in use.
    * **Requires:** FO4AU _and_ FO4FH _and_ FO4NW
    * **Installer:** "Scripted Level List Inject"
    * **Note:** [In-game configuration required.](#configure-backpacks-of-the-commonwealth)
 7. **[Dogmeat's Backpack](https://www.nexusmods.com/fallout4/mods/10111)** (v2.0) <sub>![recommended]</sub>  
    As above, but now for your companion.
-8. **[Dogmeat's Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/62037)** (v1.3) <sub>![recommended]</sub>  
+8. **[Dogmeat's Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/62037)** (v1.4) <sub>![recommended]</sub>  
    Re-balances the above mod to be in line with the one above that.
    * **Requires:** The two mods above this one.
+   * **Note:**
+     Despite the mod page's instructions, you don't need to overwrite any files.
+     As long as this mod is listed below Dogmeat's Backpack in your list of mods, MO2 will (virtually) overwrite the 
+     file for you.
 9. **[Headshot Damage Multiplier](https://www.nexusmods.com/fallout4/mods/33546)** (v1.0) <sub>![recommended]</sub>  
    In survival, your outgoing damage is reduced and enemy health is increased.
    Unfortunately, this results in bullet sponge enemies, where you can unload an entire shotgun magazine into someone's
@@ -886,14 +911,14 @@ If you don't intend to engage with settlements at all, you can skip this section
 > On the left-hand side of MO2, make sure [UFO4P](https://www.nexusmods.com/fallout4/mods/4598) and
 > [FRIK](https://www.nexusmods.com/fallout4/mods/53464) remain disabled until you have exited the vault.
 
-> [!WARNING]
-> On the right-hand side of MO2, under the tab "Plugins", check that all `.esp` files are actually activated.
-> Additionally, sort your load order one more time, just to be sure.
+> [!TIP]
+> Sort your load order one more time, just to be sure.
+> On the right-hand side of MO2, go to the "Plugins" tab, and click "Sort".
 
 > [!NOTE]
-> In MO2, in the list of plugins, some mods will be crossed out (with ~~strikethrough~~).
-> This is just MO2's weird way of informing you that it's a textures-only mod.
-> Ignore the strikethrough, and keep the mod enabled.
+> In MO2, in the list of plugins, some plugins will be crossed out (with ~~strikethrough~~).
+> This is just MO2's weird way of informing you that it's a textures-only plugin.
+> Ignore the strikethrough, and keep the plugin enabled.
 
 You're almost there!
 You should now have a good selection of mods from the previous selection installed.
@@ -908,8 +933,34 @@ After that, I promise you can play at your leisure.
 ## 5.1 Issues and solutions<a name="issues-and-solutions"></a> <small><sup>[up ▲](#playing-the-game)</sup></small>
 This section describes some common issues, their solutions, and how to prevent them from happening in the first place.
 
-### 5.1.1 Launching <small><sup>[up ▲](#issues-and-solutions)</sup></small>
-* [Recall that you should always launch F4SEVR, and should always launch from MO2.](#external-libraries)
+### 5.1.1 General <small><sup>[up ▲](#issues-and-solutions)</sup></small>
+If FO4VR doesn't start, your mods don't load, or things just don't go the way they should, this is the right place to
+start.
+I recommend you check these in the order presented here.
+Even if something seems unrelated, it's worth a try checking it anyway.
+After all, if you already knew what the cause of your troubles was, you wouldn't be checking this list.
+
+* If the screen is black in your VR headset, but you can see the game on your monitor, [re-check the instructions for 
+  installing vrperfkit](#external-libraries).
+* [Make sure you configured the INI file correctly.](#ini-configuration)
+  You _have_ to edit `fallout4custom.ini` (and not another file), you _have_ to edit it through MO2 (not through File
+  Explorer), you _have_ to include the required parts (don't skip them), and you _have_ to make sure
+  [your INI file is valid](#how-do-ini-files-work) (or some settings will be ignored).
+* For the mods used in this guide, there should be _no_ `.esm` files or `.esp` files left disabled.
+  To check if any plugins are disabled, open MO2 and go to the "Plugins" tab on the right-hand side.
+  A plugin is disabled if the checkbox next to it is unchecked.
+  To enable it, click the checkbox.
+* If you use [UFO4P](https://www.nexusmods.com/fallout4/mods/4598), make sure you use v2.1.5.
+  Newer versions don't work, and may have unexpected results.
+* If you _don't_ have the DLC, make sure you didn't install any mods that require DLC.
+* If you _do_ have the DLC, go through [the instructions for copying DLC files](#using-dlc-in-fo4vr) again to see if you
+  missed anything.
+* [Verify the integrity of FO4VR's files](https://help.steampowered.com/en/faqs/view/0C48-FCBD-DA71-93EB).
+  Since this will overwrite some files of some [external library mods](#external-libraries), you must then go through
+  [the list of external library mods](#external-libraries) to check which have to be reinstalled. 
+
+### 5.1.2 Launching <small><sup>[up ▲](#issues-and-solutions)</sup></small>
+* [Always launch F4SEVR, and should always launch from MO2.](#external-libraries)
   Otherwise, your mods will not load.
 * Unplug any controllers/gamepads you don't want to use before launching the game.
   FO4(VR) does not support multiple controllers at the same time, and gets confused when you try.
@@ -919,14 +970,15 @@ This section describes some common issues, their solutions, and how to prevent t
   This is necessary because the game is trying to show you a warning that you've removed a mod that the save relies on,
   but for some reason this warning is invisible in the main menu (but works correctly after loading another save).
 
-### 5.1.2 Saving <small><sup>[up ▲](#issues-and-solutions)</sup></small>
+### 5.1.3 Saving <small><sup>[up ▲](#issues-and-solutions)</sup></small>
 * Make sure you manually save regularly.
   Auto-saves are cool, but if it's all you have, you can't go back very far if you get stuck.
-* Loading a save in which you wear power armour causes temporary issues with [FRIK](https://www.nexusmods.com/fallout4/mods/53464).
+* Loading a save in which you wear power armour causes temporary issues with 
+  [FRIK](https://www.nexusmods.com/fallout4/mods/53464).
   Your arms will be invisible, and after you exit the power armour, your body will be stretched in weird ways.
   To resolve the issue, exit the power armour, save your game, return to the main menu, and then load your game again.
 
-### 5.1.3 Playing <small><sup>[up ▲](#issues-and-solutions)</sup></small>
+### 5.1.4 Playing <small><sup>[up ▲](#issues-and-solutions)</sup></small>
 * Do not open your Pip-Boy while your flashlight is on.
   Doing so may cause the game to crash.
 * Swimming sucks ass in VR;
@@ -946,6 +998,34 @@ This section describes some common issues, their solutions, and how to prevent t
      3. Click "Open in Explorer".
      4. Enter directory `F4SE\Plugins\FRIK_weapon_offsets\FRIK_weapon_offsets\`.
      5. Delete all files in this directory.
+
+### 5.5.5 Modding <small><sup>[up ▲](#issues-and-solutions)</sup></small>
+You may be interested in adding mods that aren't listed in this guide.
+Here's a small list of things to keep in mind if you choose to do so.
+This list is not complete, and is not foolproof.
+If things go wrong, I cannot help you.
+
+* **Do not remove mods halfway through.**  
+  If your save relies on a mod, and you remove that mod, anything could happen.
+  Texture-only mods are an exception, but the more complex a mod is, the larger the risk.
+  A crash-to-desktop is the least of your worries;
+  the real problem is when the removal causes a bug that you only encounter dozens of hours later, when it's too late to
+  change your mind.
+  Adding the mod back in almost never helps.
+* **[Be careful with mods updated or released after November 2019.](https://www.reddit.com/r/fo4vr/comments/14d6nbb/)**
+* **Be wary of performance and stability.**  
+  FO4VR is a volatile game, and mods can break performance and stability in unexpected ways.
+  Be conservative when choosing to add mods, and find out if other VR users can vouch for the mod before you install it.
+* **ENBs don't work.**  
+  ENBs require the creator of the ENB software to create a version specifically for that game.
+  The creator has not created a version for FO4VR, and the one for non-VR FO4 is in no way compatible with FO4VR.
+  (If you try it anyway, you can probably get the ENB configuration interface to work, but you can't get the visual 
+  effects to work.)
+* **Avoid AWKCR.**  
+  [AWKCR](https://www.nexusmods.com/fallout4/mods/6091) was a useful workaround for an issue that existed years ago, but
+  that issue has been fixed by Bethesda even before FO4VR was released.
+  Nowadays, AWKCR is mostly bad for your performance, and it's the kind of mod that cannot be removed from a save.
+  
 
 ## 5.2 Configure controls<a name="configure-controls"></a> <small><sup>[up ▲](#playing-the-game)</sup></small>
 > [!NOTE]
