@@ -1,4 +1,40 @@
 # Changelog
+## [1.2.0] -- 2024-05-27
+This version has some minor fixes and clarifications for new users, and some minor mod updates for existing users.
+
+### How to upgrade
+Follow these steps to update your mod list from v1.1.3 to v1.2.0 of my guide.
+      
+* Mods
+  * Update [VR Address Library for F4SEVR](https://www.nexusmods.com/fallout4/mods/64879) from v1.6.1 to v1.7.0.
+  * Update [FRIK](https://www.nexusmods.com/fallout4/mods/53464) from v0.58 to v0.66.
+  * Update [Settlement Fast Travel Survival Mod](https://www.nexusmods.com/fallout4/mods/58708) from v1.05 to v1.06.
+  * Update [Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/29447) from v1.5.6 to v1.6.4.
+  * Update [Dogmeat's Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/62037) from v1.3 to v1.4.
+* Settings
+  * Add the "Increase dev console legibility" config from Section 3.2.2 to your INI configuration.
+
+
+### Added
+* Added fix for making dev console more legible. ([#18](https://github.com/FWDekker/fo4vr-modlist/pull/18))
+* Added more extensive general troubleshooting tips.
+* Added guidance for adding mods not described in this guide. ([#6](https://github.com/FWDekker/fo4vr-modlist/pull/6)) ([#11](https://github.com/FWDekker/fo4vr-modlist/pull/11))
+* Extended instructions on downgrading non-VR FO4's next-gen patch.
+  Previously, the [Wasteland Workshop DLC](https://fallout.fandom.com/wiki/Wasteland_Workshop) was not downgraded.
+  This downgrade seems mostly inconsequential, but was included for completeness.
+
+### Changed
+* Clarify that [UFO4P](https://www.nexusmods.com/fallout4/mods/4598?tab=files&file_id=270951) should not be used.
+* Updated [VR Address Library for F4SEVR](https://www.nexusmods.com/fallout4/mods/64879) from v1.6.1 to v1.7.0.
+* Updated [FRIK](https://www.nexusmods.com/fallout4/mods/53464) from v0.58 to v0.66.
+* Updated [Settlement Fast Travel Survival Mod](https://www.nexusmods.com/fallout4/mods/58708) from v1.05 to v1.06.
+* Updated [Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/29447) from v1.5.6 to v1.6.4.
+* Updated [Dogmeat's Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/62037) from v1.3 to v1.4.
+
+### Fixed
+* Replaced dead link with additional INI tweaks with Web Archive link.
+
+
 ## [1.1.3] -- 2024-05-05
 This version contains only one minor fix, but nothing significant for existing users.
 

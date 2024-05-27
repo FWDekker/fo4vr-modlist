@@ -1,5 +1,5 @@
 # Florine's Fallout 4 VR
-v1.1.3 • [changelog](CHANGELOG.md) • [how to update](CHANGELOG.md)
+v1.2.0 • [changelog](CHANGELOG.md) • [how to update](CHANGELOG.md)
 
 > A thorough, beginner-friendly guide for a stable, vanilla-ish experience.
 
@@ -565,7 +565,7 @@ These mods provide utilities used in other mods.
 These do not affect your game directly, but are required by many other mods.
 
 1. **[Address Library for F4SE Plugins](https://www.nexusmods.com/fallout4/mods/47327)** (v1.10.163.0) <sub>![required]</sub>
-2. **[VR Address Library for F4SEVR](https://www.nexusmods.com/fallout4/mods/64879)** (v1.6.1) <sub>![required]</sub>
+2. **[VR Address Library for F4SEVR](https://www.nexusmods.com/fallout4/mods/64879)** (v1.7.0) <sub>![required]</sub>
 3. **[Fallout4 VR Tools](https://www.nexusmods.com/fallout4/mods/45167)** (v0.1) <sub>![required]</sub>
 
 ## 4.3 Stability and Patches<a name="stability-and-patches"></a> <small><sup>[up ▲](#list-of-mods)</sup></small>
