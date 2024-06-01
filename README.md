@@ -181,7 +181,10 @@ You can remove old files as follows.
     * You can create a global or a portable instance.
       It doesn't really matter which you choose.
     * Enable profile-specific INIs.
-    * Enable profile-specific saves.
+    * Disable profile-specific saves.
+      * **Note:**
+        You can choose to use profile-specific saves if you prefer to keep saves from different profiles separate.
+        However, profile-specific saves are not synced by Steam Cloud.
 * **[Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist)**
   ([direct link](https://aka.ms/vs/17/release/vc_redist.x64.exe)) <sub>![required]</sub>
 * **[7-Zip](https://7-zip.org/)** <sub>![required]</sub>
