@@ -709,8 +709,6 @@ Unfortunately, there are currently no good UI mods for VR.
 [FallUI](https://www.nexusmods.com/fallout4/mods/48758) (v2.2.1) sort of works, but suffers from a variety of bugs in
 VR, like bad contrast between text and background, menus being too small, and some VR-only menus not being replaced at
 all.
-[MCM](https://www.nexusmods.com/fallout4/mods/21497) (v1.39) also doesn't work; mods that use MCM are fine, but you
-can't configure them through MCM.
 What we're left with is a single UI mod, which actually works fine.
 
 1. **[Full Dialog VR](https://www.nexusmods.com/fallout4/mods/28516/)** (v1.1) <sub>![recommended]</sub>  
@@ -722,6 +720,16 @@ What we're left with is a single UI mod, which actually works fine.
      After installing, right-click the mod, click "Open in Explorer", enter the directory `interface`, and delete the
      file `MultiActivateMenu.swf`.
      This fixes a VR-specific bug where no icons are shown when talking with followers.
+2. **[Mod Configuration Menu](https://www.nexusmods.com/fallout4/mods/21497)** (v1.0.0) <sub>![optional]</sub>  
+   Mods with extra settings can be configured using holotapes.
+   This can be somewhat annoying, because sometimes the game fails to give you those holotapes, or you need to craft 
+   them.
+   MCM is an alternative, allowing you to change mod settings in the pause menu.
+
+   * **Variant:** _only_ "MCM_VR"
+   * **Note:**
+     MCM VR has a few visual glitches in its menus, and some controls require the use of a keyboard, but otherwise MCM
+     works fine.
 
 ## 4.9 Gameplay<a name="gameplay"></a> <small><sup>[up ▲](#list-of-mods)</sup></small>
 1. **[FRIK - Full Player Body with IK](https://www.nexusmods.com/fallout4/mods/53464)** (v0.66) <sub>![required]</sub>  
@@ -1085,6 +1093,7 @@ You will need to re-open the holotape several times.
 
 Find a chemistry station and craft the holotape "\[Settings\] Survival Options Holotape", found under "Utility".
 ([You can find a chemistry station in Sanctuary Hills.](img/chemistry-station.jpg))
+(Or, if you have [MCM VR](https://www.nexusmods.com/fallout4/mods/21497), configure the mod there.)
 Next, open your inventory, go to Misc, and use the holotape you crafted.
 Apply the following settings.
 
@@ -1108,6 +1117,7 @@ Favourite the item and put it on your favourite wheel so you can save whenever y
 ### 5.4.4 Bullet Time VATS VR<a name="configure-bullet-time-vats-vr"></a> <small><sup>[up ▲](#configure-mods)</sup></small>
 Find a chemistry station and craft the holotape "\[Settings - Bullet Time VATS\]".
 ([You can find a chemistry station in Sanctuary Hills.](img/chemistry-station.jpg))
+(Or, if you have [MCM VR](https://www.nexusmods.com/fallout4/mods/21497), configure the mod there.)
 Open your inventory, go to Misc, and use the holotape you crafted.
 Apply the following settings.
 
