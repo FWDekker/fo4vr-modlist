@@ -808,36 +808,36 @@ Some (but not all) of them assume you play in Survival mode, which I recommend y
 1. **[Survival Options](https://www.nexusmods.com/fallout4/mods/14650)** (v1.7.1) <sub>![recommended]</sub>  
    Allows you to customise your survival mode experience.
    Lets you re-enable manual saves, configure automatic saves, and change damage multipliers.
-   * Recommended even for non-survival playthroughs!
+   * **Note:** Can be skipped for non-survival playthroughs.
    * **Installer:** everything
    * **Note:** [In-game configuration required.](#configure-survival-options)
-2. **[Settlement Fast Travel Survival Mod](https://www.nexusmods.com/fallout4/mods/58708)** (v1.06) <sub>![recommended]</sub>  
+3. **[Settlement Fast Travel Survival Mod](https://www.nexusmods.com/fallout4/mods/58708)** (v1.06) <sub>![recommended]</sub>  
    Re-enables a restricted form of fast travel.
    You can use this together with the above mod.
    * **Requires:** FO4AU _and_ FO4FH _and_ FO4VW _and_ FO4NW
-3. **[Campsite](https://www.nexusmods.com/fallout4/mods/11734)** (v1.0.4) <sub>![recommended]</sub>  
+4. **[Campsite](https://www.nexusmods.com/fallout4/mods/11734)** (v1.0.4) <sub>![recommended]</sub>  
    Lets you bring a tent with you so you can sleep anywhere.
    * **Note:** [In-game configuration required.](#configure-campsite)
-4. **[Loot Logic and Reduction With optional Harvest Restrictions](https://www.nexusmods.com/fallout4/mods/21366)** (v1.5.3.1) <sub>![recommended]</sub>  
+5. **[Loot Logic and Reduction With optional Harvest Restrictions](https://www.nexusmods.com/fallout4/mods/21366)** (v1.5.3.1) <sub>![recommended]</sub>  
    Reduces loot found in containers.
    Otherwise, you'll quickly find you'll have so much ammo and chems the game just totally isn't challenging anymore.
-5. **[NPC Loot Drop rebalance](https://www.nexusmods.com/fallout4/mods/24163)** (v1.0) <sub>![recommended]</sub>  
+6. **[NPC Loot Drop rebalance](https://www.nexusmods.com/fallout4/mods/24163)** (v1.0) <sub>![recommended]</sub>  
    Reduces loot found on NPCs, in line with the above mod.
-6. **[Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/29447)** (v1.6.4) <sub>![recommended]</sub>  
+7. **[Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/29447)** (v1.6.4) <sub>![recommended]</sub>  
    In survival, you have less carrying capacity and heavier items. These backpacks will come in use.
    * **Requires:** FO4AU _and_ FO4FH _and_ FO4NW
    * **Installer:** "Scripted Level List Inject"
    * **Note:** [In-game configuration required.](#configure-backpacks-of-the-commonwealth)
-7. **[Dogmeat's Backpack](https://www.nexusmods.com/fallout4/mods/10111)** (v2.0) <sub>![recommended]</sub>  
+8. **[Dogmeat's Backpack](https://www.nexusmods.com/fallout4/mods/10111)** (v2.0) <sub>![recommended]</sub>  
    As above, but now for your companion.
-8. **[Dogmeat's Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/62037)** (v1.4) <sub>![recommended]</sub>  
+9. **[Dogmeat's Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/62037)** (v1.4) <sub>![recommended]</sub>  
    Re-balances the above mod to be in line with the one above that.
    * **Requires:** The two mods above this one.
    * **Note:**
      Despite the mod page's instructions, you don't need to overwrite any files.
      As long as this mod is listed below Dogmeat's Backpack in your list of mods, MO2 will (virtually) overwrite the 
      file for you.
-9. **[Headshot Damage Multiplier](https://www.nexusmods.com/fallout4/mods/33546)** (v1.0) <sub>![recommended]</sub>  
+10. **[Headshot Damage Multiplier](https://www.nexusmods.com/fallout4/mods/33546)** (v1.0) <sub>![recommended]</sub>  
    In survival, your outgoing damage is reduced and enemy health is increased.
    Unfortunately, this results in bullet sponge enemies, where you can unload an entire shotgun magazine into someone's
    face and they somehow survive.
@@ -846,7 +846,7 @@ Some (but not all) of them assume you play in Survival mode, which I recommend y
    The result is a sort of mutual [glass cannon](https://tvtropes.org/pmwiki/pmwiki.php/Main/GlassCannon) situation,
    where every shot matters.
    * **Variant:** "x5"
-10. **[Radiation Overhaul - 4x More Radiation Across the Wasteland](https://www.nexusmods.com/fallout4/mods/13790)** (v1.1) <sub>![optional]</sub>  
+11. **[Radiation Overhaul - 4x More Radiation Across the Wasteland](https://www.nexusmods.com/fallout4/mods/13790)** (v1.1) <sub>![optional]</sub>  
     Makes radiation actually dangerous.
     * **Variant:** depends on your DLC
     * **Patch:** [UFO4P and item name patch](https://www.nexusmods.com/fallout4/mods/79708) (v1.1-1.0.4)
