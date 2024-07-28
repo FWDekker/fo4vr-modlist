@@ -1,9 +1,9 @@
 # Changelog
-## Unreleased
-(TODO)
+## [1.3.0] -- 2024-07-28
+This version doesn't have any changes to the mod list, but fixes a potential issue with saves not being synced by Steam.
 
 ### How to upgrade
-Follow these steps to update your mod list from v1.2.0 to vTODO of my guide.
+Follow these steps to update your mod list from v1.2.0 to v1.2.1 of my guide.
 
 * Previously, the guide recommended enabling profile-specific saves for your MO2 profile.
   This allows you to create multiple profiles in MO2 with separate mod lists and separate saves.
@@ -23,6 +23,9 @@ Follow these steps to update your mod list from v1.2.0 to vTODO of my guide.
   6. Below the list of profiles, disable "Use profile-specific Save Games".
   7. When prompted for confirmation, click "No".
   8. Click "Close".
+
+### Added
+* Added instructions on how to download non-VR FO4 DLC without downloading the full game. ([#22](https://github.com/FWDekker/fo4vr-modlist/issues/22))
 
 ### Changed
 * Removed recommendation to use profile-specific saves in MO2.

@@ -166,7 +166,7 @@ You can remove old files as follows.
     [move your entire Steam installation to another directory as explain in Steam's help
     pages](https://help.steampowered.com/en/faqs/view/4BD4-4528-6B2E-8327).
     Personally, I went for `C:\Users\[username]\Steam\`.
-  * No, there is no simpler way. 
+  * No, there is no simpler way.
     Yes, this is required.
 * **Fallout 4 with all DLC** (v1.10.163) <sub>![recommended]</sub>
   [More information in Section 2.3](#using-dlc-in-fo4vr), including instructions for dealing with the
@@ -191,8 +191,8 @@ You can remove old files as follows.
 
 ## 2.3 Using DLC in FO4VR<a name="using-dlc-in-fo4vr"></a> <small><sup>[up ▲](#setup)</sup></small>
 FO4VR does not include the DLC, which sucks.
-Luckily, if you have non-VR FO4, you can just partially downgrade non-VR FO4, copy the DLC files into your FO4VR 
-installation, and install a few patches (included in the [mod list](#list-of-mods)).
+Luckily, if you have non-VR FO4, you can just partially downgrade non-VR FO4, copy the DLC files into your FO4VR
+installation, and install a few compatibility patches (included in the [mod list](#list-of-mods)).
 If you don't have non-VR FO4 with DLC, and don't want to buy it, you can safely skip the steps that require DLC.
 
 First, copy non-VR FO4's DLC into FO4VR,
@@ -200,11 +200,42 @@ First, copy non-VR FO4's DLC into FO4VR,
 2. select all files that start with `DLC`, except those that start with `DLCUltraHighResolution`, and
 3. copy those files to `[fo4vr_dir]\Data\`.
 
+> [!TIP]
+> If you don't have non-VR FO4 installed, and only want to download the files you need for this guide, [open the Steam
+> Console as explained below](#how-to-open-steam-console), and run the following commands.
+>
+> <details>
+> <summary>Click here to view the list of commands.</summary>
+>
+> ```
+> download_depot 377160 490650 4873048792354485093
+> ```
+> ```
+> download_depot 377160 393895 7677765994120765493
+> ```
+> ```
+> download_depot 377160 480631 6588493486198824788
+> ```
+> ```
+> download_depot 377160 393885 5000262035721758737
+> ```
+> ```
+> download_depot 377160 480630 5527412439359349504
+> ```
+> ```
+> download_depot 377160 435881 1207717296920736193
+> ```
+> ```
+> download_depot 377160 435882 8482181819175811242
+> ```
+>
+> </details>
+
 Since non-VR FO4's [next-gen update](https://bethesda.net/en/article/4s2bXQEbpcrsdCZhUYLHAi/x), various DLCs are no
 longer compatible with FO4VR.
 Luckily, you can still get the old versions of those DLCs using the Steam Console.
 You will download those, and then overwrite the files you copied earlier.
-1. Open the Steam Console.
+1. <a name="how-to-open-steam-console"></a>Open the Steam Console.
    You can open the Steam Console directly by
    * visiting `steam://open/console` in your browser, or
    * pressing <kbd>⊞ Win</kbd> + <kbd>R</kbd>, writing `steam://open/console`, and pressing <kbd>Enter</kbd>, or
@@ -232,7 +263,7 @@ You should now have the required software.
 Before you install mods, there's some settings to tweak.
 These settings relate to stability, visual quality, performance, and general gameplay.
 
-We start by navigating a few settings menus ([Section 3.1](#basic-configuration)) and then we do some more detailed 
+We start by navigating a few settings menus ([Section 3.1](#basic-configuration)) and then we do some more detailed
 adjustments using INI configuration ([Section 3.2](#ini-configuration)).
 
 ## 3.1 Basic configuration<a name="basic-configuration"></a> <small><sup>[up ▲](#configuration)</sup></small>
@@ -686,7 +717,7 @@ I used a combination of mods recommended by [dropadred](https://www.reddit.com/u
 
 ## 4.7 Sound<a name="sound"></a> <small><sup>[up ▲](#list-of-mods)</sup></small>
 The sound is actually fine in VR.
-However, it doesn't hurt to improve sound effects for VR, and to add more high-quality music. 
+However, it doesn't hurt to improve sound effects for VR, and to add more high-quality music.
 
 1. **[Faded Glory - A Post-Apocalyptic Soundscape](https://www.nexusmods.com/fallout4/mods/26014)** (v5-1) <sub>![optional]</sub>
 2. **[Fallout Suite - Soundtrack Extension](https://www.nexusmods.com/fallout4/mods/15870)** (v1.1) <sub>![optional]</sub>
@@ -722,7 +753,7 @@ What we're left with is a single UI mod, which actually works fine.
      This fixes a VR-specific bug where no icons are shown when talking with followers.
 2. **[Mod Configuration Menu](https://www.nexusmods.com/fallout4/mods/21497)** (v1.0.0) <sub>![optional]</sub>  
    Mods with extra settings can be configured using holotapes.
-   This can be somewhat annoying, because sometimes the game fails to give you those holotapes, or you need to craft 
+   This can be somewhat annoying, because sometimes the game fails to give you those holotapes, or you need to craft
    them.
    MCM is an alternative, allowing you to change mod settings in the pause menu.
 
@@ -822,33 +853,33 @@ Some (but not all) of them assume you play in Survival mode, which I recommend y
    * **Note:** Can be skipped for non-survival playthroughs.
    * **Installer:** everything
    * **Note:** [In-game configuration required.](#configure-survival-options)
-3. **[Settlement Fast Travel Survival Mod](https://www.nexusmods.com/fallout4/mods/58708)** (v1.06) <sub>![recommended]</sub>  
+2. **[Settlement Fast Travel Survival Mod](https://www.nexusmods.com/fallout4/mods/58708)** (v1.06) <sub>![recommended]</sub>  
    Re-enables a restricted form of fast travel.
    You can use this together with the above mod.
    * **Requires:** FO4AU _and_ FO4FH _and_ FO4VW _and_ FO4NW
-4. **[Campsite](https://www.nexusmods.com/fallout4/mods/11734)** (v1.0.4) <sub>![recommended]</sub>  
+3. **[Campsite](https://www.nexusmods.com/fallout4/mods/11734)** (v1.0.4) <sub>![recommended]</sub>  
    Lets you bring a tent with you so you can sleep anywhere.
    * **Note:** [In-game configuration required.](#configure-campsite)
-5. **[Loot Logic and Reduction With optional Harvest Restrictions](https://www.nexusmods.com/fallout4/mods/21366)** (v1.5.3.1) <sub>![recommended]</sub>  
+4. **[Loot Logic and Reduction With optional Harvest Restrictions](https://www.nexusmods.com/fallout4/mods/21366)** (v1.5.3.1) <sub>![recommended]</sub>  
    Reduces loot found in containers.
    Otherwise, you'll quickly find you'll have so much ammo and chems the game just totally isn't challenging anymore.
-6. **[NPC Loot Drop rebalance](https://www.nexusmods.com/fallout4/mods/24163)** (v1.0) <sub>![recommended]</sub>  
+5. **[NPC Loot Drop rebalance](https://www.nexusmods.com/fallout4/mods/24163)** (v1.0) <sub>![recommended]</sub>  
    Reduces loot found on NPCs, in line with the above mod.
-7. **[Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/29447)** (v1.6.4) <sub>![recommended]</sub>  
+6. **[Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/29447)** (v1.6.4) <sub>![recommended]</sub>  
    In survival, you have less carrying capacity and heavier items. These backpacks will come in use.
    * **Requires:** FO4AU _and_ FO4FH _and_ FO4NW
    * **Installer:** "Scripted Level List Inject"
    * **Note:** [In-game configuration required.](#configure-backpacks-of-the-commonwealth)
-8. **[Dogmeat's Backpack](https://www.nexusmods.com/fallout4/mods/10111)** (v2.0) <sub>![recommended]</sub>  
+7. **[Dogmeat's Backpack](https://www.nexusmods.com/fallout4/mods/10111)** (v2.0) <sub>![recommended]</sub>  
    As above, but now for your companion.
-9. **[Dogmeat's Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/62037)** (v1.4) <sub>![recommended]</sub>  
+8. **[Dogmeat's Backpacks of the Commonwealth](https://www.nexusmods.com/fallout4/mods/62037)** (v1.4) <sub>![recommended]</sub>  
    Re-balances the above mod to be in line with the one above that.
    * **Requires:** The two mods above this one.
    * **Note:**
      Despite the mod page's instructions, you don't need to overwrite any files.
-     As long as this mod is listed below Dogmeat's Backpack in your list of mods, MO2 will (virtually) overwrite the 
+     As long as this mod is listed below Dogmeat's Backpack in your list of mods, MO2 will (virtually) overwrite the
      file for you.
-10. **[Headshot Damage Multiplier](https://www.nexusmods.com/fallout4/mods/33546)** (v1.0) <sub>![recommended]</sub>  
+9. **[Headshot Damage Multiplier](https://www.nexusmods.com/fallout4/mods/33546)** (v1.0) <sub>![recommended]</sub>  
    In survival, your outgoing damage is reduced and enemy health is increased.
    Unfortunately, this results in bullet sponge enemies, where you can unload an entire shotgun magazine into someone's
    face and they somehow survive.
@@ -856,7 +887,7 @@ Some (but not all) of them assume you play in Survival mode, which I recommend y
    headshots.
    The result is a sort of mutual [glass cannon](https://tvtropes.org/pmwiki/pmwiki.php/Main/GlassCannon) situation,
    where every shot matters.
-   * **Variant:** "x5"
+10. **Variant:** "x5"
 11. **[Radiation Overhaul - 4x More Radiation Across the Wasteland](https://www.nexusmods.com/fallout4/mods/13790)** (v1.1) <sub>![optional]</sub>  
     Makes radiation actually dangerous.
     * **Variant:** depends on your DLC
@@ -951,7 +982,7 @@ I recommend you check these in the order presented here.
 Even if something seems unrelated, it's worth a try checking it anyway.
 After all, if you already knew what the cause of your troubles was, you wouldn't be checking this list.
 
-* If the screen is black in your VR headset, but you can see the game on your monitor, [re-check the instructions for 
+* If the screen is black in your VR headset, but you can see the game on your monitor, [re-check the instructions for
   installing vrperfkit](#external-libraries).
 * [Make sure you configured the INI file correctly.](#ini-configuration)
   You _have_ to edit `fallout4custom.ini` (and not another file), you _have_ to edit it through MO2 (not through File
@@ -968,7 +999,7 @@ After all, if you already knew what the cause of your troubles was, you wouldn't
   missed anything.
 * [Verify the integrity of FO4VR's files](https://help.steampowered.com/en/faqs/view/0C48-FCBD-DA71-93EB).
   Since this will overwrite some files of some [external library mods](#external-libraries), you must then go through
-  [the list of external library mods](#external-libraries) to check which have to be reinstalled. 
+  [the list of external library mods](#external-libraries) to check which have to be reinstalled.
 
 ### 5.1.2 Launching <small><sup>[up ▲](#issues-and-solutions)</sup></small>
 * [Always launch F4SEVR, and should always launch from MO2.](#external-libraries)
@@ -984,7 +1015,7 @@ After all, if you already knew what the cause of your troubles was, you wouldn't
 ### 5.1.3 Saving <small><sup>[up ▲](#issues-and-solutions)</sup></small>
 * Make sure you manually save regularly.
   Auto-saves are cool, but if it's all you have, you can't go back very far if you get stuck.
-* Loading a save in which you wear power armour causes temporary issues with 
+* Loading a save in which you wear power armour causes temporary issues with
   [FRIK](https://www.nexusmods.com/fallout4/mods/53464).
   Your arms will be invisible, and after you exit the power armour, your body will be stretched in weird ways.
   To resolve the issue, exit the power armour, save your game, return to the main menu, and then load your game again.
@@ -1030,7 +1061,7 @@ If things go wrong, I cannot help you.
 * **ENBs don't work.**  
   ENBs require the creator of the ENB software to create a version specifically for that game.
   The creator has not created a version for FO4VR, and the one for non-VR FO4 is in no way compatible with FO4VR.
-  (If you try it anyway, you can probably get the ENB configuration interface to work, but you can't get the visual 
+  (If you try it anyway, you can probably get the ENB configuration interface to work, but you can't get the visual
   effects to work.)
 * **Avoid AWKCR.**  
   [AWKCR](https://www.nexusmods.com/fallout4/mods/6091) was a useful workaround for an issue that existed years ago, but
@@ -1132,7 +1163,7 @@ To activate [Campsite](https://www.nexusmods.com/fallout4/mods/11734), you'll ne
 Once you've found the book, you'll be able to craft camping items at any chemistry workbench.
 
 ### 5.4.6 Sim Settlements<a name="configure-sim-settlements"></a> <small><sup>[up ▲](#configure-mods)</sup></small>
-[Sim Settlements](https://www.nexusmods.com/fallout4/mods/21872) can only be configured after you've played the game 
+[Sim Settlements](https://www.nexusmods.com/fallout4/mods/21872) can only be configured after you've played the game
 a bit.
 Specifically, you'll need to reach the [Museum of Freedom](https://fallout.fandom.com/wiki/Museum_of_Freedom), which is
 one of the earlier storyline locations anyway.
@@ -1212,6 +1243,8 @@ In chronological order of contribution:
   you now have to downgrade Automatron](https://github.com/FWDekker/fo4vr-modlist/pull/14)!
 * Thanks to [GeekOffTheStreet](https://github.com/GeekOffTheStreet) for [reporting an incorrect directory in the DLC
   instructions](https://github.com/FWDekker/fo4vr-modlist/issues/16)!
+* Thanks to [Nathaniel Hartlen](https://github.com/crazysmile11012) for [suggesting adding instructions on how to 
+  download non-VR DLC without installing the full game](https://github.com/FWDekker/fo4vr-modlist/issues/22)!
 
 If I should add, remove, or change anything here, just
 [open an issue](https://github.com/FWDekker/fo4vr-modlist/issues/new) or [email me](https://fwdekker.com/about/)!
