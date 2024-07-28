@@ -1,4 +1,37 @@
 # Changelog
+## [1.3.0] -- 2024-07-28
+This version adds instructions on using the MCM, and fixes a potential issue with saves not being synced by Steam.
+
+### How to upgrade
+Follow these steps to update your mod list from v1.2.0 to v1.3.0 of my guide.
+
+* Previously, the guide recommended enabling profile-specific saves for your MO2 profile.
+  This allows you to create multiple profiles in MO2 with separate mod lists and separate saves.
+  However, this also prevents Steam from storing your saves in the Steam Cloud.
+  As of this release, the guide recommends that you disable profile-specific saves.
+
+  You can disable profile-specific saves as follows.
+  1. In MO2, open the "Profiles" dialog.
+     You can do so by pressing <kbd>Ctrl + P</kbd>, or by going to "Tools" in the main menu, and then clicking "Profiles".
+  2. Select the profile you want to disable profile-specific saves for.
+  3. Click "Transfer Saves".
+  4. For each entry in the top-right box:
+     1. Click the entry.
+     2. Click "<- Move".
+     3. Click "Yes".
+  5. At the bottom, click "Done".
+  6. Below the list of profiles, disable "Use profile-specific Save Games".
+  7. When prompted for confirmation, click "No".
+  8. Click "Close".
+
+### Added
+* Added [Mod Configuration Menu (MCM) installation and usage instructions](https://github.com/FWDekker/fo4vr-modlist/tree/v1.3.0#ui).
+* Added instructions on how to download non-VR FO4 DLC without downloading the full game. ([#22](https://github.com/FWDekker/fo4vr-modlist/issues/22))
+
+### Changed
+* Removed recommendation to use profile-specific saves in MO2.
+
+
 ## [1.2.0] -- 2024-05-27
 This version has some minor fixes and clarifications for new users, and some minor mod updates for existing users.
 
